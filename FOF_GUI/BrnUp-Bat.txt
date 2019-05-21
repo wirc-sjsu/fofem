@@ -1,0 +1,39 @@
+# maximum number iterations burnup does, default 3000
+#MAX_TIMES 3000
+#  intensity of the igniting surface fire,
+#  kW/m2 sq m, 40.0 -> 1.0e5, burnup var - fi  (float)
+#INTENSITY 50.0
+#  residence time of the ignition surface fire, seconds
+#  default = 60.0, fofem's burnup input file uses 30.0
+#  burnup var = ti,   limits 10.0 -> 200.0
+#IG_TIME 60
+# windspeed at top of fuelbed meters/second
+# burnup var = u, default 0, limits 0.0 -> 5.0,
+#WINDSPEED 3.0
+# fuel depth, meters,
+# burnup var = d, defualt 0.3, limits 0.1 -> 5.0
+#DEPTH  0.3
+#  ambient air temperature, degrees Celcus
+#  burnup var = tamb, default 27,
+# if ( tamb-273 < tam1 || tamb-273 > tam2)
+# const double tam1 = -40.0,  tam2 = 40.0;
+#AMBIENT_TEMP  27.0
+# fire environment minumum dimension paramter
+# default 1.83
+#R0  1.83
+# fire environment increment temp parater
+# default 0.40
+#DR  0.4
+# time step for integration of burning rates.
+# TIMESTEP * MAX_TIMES gives max simulation period
+#TIMESTEP 10
+
+# Sigma - Surface area to volume ratio
+#SURat_Lit         8200.0
+#SURat_DW1         1480.0
+#SURat_DW10         394.0
+#SURat_DW100        105.0
+#SURat_DWk_3_6       39.4
+#SURat_DWk_6_9       21.9
+#SURat_DWk_9_20      12.7
+#SURat_DWk_20        5.91

@@ -1,0 +1,241 @@
+# Version 5.9.1 Fuel Loading File - must be same number as the Fofem program's
+#
+#        1         2         3         4         5         6         7         8         9         10        11        12        13        14        15        16        17        18        19        200
+#234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012
+# Reg                                    Name                                                      F Litter   Duff  Depth  Shrub   Herb    1Hr   10Hr  100Hr   3-9S  9-20S   20+S   3-9R  9-20R   20+R CTG
+#_-_-  ___________________________________________________________________________________________ _ ------ ______ ------ ______ ------ ______ ------ ______ ------ ______ ------ ______ ------ ______ ---
+ PI    001 Black Cottonwood - Douglas-fir - Quaking Aspen Riparian Forest,                         x   1.84  37.00   2.00   0.99   0.20   0.20   0.80   3.50   0.50   0.50   0.00   3.00   4.00   5.00
+ PI    002 Western Hemlock - Western Redcedar - Douglas-fir Forest,                                x   1.62  45.75   3.00   2.51   0.16   1.00   2.00   4.00   2.00   3.00   6.00   1.00   3.00   4.00
+ PI    003 Douglas-fir Forest, Thinning                                                            x   2.27  36.72   2.55   0.58   0.31   2.50   3.50   3.60  10.70   0.00   0.00   2.50   0.00   0.00
+ P     004 Douglas-fir / Ceanothus Forest, Prescribed fire, clearcut                               x   2.27  11.00   1.50   2.83   0.60   0.20   0.30   3.80   0.00   0.00   0.00  12.00   7.00   4.50
+ P     005 Douglas-fir - White Fir Forest, Fire exclusion                                          x   5.86  13.17   1.10   2.90   0.21   0.50   1.60   3.30   4.30   8.90   3.40   0.80   1.60   0.60
+ P     006 Oregon White Oak - Douglas-fir Forest, Selection cut                                    x   1.50   4.18   0.30   0.92   0.70   0.10   0.40   0.80   2.60   2.20   0.00   0.30   0.70   0.70
+ P     007 Douglas-fir - Sugar Pine - Tanoak Forest, Fire exclusion                                x   1.28  19.21   1.30   0.76   0.02   1.00   3.20   1.90   0.60   0.70   1.70   4.90   5.40  14.20
+ P     008 Western Hemlock - Douglas-fir - Western Redcedar / Vine Maple Forest,                   x   3.11  69.30   5.00   0.94   0.02   1.00   2.00   4.00  10.00  20.00  10.00   2.00  10.00   5.00
+ P     009 Douglas-fir - Western Hemlock - Western Redcedar / Vine Maple Forest, Clearcut          x   1.66  21.84   1.50   0.86   0.15   1.50   2.60   2.50   2.00   3.70   7.00   4.70   8.00  20.00
+ P     010 Western Hemlock - Douglas-fir - Sitka Spruce Forest,                                    x   3.22  57.00   5.00   0.99   0.35   1.30   1.00   1.00   5.00  35.00   5.00   2.00  10.00   5.00
+ P     011 Douglas-fir / Western Hemlock - Sitka Spruce Forest, Clearcut                           x   3.22  12.00   1.25   0.79   0.25   1.00   2.00   4.00   5.00   5.00   5.00   5.00   5.00   5.00
+ PI    012 Red Fir - Mountain Hemlock - Lodgepole Pine - White Pine Forest,                        x   3.87  18.82   1.40   0.01   0.06   0.30   0.60   1.10   0.60   4.50   7.00   0.50   3.60   5.00
+ P     013 Mountain Hemlock - Pacific Silver Fir Forest, Wildfire                                  x   0.65  17.52   1.60   0.39   0.20   0.40   0.60   1.00  13.00   4.00   7.00   3.00   1.00   7.00
+ P     014 Black Oak Woodland,                                                                     x   3.11   2.64   0.50   0.09   0.10   0.25   0.50   0.90   1.25   0.00   0.00   0.00   0.00   0.00
+ P     015 Jeffrey Pine - Red Fir - White Fir / Greenleaf Manzanita - Snowbrush Forest, Selctn cut x   3.14  55.48   4.50   3.02   0.05   0.08   0.05   0.23   1.75   5.00   6.00   0.50   2.00   2.00
+ P     016 Jeffery Pine - Ponderosa Pine - Douglas-fir - Black Oak Forest, Fire exclusion          x   3.01  11.44   1.00   0.80   0.20   0.30   1.40   1.80   0.80   2.50   0.00   0.70   2.50   0.00
+ P     017 Red Fir Forest, Fire exclusion                                                          x   4.84  54.64   4.60   0.00   0.06   0.90   3.10   3.00   1.00   1.00   1.00   1.00   0.80   0.00
+ P     018 Douglas-fir / Oceanspray Forest, Prescribed fire                                        x   0.92  10.54   0.80   0.15   0.17   0.40   0.80   0.20   1.10   2.70   6.30   0.90   0.80   0.00
+ P     019 White Fir - Giant Sequoia - Sugar Pine Forest, Fire exclusion                           x   3.60  26.18   2.10   0.05   0.01   0.50   1.50   3.00   0.50   4.00  19.00   0.70   2.50   8.00
+ PI    020 Western Juniper / Mountain Mahogany Woodland, Fire exclusion                            x   1.46   3.90   1.00   0.50   0.35   0.05   0.10   0.50   1.00   0.00   0.00   0.00   2.00   4.00
+ I     021 Lodgepole Pine Early Seral Forest , Wildfire                                            x   1.50   6.50   1.00   0.00   0.02   0.20   1.00   2.50   8.00   0.50   0.00   0.70   0.20   0.00
+ I     022 Lodgepole Pine Mature Forest,                                                           x   1.50  13.00   2.00   0.00   0.20   0.40   2.20   2.80   8.30   0.70   0.50   0.80   0.50   0.50
+ I     023 Lodgepole Pine Mature Forest with Beetle Kill, Insects and disease                      x   1.50   6.50   1.00   0.31   0.17   0.20   1.10   1.60   9.70   8.70   1.00   3.30   2.30   1.00
+ I     024 Pacific Ponderosa Pine - Douglas Fir Forest, Fire exclusion, grazing                    x   1.98   4.96   0.60   0.00   0.50   0.10   0.20   0.75   2.00   0.80   0.00   1.80   0.20   0.50
+ I     025 Pinyon - Juniper Forest, Fire exclusion, grazing                                        x   1.19   6.32   1.10   0.21   0.05   0.30   0.50   1.20   1.00   1.00   0.00   0.00   0.00   0.00
+ I     026 Interior Ponderosa Pine - Limber Pine Forest, Fire exclusion                            x   2.40   4.50   0.50   1.46   0.08   0.00   0.10   0.40   0.30   2.90   9.40   0.40   0.00   0.00
+ I     027 Ponderosa Pine - Twoneedle Pinyon - Utah Juniper Forest, Fire exclusion                 x   1.48   1.02   0.30   0.12   0.50   0.20   0.30   1.00   2.00   0.00   0.00   1.00   2.00   6.00
+ I     028 Ponderosa Pine Savanna,                                                                 x   1.33   3.64   0.40   0.08   0.80   0.05   0.10   0.20   0.30   0.50   0.00   0.50   1.00   2.00  PN
+ I     029 Interior Ponderosa Pine - Engelmann Spruce - Douglas-fir Forest, Selection cut          x   0.60  14.84   1.40   1.46   0.20   1.00   1.50   2.00   6.00  12.00   0.00   5.00  11.00   0.00
+ I     030 Turbinella Oak - Mountain Mahogany Shrubland,                                           x   1.52   0.65   0.20   1.18   0.10   0.10   0.30   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ I     032 Ponderosa Pine / Pinyon Pine - Juniper Forest, Fire exclusion, grazing                  x   2.40   2.54   0.60   0.01   0.00   0.10   0.90   1.30   1.40   0.00   0.00   0.40   0.50   5.90
+ I     033 Gambel Oak / Big Sagebrush Shrubland with Old Fire, Wildfire                            x   2.80   1.72   0.40   0.28   0.23   0.20   0.20   0.20   0.20   0.00   0.00   0.00   0.00   0.00  SG
+ I     034 Interior Douglas-fir - Interior Ponderosa Pine / Gambel Oak Forest, Fire exclusion      x   1.78   9.75   1.00   0.73   0.20   0.10   1.50   4.00   2.00   3.00   5.00   1.80   1.70   0.00
+ P     036 Live Oak - Blue Oak Woodland, Fire exclusion, grazing                                   x   1.08   4.30   1.00   1.48   0.40   0.50   0.50   1.00   1.00   1.00   0.20   0.20   0.20   0.20
+ P     037 Ponderosa Pine - Jeffrey Pine Forest, Fire exclusion, grazing                           x   0.90  22.10   2.00   1.31   0.31   0.10   1.00   1.50   1.20   2.50   0.00   0.60   2.50   0.00
+ P     038 Douglas-fir - Madrone / Tanoak Forest, Fire exclusion                                   x   3.01   7.40   0.80   0.54   0.20   1.00   2.00   2.00   3.00   3.00   7.00   0.00   0.00   0.00
+ P     039 Sugar Pine - Douglas-fir - Oak Forest,                                                  x   2.41   8.32   0.80   0.12   0.10   0.40   2.10   1.10   2.60   1.50   0.00   0.70   0.40   0.00
+ I     040 Tobosa - Grama Grassland, Grazing, introduction of exotic species                       x   0.00   0.00   0.00   0.33   0.08   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    041 Fescue - Wheatgrass Grassland, Fire exclusion, grazing                                  x   0.52   0.00   0.00   0.00   0.65   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ I     042 Trembling Aspen / Engelmann Spruce Forest, Fire exclusion                               x   1.16  11.22   1.30   0.01   0.40   0.30   0.70   1.80   9.00   0.60   0.00   5.00   0.00   0.00
+ I     043 Arizona White Oak - Gray Oak - Emory Oak Woodland, Fire exclusion, grazing              x   0.91   2.08   0.40   0.18   0.50   0.10   0.40   0.80   1.00   0.00   0.00   0.00   0.00   0.00
+ PI    044 Scrub Oak - Chaparral Shrubland,                                                        x   6.20   0.60   0.10   3.56   0.00   0.50   0.25   0.25   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ I     045 Pine - Oak Forest, Fire exclusion, grazing                                              x   4.46   3.90   1.00   0.55   0.10   0.40   1.00   1.00   4.00   1.00   0.00   3.00   0.50   0.00
+ P     046 Chamise Chaparral Shrubland,                                                            x   0.50   3.12   0.40   4.83   0.00   0.50   1.00   1.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ P     047 Redwood - Tanoak Forest, Fire exclusion                                                 x   3.05  51.20   4.50   2.09   0.50   0.40   2.00   3.00   8.00  12.00   8.00   6.00   8.00   6.00
+ P     048 Douglas Fir - Tanoak - Madrone - California Bay Forest,                                 x   3.23  17.00   1.50   3.37   0.10   0.50   1.00   2.00   2.00   1.50   1.50   2.00   2.00   4.00
+ P     049 Creosote Bush Shrubland, Fire exclusion, grazing                                        x   0.76   0.00   0.00   0.42   0.10   0.10   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ P     051 Coastal Sage Shrubland,                                                                 x   9.30   0.00   0.00   3.20   0.00   0.10   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     052 Douglas-fir - Pacific Ponderosa Pine / Oceanspray Forest, Fire exclusion                x   2.13  14.28   1.10   0.24   0.21   0.40   0.90   0.40   0.40   1.10   0.60   0.40   2.40   0.00
+ P     053 Pacific Ponderosa Pine Forest, Fire exclusion, insects and disease                      x   1.92  18.70   1.50   0.00   0.06   0.10   1.50   1.50   8.00   3.00   0.00   3.00   1.50   0.00
+ P     054 Douglas-fir - White Fir - Interior Ponderosa Pine Forest, Fire exclusion                x   2.42  26.60   2.00   0.09   0.11   0.30   2.40   4.90   0.50   3.00   4.00   1.00   3.00   4.00
+ I     055 Western Juniper / Sagebrush Savanna, Fire exclusion                                     x   0.28   0.45   0.20   0.42   0.61   0.20   0.40   0.80   0.00   0.00   0.00   0.00   0.00   0.00
+ I     056 Sagebrush Shrubland, Fire exclusion, grazing, introduction of exotic species            x   0.21   0.00   0.00   1.48   0.71   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SB
+ I     057 Wheatgrass - Cheatgrass Grassland, Grazing, introduction of exotic species              x   0.22   0.00   0.00   0.00   0.11   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ I     058 Western Juniper / Sagebrush Savanna with Prescribed Burn, Prescribed fire               x   0.30   0.00   0.00   0.05   0.15   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ I     059 Subalpine Fir - Engelmann Spruce - Douglas-fir - Lodgepole Pine Forest,                 x   1.48  43.80   3.20   0.95   0.30   0.50   1.00   2.00   6.30   3.90   0.30   6.30   3.90   0.30
+ I     060 Sagebrush Shrubland with Prescribed Burn, Prescribed fire                               x   3.45   0.00   0.00   0.41   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SB
+ I     061 Whitebark Pine / Subalpine Fir Forest, Insects and disease                              x   2.33  15.68   1.30   0.81   0.20   0.10   0.40   1.70   4.40  13.60   0.00   5.40  19.50   0.00
+ P     062 Vaccinium - Heather Shrublands with Wildland Fire, Wildfire                             x   1.28   0.00   0.00   0.90   0.11   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     063 Showy Sedge - Alpine Black Sedge Grassland,                                             x   1.20   0.00   0.00   0.00   1.35   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     065 Purple tussockgrass - California Oatgrass Grassland, Fire exclusion, grazing            x   1.15   2.34   0.20   0.00   1.80   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ I     066 Bluebunch Wheatgrass - Bluegrass Grassland,                                             x   5.75  24.22   1.70   0.03   1.01   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ I     067 Interior Ponderosa Pine - Douglas-fir Forest, Fire exclusion                            x   2.03  20.80   2.00   1.42   0.75   0.50   1.40   1.20   4.00   2.00   0.00   1.60   1.00   0.00
+ I     069 Western Juniper / Sagebrush - Bitterbrush Shrubland, Fire exclusion                     x   0.53   0.45   0.10   1.25   0.20   0.20   0.40   0.20   0.00   0.00   0.00   0.00   0.00   0.00  SB
+ I     070 Subalpine Fir - Lodgepole Pine - Whitebark Pine - Engelmann Spruce Forest, Fire excl.   x   2.39  14.04   1.20   0.94   0.20   0.30   1.20   2.50  12.00   7.00   0.00   8.70   5.50   0.00
+ P     071 Ohia / Florida Hopbush - Kupaoa Forest,                                                 x   3.67   0.00   0.00   2.24   0.60   0.40   0.50   0.80   0.40   0.00   0.00   0.50   0.00   0.00
+ P     072 Ohia / Uluhe Forest,                                                                    x   5.58   0.00   0.00   0.22   6.30   0.20   0.40   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     073 Koa / Pukiawe Forest,                                                                   x   5.44   0.00   0.00   0.29   3.00   0.90   1.40   4.50   0.10   0.10   0.10   0.10   0.10   0.10
+ P     074 Mamane - Naio Savanna,                                                                  x   2.78   0.00   0.00   0.12   0.72   0.20   0.70   2.20   1.90   0.00   0.00   1.90   0.00   0.00
+ P     075 Slash Pine / New Caledonia Pine Forest, Introduction of exotic species                  x   7.50  49.40   4.00   0.06   0.00   0.10   1.20   1.90   0.50   1.50   1.00   0.50   1.50   1.00
+ P     076 Slash Pine / Molasses Grass Forest, Introduction of exotic species                      x   6.14  50.73   4.80   0.01   3.02   0.10   0.40   0.50   0.50   1.50   0.30   0.50   1.50   0.30
+ P     077 Eucalyptus Plantation Forest, Introduction of exotic species                            x   5.58  50.96   4.00   0.58   0.05   0.80   3.30   4.20   4.00   1.00   6.00   2.00   0.50   0.50
+ P     078 Florida Hopbush - Mauna Loa Beggarticks Shrubland,                                      x   3.98   0.00   0.00   2.75   0.90   1.10   2.50   0.60   0.00   0.00   0.00   0.00   0.00   0.00
+ P     079 Pili Grass - Broomsedge Bluestem Grassland, Grazing, introduction of exotic species     x   2.30   0.00   0.00   0.35   2.50   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     080 Fountain Grass Grassland, Introduction of exotic species                                x   1.61   0.00   0.00   0.08   5.10   0.10   0.30   0.30   0.00   0.00   0.00   0.00   0.00   0.00
+ P     081 Columbia Bluestem / Pukiawe Grassland, Introduction of exotic species                   x   2.95   0.00   0.00   0.21   3.82   0.10   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     082 White Leadtree / Guinea Grass Shrubland, Introduction of exotic species                 x   2.38   0.00   0.00   0.12   4.50   0.20   0.30   0.10   0.00   0.00   0.00   0.00   0.00   0.00
+ P     083 Molasses Grass Grassland, Introduction of exotic species                                x   4.63   0.00   0.00   1.52   5.00   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     084 Ohia / Broomsedge Bluestem Savanna, Introduction of exotic species                      x   5.08   0.00   0.00   2.02   4.00   0.10   0.20   0.50   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    085 Black Spruce / Lichen Forest,                                                           x   3.14  53.60   6.00   0.73   0.07   0.20   0.30   1.00   1.50   0.00   0.00   1.00   0.00   0.00
+ PI    086 Black Spruce / Feathermoss Open Forest,                                                 x   4.79  52.00   6.00   0.73   0.04   0.20   0.30   1.00   1.50   0.00   0.00   1.00   0.00   0.00
+ PI    087 Black Spruce / Feathermoss Closed Forest,                                               x   6.05  64.40   6.00   0.42   0.03   0.10   0.20   0.50   1.00   0.00   0.00   0.50   0.00   0.00
+ PI    088 Black Spruce / Sphagnum Moss Forest,                                                    x  21.80 441.00  35.00   0.28   0.04   0.20   0.30   1.00   1.00   0.00   0.00   1.00   0.00   0.00
+ PI    089 Black Spruce / Sheathed Cottonsedge Woodland,                                           x  13.50 270.00  20.00   0.19   1.02   0.20   0.30   1.00   1.00   0.00   0.00   1.00   0.00   0.00
+ I     090 White Oak - Northern Red Oak Forest,                                                    x   6.20  22.10   2.00   0.32   0.01   1.00   1.40   1.50   5.00   4.00   0.00   1.00   0.00   0.00
+ PI    091 White Spruce / Prickly Rose Forest,                                                     x   6.10  48.60   5.00   0.55   0.05   0.20   0.40   1.20   1.50   0.00   0.00   0.50   0.00   0.00
+ PI    092 Aspen - Paper Birch - White Spruce - Black Spruce Forest,                               x   5.24  30.60   3.00   0.28   0.03   0.40   0.60   1.50   3.00   0.00   0.00   1.50   0.00   0.00
+ PI    093 Paper birch - Trembling Aspen Forest,                                                   x   6.82  37.80   4.00   0.34   0.02   0.30   0.40   0.80   3.00   3.00   0.00   1.00   1.00   0.00
+ PI    094 Balsam Poplar - Trembling Aspen Forest,                                                 x   6.35  30.60   3.00   0.47   0.03   0.20   0.30   1.50   2.00   1.00   0.00   1.00   0.50   0.00
+ PI    095 Willow - Alder Shrubland,                                                               x   3.10  23.40   2.00   2.11   0.10   0.20   0.50   0.50   0.50   0.00   0.00   0.40   0.00   0.00
+ PI    097 Cottongrass Grassland,                                                                  x   4.55 150.00  10.00   0.11   3.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    098 Marsh Labrador Tea - Lingonberry Tundra Shrubland,                                      x   3.68   7.60   2.00   1.13   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    099 Bluejoint Reedgrass Grassland,                                                          x   6.90  27.00   2.00   0.00   5.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    100 Altai Fescue Grassland,                                                                 x   4.75   7.50   1.00   0.00   4.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    101 White Spruce Forest,                                                                    x   5.68  48.60   5.00   0.59   0.03   0.30   0.50   1.50   2.00   0.00   0.00   0.50   0.00   0.00
+ PI    102 White Spruce Forest with Beetle Attack, Insects and disease                             x   5.30  48.60   5.00   0.85   1.05   1.00   1.50   3.00  20.00   5.00   0.00   0.50   0.00   0.00
+ PI    103 White Spruce - Paper Birch Forest,                                                      x   5.92  34.20   3.00   0.80   0.03   0.50   0.70   1.50   3.00   2.00   0.00   1.00   1.00   0.00
+ PI    104 White Spruce - Paper Birch Forest with Beetle Attack, Insects and disease               x   5.49  34.20   3.00   1.29   1.05   1.50   2.00   3.00  15.00   5.00   0.00   1.00   1.00   0.00
+ PI    105 Paper Birch - Trembling Aspen - White Spruce Forest,                                    x   6.78  30.60   3.00   0.79   0.06   0.40   0.50   1.50   5.00   3.00   0.00   2.00   2.00   0.00
+ N     106 Red Spruce - Balsam Fir Forest following Budworm Infestation, Insects and disease       x   7.52  30.69   2.00   0.20   0.10   1.00   1.70   3.30  17.50  17.50   0.00   3.50   3.50   0.00 BBS
+ N     107 Pitch Pine / Scrub Oak Forest,                                                          x   3.04  35.10   3.00   0.49   0.02   0.10   0.70   0.50   0.10   0.00   0.00   0.20   0.00   0.00
+ N     109 Eastern White Pine - Northern Red Oak - Red Maple Forest,                               x   4.71  11.70   1.00   1.31   0.40   0.30   0.50   1.00   1.20   0.50   0.50   0.75   0.30   0.00
+ N     110 American Beech - Yellow Birch - Sugar Maple, Selection cut                              x   3.25  14.85   1.00   0.14   0.10   0.40   0.50   1.00   1.00   5.00   0.00   0.50   1.00   0.00
+ S     114 Virginia Pine - Pitch Pine - Shortleaf Pine Forest, Fire exclusion                      x   4.55  19.80   2.00   0.38   0.20   0.20   0.70   0.40   0.30   0.50   0.00   0.20   0.30   0.00
+ S     115 Rhododendron - Blueberry - Mountain Laurel Shrubland,                                   x   6.40  40.00   2.50   6.80   0.05   0.20   0.70   2.00   0.00   0.00   0.00   0.20   0.00   0.00
+ S     120 Oak - Pine / Mountain Laurel Forest, Fire exclusion                                     x   6.16  19.80   1.50   7.24   0.05   0.50   1.00   1.50   1.50   1.80   0.00   0.80   0.00   0.00
+ S     121 Oak - Pine / Mountain Laurel Forest with Beetle Damage, Insects and disease             x   9.22  19.80   1.50   7.24   0.10   2.00   3.00   4.00   8.80  14.60   5.80   0.80   0.00   0.00
+ S     123 White Oak - Northern Red Oak - Black Oak - Hickory Forest, Fire exclusion               x   8.03  22.10   2.00   1.16   0.06   0.60   1.20   1.60   1.50   1.80   0.00   0.80   0.00   0.00
+ N     124 Pitch Pine - Oak Forest,                                                                x   4.59  18.72   1.60   0.73   0.11   0.20   0.50   0.50   0.10   0.10   0.00   0.20   0.00   0.00
+ N     125 Oak - Hickory - Pine - Eastern Hemlock Forest,                                          x   6.19   8.16   0.70   1.12   0.05   0.02   0.40   0.70   1.80   1.80   0.00   0.50   0.00   0.00
+ S     129 Green Ash - American Elm Forest,                                                        x   1.55   1.30   1.00   0.67   0.11   0.10   0.20   1.50   1.50   1.50   0.00   0.50   0.50   0.00
+ S     131 Bluestem - Indian Grass - Switchgrass Grassland, Prescribed fire                        x   7.28   0.00   0.00   0.11   3.30   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ S     133 Tall Fescue - Foxtail - Purple Bluestem Grassland,                                      x   4.66   0.00   0.00   0.20   3.00   0.40   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ S     134 White Oak - Northern Red Oak - Hickory Forest, Clearcut                                 x   4.59   7.12   0.60   1.02   0.20   1.40   3.20   6.90   7.90   2.80   0.00   2.50   1.00   0.00
+ S     135 Eastern Redcedar - Oak / Bluestem Savanna,                                              x   1.49   0.45   0.20   0.20   1.50   0.20   0.40   0.80   0.00   0.00   0.00   0.00   0.00   0.00
+ N     138 Red Pine - White Pine Forest, Fire exclusion                                            x   2.80  19.89   1.80   0.26   0.10   0.90   1.50   1.90   4.80   5.20   0.00   1.40   2.10   0.00
+ N     140 Jack Pine / Black Spruce Forest, Fire exclusion                                         x   2.60  18.53   1.50   0.76   0.72   0.30   0.30   0.10   0.40   0.00   0.00   0.10   0.00   0.00
+ N     142 Trembling Aspen - Paper birch Forest,                                                   x   3.24  23.40   2.00   0.22   0.11   0.50   1.00   3.00   3.00   0.00   0.00   1.00   0.00   0.00
+ I     143 Trembling Aspen - Paper birch - White Spruce - Balsam Fir Forest,                       x   6.29  24.70   2.00   1.53   0.50   0.40   0.60   1.30   2.00   2.00   0.00   0.30   0.00   0.00
+ N     146 Jack Pine Mature Forest,                                                                x   3.42  15.60   1.20   0.12   0.11   0.20   0.80   1.00   6.00   0.00   0.00   1.50   0.00   0.00 RJP
+ N     147 Jack Pine Savanna,                                                                      x   1.31   3.64   0.40   0.29   0.31   0.10   0.10   0.10   0.30   0.00   0.00   0.00   0.00   0.00 RJP
+ N     148 Jack Pine Young Forest, Wildfire                                                        x   3.62   4.23   0.50   0.16   0.06   0.10   0.50   1.30  10.00   0.00   0.00   1.50   0.00   0.00 RJP
+ N     152 Red Pine - White Pine Forest following Severe Windthrow, Windrow                        x   3.19  17.55   1.80   0.15   0.20   2.00   3.00   4.00  12.50  15.00  10.00   1.40   2.10   0.00
+ I     154 Bur Oak Savanna, Fire exclusion                                                         x   4.72   3.60   0.40   0.25   0.30   0.20   0.50   0.50   1.00   0.50   0.00   0.00   0.00   0.00
+ N     155 Red Spruce - Balsam Fir Forest,                                                         x   3.06  44.55   3.00   0.07   0.05   0.50   1.00   0.50   1.50   0.40   0.00   2.00   0.75   0.00 BBS
+ S     156 Slash Pine Plantation Forest, Thinning                                                  x   2.94   9.35   0.75   2.28   0.10   1.60   0.84   1.50   2.00   0.00   0.00   0.07   0.00   0.00
+ S     157 Loblolly Pine - Shortleaf Pine - Mixed Hardwoods Forest,                                x   6.06  11.05   1.00   1.56   0.11   1.00   1.30   1.30   0.70   0.70   0.70   0.90   0.00   0.00
+ S     158 Loblolly Pine - Shortleaf Pine - Mixed Hardwoods Forest post Beetle Infestation         x   9.08  11.05   1.00   2.56   0.11   0.30   1.10   1.90  10.40  10.00   9.00   7.00   4.00   0.00
+ S     161 Loblolly Pine - Slash Pine Forest,                                                      x   3.00  12.35   1.00   0.63   0.11   1.20   0.84   0.25   0.50   0.00   0.00   1.00   0.00   0.00
+ S     162 Loblolly Pine - Slash Pine Forest with Commercial Thin, Thinning                        x   3.00  12.35   1.00   0.94   0.11   0.50   4.30   3.70   2.70   0.00   0.00   1.60   0.00   0.00
+ S     164 Sand Pine Forest,                                                                       x   2.97   7.80   1.00   1.18   0.01   1.50   1.50   0.30   1.00   0.50   0.00   0.10   0.00   0.00
+ S     165 Longleaf Pine / Three-awned Grass - Pitcher Plant Savanna with Prescribed Fire,         x   1.17   1.30   0.50   1.33   0.35   0.10   0.16   0.14   0.20   0.10   0.00   0.00   0.00   0.00
+ S     166 Longleaf Pine / Three-awned Grass - Pitcher Plant Savanna, Fire exclusion               x   1.30  17.68   1.60   5.91   0.21   0.20   0.50   0.30   0.50   0.20   0.00   0.00   0.00   0.00
+ S     168 Little Gallberry - Fetterbush Shrubland,                                                x   3.69 993.20  45.50   3.95   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ S     170 Pond Pine / Little Gallberry - Fetterbush Shrubland,                                    x   6.28 223.20  10.50   5.04   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ S     173 Live Oak / Sea Oats Savanna,                                                            x   0.69   0.00   0.00   0.42   0.20   0.20   0.20   0.50   0.00   0.00   0.00   0.00   0.00   0.00
+ S     174 Live Oak - Sabal Palm Forest,                                                           x   5.74   6.38   0.75   2.88   0.20   0.50   0.50   0.50   1.50   1.00   0.00   0.00   0.00   0.00
+ S     175 Smooth Cordgrass - Black Needlerush Grassland,                                          x   3.45 110.00  12.50   0.00   4.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ S     176 Smooth Cordgrass - Black Needlerush Grassland with Common Reed Invasion, exotic species x   6.90 298.80  19.00   0.00   4.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ S     178 Loblolly Pine - Shortleaf Pine Forest,                                                  x   6.06  13.26   1.20   1.95   0.10   0.90   3.60   6.20  10.60   0.00   0.00   4.40   1.40   0.00
+ S     180 Red Maple - Oak - Hickory - Sweetgum Forest, Selection cut                              x   6.20  20.80   2.00   0.66   0.25   0.40   0.70   1.40   1.80   1.80   0.00   0.50   0.70   0.00
+ S     181 Pond Pine Forest,                                                                       x   4.93  56.00   5.00   3.33   0.00   1.00   1.50   1.50   2.00   1.00   0.50   0.50   0.50   0.00
+ S     182 Longleaf Pine - Slash Pine / Saw Palmetto - Gallberry Forest, Fire exclusion            x   5.16  36.40   4.00   6.57   0.20   0.10   0.40   0.30   0.50   0.00   0.00   0.00   0.00   0.00
+ S     183 Loblolly Pine - Shortleaf Pine Forest with Commercial Thin, Thinning                    x   6.06  13.26   1.20   2.42   0.20   0.90   4.00   8.20  10.60   0.00   0.00   4.40   1.40   0.00
+ S     184 Longleaf Pine / Turkey Oak Forest, Fire exclusion                                       x   5.47   5.00   1.25   0.97   0.20   0.10   0.50   1.00   0.80   0.00   0.00   0.20   0.00   0.00
+ S     185 Longleaf Pine / Turkey Oak Forest with Prescribed Fire, Prescribed fire                 x   1.48   0.52   0.40   0.40   0.20   0.10   0.20   0.20   0.10   0.00   0.00   0.00   0.00   0.00
+ S     186 Turkey Oak - Bluejack Oak Forest, Fire exclusion                                        x   5.51   6.53   0.75   0.95   0.10   0.20   0.50   0.14   0.30   0.50   0.00   0.10   0.10   0.00
+ S     187 Longleaf Pine / Yaupon Forest, Thinning                                                 x   3.90  10.13   1.25   1.82   0.20   0.80   4.00   6.20   1.20   1.50   0.00   0.20   0.00   0.00
+ S     188 Sand Pine - Oak Forest,                                                                 x   2.21  11.70   1.00   0.62   0.00   0.40   0.60   0.40   1.10   0.00   0.00   0.00   0.00   0.00
+ S     189 Sand Pine - Oak Forest with Overstory Pine Mortality, Insects and disease               x   2.17  20.59   1.60   0.78   0.00   0.60   0.70   0.80   4.10   2.10   0.00   0.20   0.20   0.00
+ S     190 Slash Pine - Longleaf Pine / Gallberry Forest, Fire exclusion                           x   1.46  16.58   1.50   9.17   0.10   0.15   0.40   0.30   1.20   0.00   0.00   0.10   0.00   0.00
+ S     191 Longleaf Pine - Slash Pine / Gallberry Forest, Prescribed fire                          x   2.95   4.16   0.40   3.43   0.20   0.08   0.35   0.40   1.00   0.00   0.00   0.00   0.00   0.00
+ S     196 Loblolly Pine / Bluestem Forest,                                                        x   7.19   1.69   0.20   0.22   0.10   0.30   0.56   0.15   0.50   0.00   0.00   1.00   0.50   0.00
+ S     203 Sawgrass - Muhlenbergia Grassland,                                                      x   4.60   0.00   0.50   0.00   3.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     208 Grand Fir - Douglas-fir Forest, Fire exclusion                                          x   1.23  23.14   2.00   0.73   0.06   0.50   1.60   3.30   4.30   8.90   3.40   0.80   1.60   0.60
+ I     210 Pinyon - Juniper Woodland, Fire exclusion, grazing                                      x   1.49   0.52   0.20   0.46   0.10   0.20   0.40   1.00   0.30   0.00   0.00   0.20   0.20   0.00
+ I     211 Interior Ponderosa Pine Forest, Fire exclusion                                          x   2.72   5.70   0.50   0.09   0.11   0.10   0.50   0.90   0.40   1.20   0.00   0.40   0.30   0.00  PN
+ P     212 Pacific Ponderosa Pine Forest with Thinning, Selection cut                              x   0.91  21.60   1.50   0.00   0.06   1.00   3.20   3.00  40.00   3.00   0.00   1.70   1.00   0.00
+ I     213 Wheatgrass - Cheatgrass Grassland with Prescribed Burn, exotic species, prescribed fire x   0.00   0.00   0.00   0.00   0.21   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ P     214 Giant Sequoia - White Fir - Sugar Pine Forest, Prescribed fire                          x   2.10  13.32   1.10   0.54   0.06   0.50   1.50   1.50   0.50   4.00  21.00   0.20   2.00   4.00
+ P     215 Douglas-fir - Madrone / Tanoak Forest, Wildfire                                         x   0.30   2.00   0.20   0.27   0.05   0.80   1.10   0.90   2.50   3.10  14.80   1.00   1.00   2.00
+ I     216 Gambel Oak - Bigtooth Maple Forest, Fire exclusion                                      x   3.00  13.60   1.50   0.29   0.15   1.00   1.10   1.90   1.90   0.00   0.00   0.00   0.00   0.00
+ I     217 Gambel Oak - Bigtooth Maple Forest with Prescribed Burn, Prescribed fire                x   3.66   6.88   0.70   0.25   0.11   0.10   0.20   1.40   1.60   0.00   0.00   0.00   0.00   0.00
+ I     218 Gambel Oak / Big Sagebrush Shrubland, Fire exclusion                                    x   1.86   3.90   0.60   0.56   0.11   0.20   0.60   1.00   0.50   0.00   0.00   0.00   0.00   0.00
+ I     219 Ponderosa Pine - White Fir / Trembling Aspen Forest, Fire exclusion                     x   2.70  24.96   2.00   0.01   0.11   0.30   1.70   2.50   2.70   2.60   1.50   1.20   4.30   1.80
+ I     220 Ponderosa Pine - White Fir / Trembling Aspen Forest with Prescribed Burn,               x   1.20   7.92   0.60   0.05   0.11   0.20   1.00   0.80   2.40   2.10   1.20   1.20   1.00   0.80
+ P     221 Wheatgrass - Ryegrass Grassland, Prescribed fire, restoration work                      x   4.14   0.00   0.00   0.00   0.25   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ I     222 Interior Ponderosa Pine Forest with Prescribed Burn, Prescribed fire                    x   1.50   2.34   0.20   0.05   0.02   0.10   0.30   0.20   0.50   1.00   0.00   0.30   0.00   0.00  PN
+ I     223 Douglas-fir - White Fir - Interior Ponderosa Pine Forest with Wildland Fire, Wildfire   x   0.91   1.86   0.20   0.05   0.11   0.10   0.20   0.70   0.60   2.60   0.00   1.50   1.90   0.00
+ I     224 Trembling Aspen Forest, Fire exclusion                                                  x   0.92  11.88   0.90   0.36   1.05   0.20   0.60   1.80   5.90   1.90   0.00   2.80   0.90   0.00
+ I     225 Trembling Aspen Forest with Prescribed Burn, Prescribed fire                            x   0.92   1.04   0.40   0.30   0.55   0.10   0.10   1.60   6.90   3.30   2.10   1.80   1.00   0.00
+ I     226 White Fir - Gambel Oak Forest, Fire exclusion                                           x   1.20  23.40   1.80   0.03   0.08   0.60   0.90   1.20   7.10   0.00   0.00   1.50   0.00   0.00
+ I     227 White Fir Forest, Prescribed fire                                                       x   1.20  19.80   1.40   0.04   0.06   0.30   0.40   1.00   6.70   0.00   0.00   1.50   5.90   0.00
+ I     228 Interior Ponderosa Pine - Limber Pine Forest with Prescribed Burn, Prescribed fire      x   1.50   5.46   0.60   1.15   0.21   0.10   0.60   0.60   0.80   0.70   1.00   0.10   0.90   0.00
+ I     229 Ponderosa Pine / Juniper Forest, Prescribed fire                                        x   3.00   1.36   0.30   0.00   0.05   0.20   1.00   1.20   2.30   0.00   0.00   0.00   0.00   0.00
+ I     230 Pinyon - Juniper Forest with Prescribed Fire, Prescribed fire                           x   0.90   1.56   0.40   0.01   0.06   0.20   0.50   0.20   0.50   0.50   0.00   0.00   0.00   0.00
+ I     231 Gambel Oak - Juniper - Ponderosa Pine Forest, Fire exclusion, grazing                   x   3.07   4.68   1.20   1.01   0.12   0.50   0.50   2.00   5.00   2.00   0.00   1.00   1.00   0.00
+ I     232 Mesquite Savanna, Fire exclusion, grazing                                               x   1.47   0.00   0.00   1.06   0.50   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ I     233 Sagebrush Shrubland, Fire exclusion                                                     x   0.00   0.00   0.00   1.18   0.06   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SB
+ I     234 Sagebrush Shrubland with Prescribed Burn, Prescribed fire                               x   0.00   0.00   0.00   0.23   0.11   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SB
+ P     235 Idaho fescue - Bluebunch Wheatgrass Grassland, Wildfire                                 x   0.24   0.00   0.00   0.00   2.01   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ I     236 Tobosa - Grama Grassland,                                                               x   0.00   0.00   0.00   0.04   0.05   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ P     237 Vaccinium - Heather Shrublands,                                                         x   1.26   0.00   0.00   2.00   0.06   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     238 Pacific Silver Fir - Mountain Hemlock Forest,                                           x   1.75  25.48   2.00   0.15   0.10   0.20   0.20   0.40   0.20   6.00   2.50   0.50  17.00   7.00
+ P     239 Douglas-fir - Sugar Pine - Tanoak Forest, Wildfire                                      x   0.32   4.71   0.40   3.22   0.02   0.30   0.80   1.20   1.00   1.00   0.00   8.00   6.00   1.00
+ S     240 Saw Palmetto / Three-awned Grass Shrubland,                                             x   2.38   0.00   2.00   4.02   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ S     241 Longleaf Pine - Loblolly Pine Forest, Windrow                                           x   2.90   7.41   0.60   1.66   0.20   0.20   3.50   6.00  14.50  21.50   0.00   0.40   0.60   0.00
+ S     242 Longleaf Pine - Loblolly Pine Forest with Prescribed Fire, Prescribed fire              x   0.20   2.47   0.20   0.92   0.30   0.02   1.50   3.00  12.00  18.00   0.00   0.40   0.60   0.00
+ S     243 Pitch Pine / Scrub Oak Shrubland, Wildfire                                              x   2.77   6.83   0.70   0.17   0.10   1.50   0.90   1.40   2.10   0.50   0.00   0.00   0.00   0.00
+ P     260 Ohia / Uluhe Forest with Wildfire, Wildfire                                             x   5.58   0.00   0.00   0.28   6.00   0.10   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     261 Pili Grass - Broomsedge Bluestem Grassland with Recent Fire, Wildfire                   x   1.15   0.00   0.00   0.40   2.00   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     262 Molasses Grass Grassland with Recent Fire, Wildfire                                     x   4.60   0.00   0.00   0.15   6.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     263 Ohia / Broomsedge bluestem Savanna, Wildfire                                            x   3.45   0.00   0.00   0.59   3.00   0.10   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ S     264 Post Oak - Blackjack Oak Forest, Fire exclusion, grazing                                x   3.06   2.94   0.40   0.89   1.25   0.30   0.70   1.00   0.00   0.00   0.00   0.00   0.00   0.00
+ I     265 Balsam Fir - White Spruce - Mixed Hardwoods Forest,                                     x   3.65  11.20   2.00   0.57   1.00   0.50   0.60   1.60   1.10   2.00   4.00   0.20   1.00   1.00
+ N     266 Sugar maple - Basswood Forest,                                                          x   3.10  11.70   1.00   0.30   0.35   0.50   1.00   1.00   3.00   2.00   0.20   0.50   1.00   0.20
+ N     267 American Beech - Yellow Birch - Sugar Maple - Red Spruce Forest,                        x   4.79  18.70   1.50   0.13   0.10   0.50   1.00   1.00   1.50   5.00   0.20   0.50   1.00   0.20
+ N     268 American Beech - Yellow Birch - Sugar Maple - Eastern Hemlock Forest,                   x   4.79  18.70   1.50   0.11   0.10   0.50   1.00   1.00   1.50   5.00   0.20   0.50   1.00   0.20
+ S     269 Sugar maple - Yellow poplar - American beech - Oak Forest,                              x   6.20  23.40   2.00   0.29   0.50   1.00   1.00   2.00   3.00   2.00   0.50   2.30   0.50   0.00
+ S     270 Red Spruce - Fraser Fir / Rhododendron Forest, Insects and disease, windthrow           x   4.86  20.80   2.00   9.82   0.10   0.80   1.40   1.50  15.00  12.00   0.00   2.00   2.00   0.00
+ S     272 Red Mangrove - Black Mangrove Forest,                                                   x   0.78 540.00  40.00   1.13   0.25   0.25   1.00   4.20   0.20   0.00   0.00   3.00   0.00   0.00
+ I     273 Engelmann Spruce - Douglas-fir - White Fir - Interior Ponderosa Pine Forest, Fire excl. x   2.98  16.64   1.60   0.08   0.07   0.25   1.50   3.00   5.00   4.50   0.00   1.00   1.50   0.00
+ N     274 American Beech - Sugar Maple Forest,                                                    x   3.10  11.70   1.00   0.66   0.75   0.30   0.75   1.00   2.00   2.00   0.20   0.50   1.00   0.20
+ S     275 Chestnut Oak - White Oak - Red Oak Forest, Fire exclusion                               x   5.24   9.95   0.90   3.71   0.15   0.60   0.90   1.50   0.40   0.00   0.00   0.80   0.20   0.00
+ S     276 Oak - Pine - Magnolia Forest,                                                           x   6.18   6.38   0.75   1.00   0.11   0.50   0.50   1.00   3.00   1.00   0.50   0.00   0.00   0.00
+ N     279 Black Spruce - Northern White Cedar - Larch Forest,                                     x  10.07 342.00  24.00   1.03   0.02   0.40   1.00   2.00   4.00   2.00   0.00   2.00   1.00   0.00
+ S     280 Bluestem - Gulf Cordgrass Grassland,                                                    x   2.38   0.00   0.00   0.56   3.50   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  GG
+ S     281 Shortleaf Pine - Post Oak - Black Oak Forest,                                           x   6.10  12.35   1.00   0.43   0.01   0.60   0.90   2.30   3.80   6.10   0.00   1.10   0.00   0.00
+ S     282 Loblolly Pine Forest,                                                                   x   6.03  22.10   2.00   0.58   0.02   0.60   1.70   2.00   3.00   2.00   0.00   0.20   0.00   0.00
+ S     283 Willow Oak - Laurel Oak - Water Oak Forest,                                             x   1.55   1.30   1.00   1.95   0.01   0.10   0.20   1.50   1.50   1.50   0.00   0.50   0.50   0.00
+ I     284 Green Ash - American Elm - Silver Maple - Cottonwood Forest,                            x   1.55   1.30   1.00   0.53   0.11   0.00   0.20   1.50   1.50   1.50   0.00   0.50   0.50   0.00
+ I     286 Limber Pine - Interior Ponderosa Pine Forest, Fire exclusion                            x   2.98  12.74   1.40   0.52   0.11   0.20   1.00   1.00   1.00   6.00   2.00   2.00   5.00  10.00
+ N     287 Eastern White Pine - Eastern Hemlock Forest,                                            x   3.17  11.05   1.00   0.38   0.01   0.20   0.40   0.90   0.30   0.00   0.00   0.60   0.30   0.00
+ S     288 Bald-Cypress - Water Tupelo Forest,                                                     x   1.67   5.20   1.00   0.53   0.01   0.20   0.20   0.50   1.00   1.00   1.00   1.00   2.00   2.00
+ S     289 Pond-cypress / Muhlenbergia - Sawgrass Savanna,                                         x   4.67  30.00   2.00   0.00   3.00   0.10   0.10   0.10   0.00   0.00   0.00   0.00   0.00   0.00
+ S     291 Longleaf Pine - Slash Pine / Saw Palmetto Forest, Fire exclusion                        x   5.16  15.40   1.50   5.36   0.20   0.02   0.40   0.30   0.50   0.00   0.00   0.00   0.00   0.00
+ P     301 California Central Valley Riparian (Flood)                                              x   1.05   1.00   0.50   0.48   0.20   0.20   0.30   0.10   0.00   0.00   0.00   0.10   0.00   0.00
+ I     302 Intermountain Montane Subalpine Riparian (None)                                         x   0.04   0.45   0.50   0.59   0.30   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    303 Warm Desert Riparian (None)                                                             x   0.74   1.00   0.50   0.39   0.10   0.20   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ I     304 Conifer Swamp Forest                                                                    x   2.55  25.50   3.00   0.94   0.02   0.40   1.00   2.00   4.00   2.00   0.00   2.00   1.00   0.00
+ P     305 Red Alder Forest (None)                                                                 x   1.28  11.05   1.00   1.55   0.10   0.20   0.80   1.30   0.50   0.50   0.00   3.00   2.00   0.00
+ P     306 Knobcone Pine Forest (None)                                                             x   1.72   3.92   0.70   5.29   0.00   0.20   1.00   1.00   1.00   6.00   2.00   2.00   5.00   0.00
+ PI    307 Palo Verd Shrubland                                                                     x   0.00   0.00   0.00   0.00   0.05   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ PI    308 Low Sagebrush Steppe (None)                                                             x   0.30   0.00   0.00   1.14   0.50   0.06   0.02   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SB
+ PI    309 Blackbrush Shrubland (None)                                                             x   0.53   0.00   0.00   0.21   0.50   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ I     310 Greasewood Shrubland (None)                                                             x   0.35   0.00   0.00   0.70   0.10   0.10   0.20   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ I     311 Salt-Desert Shrubland (None)                                                            x   0.35   0.00   0.00   0.95   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00  SG
+ I     312 Gambel Oak Shrubland (None)                                                             x   1.80   1.20   0.30   0.35   0.31   0.20   0.20   1.00   0.50   0.00   0.00   0.00   0.00   0.00
+ I     313 Mountain Mahogany Shrubland (None)                                                      x   0.75   0.60   0.30   0.72   0.10   0.20   0.20   1.00   0.50   0.00   0.00   0.00   0.00   0.00
+ PI    314 Limber - Bristlecone Pine Forest (None)                                                 x   0.74   0.00   0.00   0.04   0.05   0.10   0.20   0.10   1.00   1.00   0.00   1.00   0.50   0.00
+ I     315 Interior Alpine Forb-Grassland (None)                                                   x   0.30   0.00   0.00   0.00   0.45   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ P     316 Northern California Coastal Shrubland (None)                                            x   4.50   0.00   0.00   6.87   0.50   0.10   0.10   0.00   0.00   0.00   0.00   0.00   0.00   0.00
+ I     317 Rocky Mountain Maple Forest (None)                                                      x   0.98   4.00   0.50   0.19   0.10   0.20   0.40   0.80   0.50   0.50   0.00   3.00   2.00   0.00
+ P     319 North Pacific Avalanche Chute Shrubland (Avalanche)                                     x   1.80   1.20   0.30   0.00   0.00   0.30   0.40   0.90   1.00   0.00   0.00   0.10   0.00   0.00
+ PI    320 Western Larch Forest (None)                                                             x   2.93  14.88   1.70   0.30   0.11   0.70   2.10   4.40   0.70   3.50   0.00   0.70   8.00   1.00

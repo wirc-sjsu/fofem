@@ -1,0 +1,12 @@
+
+C:\FuelCalc\FOF_DLL>make -a -s -fansi.mak 
+MAKE Version 5.0  Copyright (c) 1987, 1997 Borland International
+Borland C++ 5.2 Copyright (c) 1987, 1997 Borland International
+Mar 19 1997 17:29:40
+fof_mrt.cpp:
+Warning fof_spp.h 229: Array variable 'sr_MSMT' is near
+Error fof_mrt.cpp 23: Array size too large
+Error fof_mrt.cpp 23: Too much global data defined in file
+*** 2 errors in Compile ***
+
+** error 1 ** deleting obj\fof_mrt.obj

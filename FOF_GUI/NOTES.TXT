@@ -1,0 +1,26 @@
+
+
+  To Do:
+   > Need to pop up a savedialogbox when contextmenu Save item is clicked
+
+
+   > Anchor  graphs in their form windows like I did with the Soil one
+
+   > setup the business with Duff & Duff Depth change by user
+
+   > set the fof_saf.dat, etc opens to use the Wnd_Frm.s_strupPth like
+      i do with fof_spp.dat, also setup #defines for the file names
+
+   > Fix how GUI changes when FLM class is selected, will probably need to
+      set the default Log Rot, and look into what happens with Log Dist for
+      FLMs
+      Also type doing a User adjustment on FLM you get an error
+
+  > Mortality Tab,  put one good row in grid, select a Species, a second
+    row gets added with the species code in it, then hilight the row
+    and try to delete it, it won't delete, but add something in another column
+    and a new blank row is added to grid, now you can delete the 2cd row,
+    seems it always wants to keep an extra row in the grid.
+    Try and fix or else put a "Delete Tip" button on screen and open a window
+    to explain,
+     Or try making the Species column not read only and see what happens

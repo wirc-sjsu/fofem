@@ -1,0 +1,443 @@
+#Prj-Open  Open Project
+
+Opens a project file. The Work folder will get set to the folder where the project file is located. If you go to a different folder to open a file, that will become your new Work folder and be shown in the Project window.
+
+#Prj-Save    Save Project
+
+Save will only save your screen settings to a project file, it will not change your Work folder setting. You are free to save to any project file, whether it's your active, an existing one, or even a new one.
+
+#Prj-Exit    Exit Program
+
+Exit the FOFEM Program
+
+#Project-File   Project Window
+
+This window shows the active project file and Work folder. The path name shown in front of the project file name is your FOFEM Work folder and will be considered your default folder. It is shown in all popup windows that you will use to open or save 
+any FOFEM files. You can still open and save files to other folders. If the path and project file names do not fit in this window you can mouse click on the name and scroll the text or you can always enlarge the entire FOFEM window.
+
+#Region    Region
+
+Select one of the four geographic regions.  Only the cover types found in the selected region will be presented in the Cover Type Window.
+
+#Fuel-Smoke-Soil   Fuel, Smoke, and Soil fire effects Tab
+
+Click this tab to input data to compute fuel consumption, smoke emissions, and soil heating
+
+#Mortality   Tree Mortality Tab
+
+Click this tab to input data to compute tree mortality
+
+#Cover-Id   Cover Type Classification Code
+
+Select the most appropriate cover type classification for this region.  You may use Society of American Foresters/ Society of Range Management (SAF/SRM)    cover types, the National Vegetation Classification System cover types (NVCS), or the Fuel Cha
+racteristic Classification System (FCCS) default fuelbeds to describe your cover type that is entered on the next field.  
+
+#Cover-Type  Cover Type
+
+Select the most appropriate Cover Type that best describes your treatment unit vegetation conditions. Your choice will be used in FOFEM to select the most appropriate default fuel loadings and consumption algorithms.  
+
+#Season   Season of Burn
+
+Select the season when the burn will occur. This will not affect fuel loadings but will be used to adjust model parameters.
+
+#Fuel-Category   Fuel Category
+
+Select the type of fuel that best describe your fuelbed: natural fuels (non-activity, or untreated fuels), or the activity fuels of piled fuels or slash fuels.  Your selection may alter the default fuel loadings or the consumption algorithms.
+
+#TPA          Fuel loading (tons per acre) Windows
+
+Default fuel loadings (dry weight tons per acre) by fuel component used to calculate Fuel Consumption, Smoke Emissions and Soil Heating.  These were populated from an extensive analysis of field data collected across the United States. You can adjust
+ them using the Adjustments Box immediately to the right of all the fields.  Or you can directly enter your own (User) amounts.
+
+#Adj-TPA      Fuel loading Adjustment Windows
+
+Default fuel loadings were computed as the average of the fuel component loading across all the field plots.  You can adjust the load to lighter (L-one standard deviation lower), typical (T-average), and High (H-one standard deviation higher) based o
+n the span of field data used to calculate the mean.
+
+#Duff-Depth           Depth of Duff
+
+Enter the depth of the duff layer in tenths of inches.  If you change the Duff Depth the program will often ask you to adjust the duff loading proportionately.
+
+#Rotten-Wood3     Percent of Logs (3+ Downed Wood) Rotten
+
+This is the percent of logs (3+ in down dead woody fuel; 1000 hr) that is considered to be rotten.
+
+#Weight-Dist-Wood-3   Log Loading Distribution
+
+Select how the large (3+ inch) down dead woody fuel is distributed in your unit across diameter classes.  There are three log diameter classes: 3->6, 6->9, 9->20 and over 20 inches so the five possible loading distributions are:
+
+     'Right'    Largest loading in the 20+ logs
+     'Left'     Largest amount of fuel in smallest logs 3-6 inches
+     'Even'    Equal amounts of fuel in each size class
+     'End'      Most loadings are in 3-6 and 20+ logs
+     'Center'  Most loading in 3-9 & 9-20 in diameter logs
+
+#Crown-Percent-Burned   Percent of Canopy Fuels Burned
+
+Enter percent of canopy fuels to be burned.  This option allows you to predict emissions from crown fire.  FOFEM does not compute fire behavior, so you are required to enter the expected amount of canopy fuel consumed by crown fire.  Range is 0 (no c
+rown fire) to 100% for an active crown fire.  For fires with some torching select an intermediate value.
+
+
+#Moisture-Condition  Moisture Condition
+
+Enter a relative fuel moisture condition scenario. The selected scenario will determine the default moisture contents for woody fuel and duff.  You can alter these fuel moistures if you wish.
+
+#Moist-Duff     Duff Moisture Content
+
+Enter the percent moisture content of the duff layer.  This duff moisture is for the entire duff profile. 
+
+#Moist-10HR     10HR Moisture Content
+
+Enter the percent moisture content of the down dead woody fuels that are above 0.25 in and below 1 inch in diameter (1 hr woody fuels)
+
+#Moist-Log     Log Moisture Content
+
+Enter the percent moisture content of the down dead woody fuels that are above 3.0 in diameter (1000 hr woody fuels, or logs).
+
+#Moist-Soil     Soil Moisture Content
+
+Enter the percent moisture content of the soil layer.  This soil moisture content is for the soil profile that is the free rooting zone. 
+
+#Output-Type     Output type
+
+Enter the type of output you want displayed on the FOFEM page.  Output types include (1) Consumed-amount of fuel consumed by the fire, (2) Post-amount of fuel left after the fire, and (3) amount of fuel consumption in percentages.  This is NOT the on
+ly output from FOFEM; you can output tabular and graphic reports in the FOFEM output window. 
+
+#Soil-Type     Soil Type
+
+Enter the most appropriate soil texture type in dropdown list.  A complete description of soil types is given in the user's guide. This soil type input is for the soil profile that is the free rooting zone.  Here are the options:
+
+Fine-Silty: by weight, < 15% of the particles are fine sand (diameter 0.25-0.1 mm) or coarser, including fragments up to 7.5 cm in diameter;                            18 - 34% clay in the fine-earth fraction.
+Fine: a clayey particle-size class that has 35 - 59% clay in the fine-earth fraction.
+Coarse-Silty: by weight, < 15% of the particles are fine sand (diameter 0.25-0.1 mm) or coarser, including fragments up to 7.5 cm in diameter; less than 18% clay in the fine-earth fraction.
+Coarse-Loamy: by weight, 15% or more of the particles are fine sand (diameter 0.25-0.1 mm) or coarser,including fragments up to 7.5 cm in diameter; less than 18% clay in the fine-earth fraction.
+Loamy-Skeletal:  rock fragments make up 35% or more by volume; enough fine earth to fill interstices larger that 1 mm; fraction finer than 2 mm is loamy as defined for the loamy particle-size class.
+
+#Fuel_Report        Fuel Consumption Report Button
+
+Click this Button to create a tabular report describing consumption by fuel component.
+
+#Smoke_Report       Smoke Emission Report Button
+
+Click this Button to create a tabular report of smoke emissions such as PM2.5 and CO2.
+
+#Soil_Report   Soil Heating Report Button
+
+Click this Button to create a report detailing soil temperatures at various depths below the soil surface.
+
+#Clear_Report  Clear Report Button
+
+Click this Button to clear all calculations from the output window
+
+
+#Fuel_Graph        Fuel Consumption Graph Button
+
+Click this Button to create bar graphs describing consumption by fuel component.
+
+#Smoke_Graph       Smoke Emission Graph Button
+
+Click this Button to create a stacked graph of smoke emissions such as PM2.5 and CO2.
+
+#Soil_Graph   Soil Heating Graph Button
+
+Click this Button to create a graph showing soil temperatures at various depths below the soil surface over time of burning.
+
+#Totals      Report Totals
+   
+Supply a short unique name in the field that is used to stratify your FOFEM results into a summary table
+
+Tree Mortality Input Fields
+
+#User-Entered-Species     Species Selection   
+
+Select the species that you want to include in your tree list that is populated using the table to the right.  This species list is tailored to include only species that occur in the selected geographical region.  Note: only the six letter code will 
+appear in the input table and all output.  You don't need to select the species from this dropdown list; you can directly enter the six letter code in the tree list input
+
+#User-Entered-Tree-Data     Tree Data Entry   
+
+The input data needed to compute tree mortality are entered in this input table.  You must enter the species (6-letter code), Tree Density (trees per acre), DBH (Diameter at Breast Height in tenths of inches), Height (feet), and Crown Ratio (percent 
+of tree height that is live crown divided by 10 - 50% crown ratio would be entered as 5).  You may enter as many lines of tree data as you like. 
+
+#Flame-Length-Button   Flame Length Button
+
+Since FOFEM does not compute fire behavior, you must enter fire behavior yourself.  Please check this button if you want to directly enter flame length in feet.  Flame length is converted to scorch height by assuming zero wind, which will result in t
+he highest scorch height.
+
+#Scorch-Height-Button  Scorch Height Button
+
+Since FOFEM does not compute fire behavior, you must enter fire behavior yourself.  Please check this button if you want to directly enter scorch height in feet.Check either this button or the Flame Height Button
+
+
+#PostFire-Injury     Postfire Injury and Mortality
+
+If you expect there will be substantial postfire tree injury from insects, then click this box and you will be ased to enter a number of additional variables.  Inputs for postfire injury differ between species.  Please enter species (6-letter code), 
+Tree Density (trees per acre), DBH (Diameter at Breast Height in tenths of inches), cambial kill ratio (number from 1-4), beetle activity (yes/no), and if you want the mortality graphed.
+
+#FFI-File             FFI Data Input File
+
+You may input all the tree list data from the FFI database by entering a filename that is the FFI database file.  This will allow FOFEM to find the tree list data from the field data as entered in the FFI database.  It will read in data for all plots
+ so you will have to enter the plot number for analysis.
+
+#FFI-Plot             FFI Plot Number
+
+Please select the plot ID code from all the plots in the selected FFI database.
+
+#Mortality_Report        Tree Mortality Report Button
+
+Click this Button to create a tabular report describing the fire-caused mortality of the entered items in the tree list.
+
+#Mortality_Graph        Tree Mortality Graph Button
+
+Click this Button to create a graphs of the probability of fire-caused mortality by entered items in the tree list.
+
+
+Where are these fields?
+
+
+
+#Report-Totals      Report Summaries
+
+  This options is used to put any summaries that have been created
+
+  while you were running reports. You have to check the summaries
+
+  button to 'Y'(yes) and fill in a name.
+
+
+
+#Report-TotClr
+
+  This option is used to clear any saved summaries.
+
+
+
+ 
+
+#Report-Clear       Clear Report Window
+
+  Clear the report window, removes all text from the report window.
+
+  There is enough space in the window to hold several reports and
+
+  the program will warning you when it starts to get full.
+
+  You can also use the mouse to 'Select' and 'Cut' specific text.
+
+
+
+#Report-Save        Save Report Window to File
+
+   Save contents of the report window to a disk file.
+
+
+
+#Report-Print       Print Report Window
+
+   Print contents of the report window
+
+
+
+#RoboHelp            FOFEM Help
+
+   Bring up the FOFEM Help Documentaion
+
+
+
+#About              Show the About Dialog Box
+
+   Show the 'About' dialog box.
+
+
+
+
+
+#Run-Batch    Run Batch Data Files
+
+    This is the Batch mode that we haven't got working yet.
+
+
+
+#Exit        Exit Fofem
+
+    Exit the fofem program.
+
+
+
+#View-Graph      View Graph Window
+
+    Show the graph window
+
+
+
+#View-Report    View Report Window
+
+    Show the report window.
+
+
+
+#Graph-Create   Create a Graph
+
+    Create a graph for the button that is selected
+
+
+
+#Graph-Save     Save a Graph
+
+    This option will save the current graph as a Enhanced Meta file (.emf)
+
+    Enhanced Meta files can be use with other programs that support them,
+
+    such as Microsoft Word.
+
+
+
+#Graph-Clipboard     Save Graph to System Clipboard
+
+    Put the contents of the graph window into the system clipboard where
+
+    it can then be pasted into another program, like a word processor.
+
+
+
+#Graph-Clear         Clear Graph Window
+
+    Clear the graph window.
+
+
+
+#Graph-Points        Save Graph Points
+
+    This options applies to the soil program, and it will save the
+
+    points for the graph so that they can be used by other graphing
+
+    programs.
+
+
+
+#Graph-Print         Print Graph
+
+    Send the graph to a  printer.
+
+
+
+#Soil-Input-File    Soil Heating Input File
+
+    Create a soil heating graph from user input file.
+
+    See the Create Sample Soil Input Files menu item to create sample input
+
+    files.
+
+    See FOFEM Help documentaion for file format and detailed information.
+
+
+
+#Burnup-Input-File      Burnup Input File
+
+    Run Burnup from a user input file.
+
+    See FOFEM Help documentaion for file format and detailed information.
+
+
+
+#BurnSim         Run DOS Burn Simulator Program
+
+    Run the DOS BurnSim Program.
+
+
+
+#Save-Burn-Emissions   Create an Emissions File
+
+    Create and save an emissions file which shows emissions over time.
+
+
+
+#Create-Soil-Sample    Create Sample Soil Input Files
+
+    This option will create 2 soil sample input files.
+
+      1. Duff model - "Sample.duf"
+
+      2. Zero Duff model (absence of duff) - "Sample.exp"
+
+    These are sample text files that you can go into and modify
+
+    and then use as input to this program using the soil input
+
+    file Option.
+
+    See Help document for more details and look in the sample soil files
+
+     for comments.
+
+
+
+#Create-Burn-Sample
+
+    This option will create a sample burnup input file based on the
+
+    screen settings. This is a sample text file that you can go into
+
+    and modify and then use as input to this program using the burnup
+
+    input file option.
+
+
+
+
+
+#Smoke-Emission-Graph   Smoke Emissions Graph Box
+
+    Select the category you want to graph, do this by left clicking
+
+      the mouse on the small circle to the left of the category text.
+
+    If you want to do more than one category you'll have to do them one at
+
+      a time and save them as you go; in which case you'll use the
+
+      menu 'Graph' selections that let you save them to the Clipboard
+
+      or a file.
+
+    See menu 'Help' for more details.
+
+
+
+#Batch    Batch Input Processing Dialog Box
+
+    This option is used to process multiple stands of fuel data. The input
+
+      data is contained in a text file and output is stored to separate
+
+      text file.
+
+    To run the batch:
+
+      1. Select a Model Type buttonn.
+
+      2. Click the 'Input' button to select an input file, a default output
+
+           file name will be created and put in the Output window, where you
+
+           can modify it.
+
+      3. Click the 'Run' button.
+
+
+
+     Use the 'Sample' button to create a sample input file, the file
+
+      contains comments and column headings that can used as a reference.
+
+
+
+     See menu Help for more details
+
+
+#Fire-Severity   Fire Severity
+
+   Fire Severity has a direct effect on the amount of load that will
+
+   be consumed.

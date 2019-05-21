@@ -1,0 +1,53 @@
+REM  move all need files into ANSI folder
+
+copy    ansi_mai.cpp   ansi
+copy    fof_mrt.cpp    ansi
+copy    fof_cm.cpp     ansi
+copy    fof_ci.cpp     ansi
+copy    fof_co.cpp     ansi
+copy    fof_lem.cpp    ansi
+copy    fof_hsf.cpp    ansi
+copy    fof_bcm.cpp    ansi
+copy    fof_duf.cpp    ansi
+copy    bur_bov.cpp    ansi
+copy    bur_brn.cpp    ansi
+copy    fof_sgv.cpp    ansi
+copy    fof_util.cpp   ansi
+copy    fof_unix.cpp   ansi
+copy    fof_disp.cpp   ansi
+copy    fof_sh.cpp     ansi
+copy    fof_sd.cpp     ansi
+copy    fof_se.cpp     ansi
+copy    fof_sha.cpp    ansi
+copy    fof_soi.cpp    ansi
+
+
+copy    bur_bov.h      ansi
+copy    bur_brn.h      ansi
+copy    fof_ansi.h     ansi
+copy    fof_bcm.h      ansi
+copy    fof_cct.h      ansi
+copy    fof_ci.h       ansi
+copy    fof_cm.h       ansi
+copy    fof_co.h       ansi
+copy    fof_co2.h      ansi
+copy    fof_disp.h     ansi
+copy    fof_duf.h      ansi
+copy    fof_gen.h      ansi
+copy    fof_hsf.h      ansi
+copy    fof_iss.h      ansi
+copy    fof_lcc.h      ansi
+copy    fof_lem.h      ansi
+copy    fof_mrt.h      ansi
+copy    fof_sd.h       ansi
+copy    fof_sd2.h      ansi
+copy    fof_se.h       ansi
+copy    fof_se2.h      ansi
+copy    fof_sgv.h      ansi
+copy    fof_sh.h       ansi
+copy    fof_sh2.h      ansi
+copy    fof_sha.h      ansi
+copy    fof_smt.h      ansi
+copy    fof_soi.h      ansi
+copy    fof_spp.h      ansi
+copy    fof_util.h     ansi

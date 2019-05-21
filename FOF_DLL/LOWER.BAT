@@ -1,0 +1,55 @@
+ren   makefiel       makefile
+
+ren   ansi_mai.cpp      ansi_mai.cpp
+ren   fof_unix.cpp      fof_unix.cpp
+
+ren   fof_mrt.cpp       fof_mrt.cpp
+ren   fof_cm.cpp        fof_cm.cpp
+ren   fof_ci.cpp        fof_ci.cpp
+ren   fof_co.cpp        fof_co.cpp
+ren   fof_lem.cpp       fof_lem.cpp
+ren   fof_hsf.cpp       fof_hsf.cpp
+ren   fof_bcm.cpp       fof_bcm.cpp
+ren   fof_duf.cpp       fof_duf.cpp
+ren   bur_bov.cpp       bur_bov.cpp
+ren   bur_brn.cpp       bur_brn.cpp
+ren   fof_sgv.cpp       fof_sgv.cpp
+ren   fof_util.cpp      fof_util.cpp
+ren   fof_disp.cpp      fof_disp.cpp
+ren   fof_sh.cpp        fof_sh.cpp
+ren   fof_sd.cpp        fof_sd.cpp
+ren   fof_se.cpp        fof_se.cpp
+ren   fof_sha.cpp       fof_sha.cpp
+ren   fof_soi.cpp       fof_soi.cpp
+
+
+ren   fof_util.h      fof_util.h
+ren   fof_disp.h      fof_disp.h
+ren   fof_ci.h        fof_ci.h
+ren   cep_if.h        cep_if.h
+ren   fof_ansi.h      fof_ansi.h
+ren   fof_iss.h       fof_iss.h
+ren   fof_mrt.h       fof_mrt.h
+ren   fof_smt.h       fof_smt.h
+ren   fof_spp.h       fof_spp.h
+ren   fof_cct.h       fof_cct.h
+ren   fof_co.h        fof_co.h
+ren   fof_co2.h       fof_co2.h
+ren   fof_bcm.h       fof_bcm.h
+ren   fof_hsf.h       fof_hsf.h
+ren   fof_cm.h        fof_cm.h
+ren   bur_brn.h       bur_brn.h
+ren   fof_lem.h       fof_lem.h
+ren   fof_duf.h       fof_duf.h
+ren   bur_bov.h       bur_bov.h
+ren   fof_sgv.h       fof_sgv.h
+ren   fof_gen.h       fof_gen.h
+ren   win_ccwf.h      win_ccwf.h
+ren   fof_sh.h        fof_sh.h
+ren   fof_sh2.h       fof_sh2.h
+ren   fof_sd.h        fof_sd.h
+ren   fof_soi.h       fof_soi.h
+ren   fof_sha.h       fof_sha.h
+ren   fof_sd2.h       fof_sd2.h
+ren   fof_se.h        fof_se.h
+ren   fof_se2.h       fof_se2.h

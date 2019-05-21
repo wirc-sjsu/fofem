@@ -1,0 +1,28 @@
+# Duff Model - Example Input File
+# Use this file type when duff is present
+# Lines that start with a # are comments.
+# Warning: extreme or missing values in this file can
+# cause unexpected results.
+# These inputs represent the current GUI settings.
+# Soil characteristics represent Coarse-Silt
+
+Duff-Model          
+duff-weight             0.4   pre-burn weight - (T/ac) 
+duff-depth             0.04   duffdepth - (in) 
+duff-consumed           1.9   percent consumed, whole integer 0 -> 100 
+duff-moisture          192.0   very dry 20, dry 40, moderate 75, wet 130 
+bulk-density           1230000   soil bulk density - (g/m3) 
+particle-density       2350000   soil particle density - (g/m3) 
+extrap-water           0.16   extrapolated water cont. at -1 (J/kg) 
+thermal-conduct        2.53   thermal conductivity of mineral fraction
+Vries-shape            0.103   de Vries shape factor
+water-content          0.218   water content for liquid recirculation
+cop-power              3.43   power for recirculation function
+time-step              20      time step - (sec) 
+start-water            0.10   starting soil water content, Wet 0.25, Mod 0.15, Dry 0.10, V-Dry 0.05,  m3/m3
+start-temp             21.0   starting soil temperatue (C) 
+
+efficiency-duff        100  percent of Duff fire intensity applied to soil surface 
+
+# Specifiy exactly 13 depths (cm)
+layers   1 2 3 4 5 6 7 8 9 10 11 12 13
