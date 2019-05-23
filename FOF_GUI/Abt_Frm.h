@@ -94,7 +94,7 @@ using namespace System::Drawing;
             this->label2->Name = L"label2";
             this->label2->Size = System::Drawing::Size(60, 13);
             this->label2->TabIndex = 1;
-            this->label2->Text = L"Version 6.5";
+            this->label2->Text = L"Version 6.6";
             // 
             // label5
             // 
@@ -193,7 +193,7 @@ using namespace System::Drawing;
             this->label4->Name = L"label4";
             this->label4->Size = System::Drawing::Size(105, 20);
             this->label4->TabIndex = 12;
-            this->label4->Text = L"Version  6.5";
+            this->label4->Text = L"Version  6.6";
             // 
             // Abt_Frm
             // 
@@ -217,7 +217,7 @@ using namespace System::Drawing;
             this->MaximumSize = System::Drawing::Size(430, 400);
             this->MinimizeBox = false;
             this->Name = L"Abt_Frm";
-            this->Text = L"FOFEM6.5";
+            this->Text = L"FOFEM6.6";
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox1))->EndInit();
             (cli::safe_cast<System::ComponentModel::ISupportInitialize^  >(this->pictureBox2))->EndInit();
             this->ResumeLayout(false);

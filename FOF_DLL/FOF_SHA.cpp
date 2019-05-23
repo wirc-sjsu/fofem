@@ -45,7 +45,7 @@ int SHA_GetInc()
 #define eC_TP  100000
 int   gi_Tim [eC_TP];    /* Running time in seconds */
 float gf_PC  [eC_TP];    /* percent of heat/watts reaching soil */
-float gf_Wts [eC_TP];    /* Watts */
+float gf_Wts [eC_TP];    /* Watts ( with percent already applied to it) */
 
 void SHA_TP_Init()
 {
@@ -56,7 +56,15 @@ int i;
      gf_Wts [i] = -1;  }
 }
 
-/*...........................................................*/
+/******************************************************
+* Name: SHA_TP_Put
+* Desc: save the time (seconds) and watts(w/m2) that
+*       the Campbell model used for the Duff and non-Duff
+*       models,
+*
+*       See Notes below for SHA_TP_Get()
+*
+*******************************************************/
 int SHA_TP_Put (int i_Tim, float f_PC, float f_Wts)
 {
 int i;
@@ -71,14 +79,26 @@ int i;
   return 0; 
 }
 
-/*...........................................................*/
-int SHA_TP_Get (int iX, int *ai_Tim, float *af_PC, float *af_Wts)
+/**************************************************************
+* Name: SHA_TP_Get 
+* Desc: Get FOFEM fire intensity
+*       Watts were loaded when FOFEM ran the Campbell model 
+*       see SE_Mngr_Array() or SD_Mngr_New()
+*   In: iX....index into the watts array
+*       ai_Tim....time in seconds
+*       af_Wts....watts per meter square, 
+*                 NOTE: the amount of heat reduction has been
+*                 allied to this by the above mentioned 
+*                 So this is the heat/watts that actualy
+*                 reaches the soil 
+***************************************************************/
+int SHA_TP_Get (int iX, int *ai_Tim,  float *af_Wts)
 {
 int i;
    if ( iX >= eC_TP )
       return 0;
    *ai_Tim = gi_Tim[iX];  /* Running time in seconds */
-   *af_PC  = gf_PC[iX]; 
+//  *af_PC  = gf_PC[iX]; 
    *af_Wts = gf_Wts[iX];
    return 1; 
 }
@@ -86,7 +106,12 @@ int i;
 /************************************************************
 * Name: SHA_TP_GetByTime
 * Desc: Get the data for the specified time (seconds)
-*       
+*   In: i_Sec.....time in seconds of info to retreive
+*  Out: ai_Tim....burnup time where info is found
+*       af_PC.....percent of heat the reaches soil
+*       af_Wts....Watts 
+* Note: The arrays searched are create when Burnup runs
+*       b
 *************************************************************/
 int SHA_TP_GetByTime (int i_Sec, int *ai_Tim, float *af_PC, float *af_Wts)
 {

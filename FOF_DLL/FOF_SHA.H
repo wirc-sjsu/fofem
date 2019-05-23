@@ -31,7 +31,7 @@ void  SHA_DufDepRem_Set (float f);
 
 void SHA_TP_Init();
 int SHA_TP_Put (int i_Tim, float f_PC, float f_Wts);
-int SHA_TP_Get (int iX, int *ai_Tim, float *af_PC, float *af_Wts);
+int SHA_TP_Get (int iX, int *ai_Tim, float *af_Wts);
 int SHA_TP_GetByTime (int i_Sec, int *ai_Tim, float *af_PC, float *af_Wts);
 
 

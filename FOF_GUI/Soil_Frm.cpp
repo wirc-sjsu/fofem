@@ -24,21 +24,22 @@ String ^ _MakeLable (CheckBox ^cb, Label ^lb, float f);
 * Note-1: we want to plot points on the mid-point of each X 
 *         interval, so if interval is 10, points would be
 *         0,10,20..., we'll plot them at 5,15,25,....
-*
+* Note-2: 
 ***************************************************************/
 int Soil_Frm::UpdateWatts()
 {
 int i, iX, i_Sec, i_Inc;  
-float f, f_Min, f_PC, f_Wts, f_Max, f_Kw; 
+float f, f_Min, f_Wts, f_Max, f_Kw; 
 
    this->chart2->Series["Series1"]->Points->Clear();
    this->chart2->Series["Series1"]->Points->AddXY(0,0); 
 
    i = SHA_GetInc();         /* # of seconds betweenn points  */
-   i_Inc = i / 2;            /* See Note-1 above */
+ //  i_Inc = i / 2;            /* See Note-1 above */
+   i_Inc = i;   /* change 5-5-19 See Note-2 above */
 
    for ( i = 0; i < 10000; i++ ) {
-     SHA_TP_Get (i, &i_Sec, &f_PC, &f_Wts);
+     SHA_TP_Get (i, &i_Sec, &f_Wts);
      if ( i_Sec < 0 ) 
        break; 
      i_Sec += i_Inc;
@@ -229,7 +230,9 @@ float f_Max = 0;
   for ( L = 1; L <= eC_Lay; L++ ) {                    /* For Each Soil Layer */
     sprintf (cr, "Lay%d", L);
     Str =_CharToStr ( cr); 
-    f_Tim = f_Inc / 2.0;                              /* plot on mid-point of time increments */
+
+    f_Tim = f_Inc;  /* change 5-5-19 See Note-1 above */
+//    f_Tim = f_Inc / 2.0;      /* plot on mid-point of time increments */
  
    for ( i = 0; i < 100000; i++  ) {                 /* get each temp from stored array */
  //     if ( i >= i_MaxMinutes )                        /* arbitrary number of minutes we won't go past*/

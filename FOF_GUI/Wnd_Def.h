@@ -172,6 +172,7 @@ typedef struct {
    char   cr_FuelClass[50];
    char   cr_CoverType[1000];   
    char   cr_SoilType[100]; 
+   float  f_AmbAirTmp;       /* Ambient Air Temperature */
 
 
    char   cr_EmisFlame[200];

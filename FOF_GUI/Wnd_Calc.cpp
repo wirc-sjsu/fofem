@@ -245,13 +245,13 @@ String ^ Str;
 int iX, i_Tim; 
 float f_PC, f_Wts;
 
-  for ( iX = 0; iX < 1000000; iX++ ) {
-    i = SHA_TP_Get (iX, &i_Tim, &f_PC, &f_Wts);
-    if ( i == 0 )
-      break; 
-    this->BmSoil_Frm->ir_KwM2[iX] = f_PC * f_Wts; 
-  }
-  this->BmSoil_Frm->i_TimInc =  SHA_GetInc();
+//  for ( iX = 0; iX < 1000000; iX++ ) {
+//    i = SHA_TP_Get (iX, &i_Tim, &f_PC, &f_Wts);
+//    if ( i == 0 )
+//      break; 
+ //   this->BmSoil_Frm->ir_KwM2[iX] = f_PC * f_Wts; 
+ // }
+//  this->BmSoil_Frm->i_TimInc =  SHA_GetInc();
 
   this->BmSoil_Frm->FireTypeSet(); 
 
@@ -436,6 +436,7 @@ d_SI SI;
    strcpy (a_SI->cr_SoilType,a_FLI->cr_SoilType);
    strcpy (a_SI->cr_MoistCond,a_FLI->cr_Moisture);
    a_SI->f_SoilMoist = a_FLI->f_MoistSoil;
+   a_SI->f_AmbAirTmp = a_FLI->f_AmbAirTmp; 
 
    a_SI->f_DufLoaPre  = a_CI->f_Duff;
    a_SI->f_DufConPer = a_CO->f_DufPer;
@@ -604,7 +605,10 @@ C:
   if ( !_Get_TBFlo (this->_txMoist1kHr, &a_FLI->f_Moist1kHr, cr, "1000 Hr Moisture", a_FLI->cr_ErrMes))
     return 0;
 
- if ( !_Get_TBFlo (this->_txMoistSoil, &a_FLI->f_MoistSoil, cr, "Soil Moisture", a_FLI->cr_ErrMes))
+  if ( !_Get_TBFlo (this->_txMoistSoil, &a_FLI->f_MoistSoil, cr, "Soil Moisture", a_FLI->cr_ErrMes))
+    return 0;
+
+  if ( !_Get_TBFlo (this->_txAmbAirTmp, &a_FLI->f_AmbAirTmp, cr, "Ambient Air Temperature", a_FLI->cr_ErrMes))
     return 0;
 
   

@@ -55,7 +55,8 @@ float f_MaxFI = 0;
 
   for ( i = 1; i < 1000000; i++ ) {
     r = (float)fr[i]; 
-    if ( i > 120 && fr[i] == 0 ) 
+    r = r / 1000.0; 
+    if ( i > e_MaxHourSim && fr[i] == 0 ) 
       break; 
  
    if ( r > f_MaxFI ) 
@@ -74,7 +75,7 @@ float f_MaxFI = 0;
   f_MaxFI = f_MaxFI + ( 0.25 * f_MaxFI ); 
   this->chart2_Rabs->ChartAreas["ChartArea1"]->AxisY->Maximum = f_MaxFI ;
 
-  this->chart2_Rabs->ChartAreas["ChartArea1"]->AxisY->Title = "Watts w/m2"; 
+ // this->chart2_Rabs->ChartAreas["ChartArea1"]->AxisY->Title = "Watts w/m2"; 
 
   return 1; 
 }
@@ -237,8 +238,13 @@ String ^ CB;
   this->chart1->Series["B_Lay19"]->BorderWidth = 1; 
   this->chart1->Series["B_Lay20"]->BorderWidth = 1; 
   this->chart1->Series["B_Lay21"]->BorderWidth = 1; 
+
   
-/* Load Massman Soil Input textboxes */
+/* Load Massman Soil Input textboxes */ 
+  sprintf (cr, "%6.2f", e_SoiVolMoist);   /* Soil Moisture */ 
+  A = _CharToStr(cr);  
+  this->_txBM_Moist->Text = A; 
+
   sprintf (cr, "%6.3f", e_SoiBulDen);   /* Soil Buil Density */ 
   A = _CharToStr(cr);  
   this->_txBM_SoiBulDen->Text = A;  
@@ -248,31 +254,32 @@ String ^ CB;
   this->_txBM_SoiParDen->Text = A;  
 
    
-  sprintf (cr, "%6.1f", e_BurnTime);  /* Half Width, BoundaryUBFD() heat curve */
+  sprintf (cr, "%6.1f", e_BurnTime);  /* Burn Time - Fire Duration */
   A = _CharToStr(cr);  
-  this->_txTqMax->Text = A;  
+  this->_txFirDur->Text = A;  
 
-  sprintf (cr, "%6.1f", e_MaxTim);  /* Time Max watts applied to heat curve */
+  sprintf (cr, "%6.1f", e_MaxTim);    /* Time To Max watts applied to heat curve */
   A = _CharToStr(cr);  
   this->_txMaxTim->Text = A;  
 
 
-  sprintf (cr, "%6.0f", e_Qabs);  /* Initial Fire Intensity w/m2 */
+  sprintf (cr, "%6.2f", e_Qabs);  /* Initial Fire Intensity Kw/m2 */
   A = _CharToStr(cr);  
   this->_txQabs->Text = A;  
 
 
   this->_cbSimTime->SelectedIndex = 2;  /* Simulation Time Combobox, select first item in list */
 
-  
-  this->_cb_FireType->Items->Add (e_FT_Test); 
+/* Fire Type ComboBox  */  
+//   this->_cb_FireType->Items->Add (e_FT_Test); 
   this->_cb_FireType->Items->Add (e_FT_Wild); 
   this->_cb_FireType->Items->Add (e_FT_Pres); 
   this->_cb_FireType->Items->Add (e_FT_Pile); 
   this->_cb_FireType->Items->Add (e_FT_Burnup); 
 
- _SetComboBox (this->_cb_FireType, e_FT_Test);
+ _SetComboBox (this->_cb_FireType, e_FT_Wild);
 
+// _SetComboBox (this->_cb_FireType, e_FT_Test);
 
 
   return 1; 
@@ -307,9 +314,9 @@ char cr[100];
 /*   Min Max Y axis limits - Temperature - Moisture       */
 
    if ( this->GraphType(cr) == e_Moist || this->GraphType(cr) == e_MoistTemp ) {
-     this->chart1->ChartAreas["ChartArea1"]->AxisY->Maximum = 0.2 ;
-     this->chart1->ChartAreas["ChartArea1"]->AxisY->Minimum = -0.1;
-     this->chart1->ChartAreas["ChartArea1"]->AxisY->Title = L"Moisture m3/m3";
+     this->chart1->ChartAreas["ChartArea1"]->AxisY->Maximum = 0.3 ;
+     this->chart1->ChartAreas["ChartArea1"]->AxisY->Minimum = 0;
+     this->chart1->ChartAreas["ChartArea1"]->AxisY->Title = L"Volumetric Moisture (m3/m3)";
      return i_TimMax; } 
       
   _StrToChar (this->_ud_YMin->Text,cr);
@@ -323,7 +330,7 @@ char cr[100];
   this->chart1->ChartAreas["ChartArea1"]->AxisY->Minimum = f_Min;
   this->chart1->ChartAreas["ChartArea1"]->AxisY->Maximum = f_Max ;
   
-  this->chart1->ChartAreas["ChartArea1"]->AxisY->Title = "Temperature Celsius";
+  this->chart1->ChartAreas["ChartArea1"]->AxisY->Title = "Temperature C";
 
   return i_TimMax; 
 }

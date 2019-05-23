@@ -60,6 +60,7 @@ typedef struct {
    float f_DufDepPre;                   /* Pre and Post fire Duff Depth      */
    float f_DufDepPos;                   /*  inches                           */
    float f_SoilMoist;
+   float f_AmbAirTmp;               /* Ambient Air Temperature */                                    
 
 /* If Soil Heating is being calculated using the Consumed Managers outputs   */
 /* you can set this from d_CO.cr_BrnIg, which tells if burnup ignited or not */

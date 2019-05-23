@@ -549,9 +549,9 @@ A:
   if ( CI_isPiles  (a_CI)) goto C;
   if ( CI_isNatural(a_CI)) goto C;
   if ( CI_isSlash  (a_CI)) goto C;
-  sprintf(cr_ErrMes,"No/Invalid Fuel Category (%s), Valid: %s, %s (Default %s)",
+  sprintf(cr_ErrMes,"No/Invalid Fuel Category (%s), Valid: %s, %s, %s)",
       a_CI->cr_FuelCategory,
-      e_Natural, e_Slash,e_FuelCategoryDefault);
+      e_Natural, e_Slash, e_Piles);
   return 0;
 
 C:

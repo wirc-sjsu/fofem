@@ -15,22 +15,22 @@
 
 
 #include  "bur_brn.h"
-
 #include "fof_dll.h"
 #include "fof_ci.h"
-
 #include "fof_sgv.h"
-
 #include "fof_co.h"
 #include "fof_co2.h"
 #include "fof_cm.h"
-
-//#include "fof_iss.h" 
 
 #include "..\\FOF_GUI\\fof_mis.h"
 #include "fof_mrt.h"
 
 #include "fof_lcc.h"
+#include "fof_nes.h"
+
+#include "fof_Util.h" 
+
+
 
 /*******************************************************************************/
 FOFEM::FOFEM() 
@@ -43,15 +43,104 @@ FOFEM::~FOFEM()
   delete lcc;
 }
 
-
-void FOFEM::Init ()
+/*********************************************************************
+* Name: Init
+* Desc: init the DLL
+*   In: iS....1 read in the Extended Emission Factor file 
+*             0 don't read it in
+*********************************************************************/
+int FOFEM::Init (char cr_ErrMes[], int iS)
 {
+int i;
   lcc->CI_init(); 
   lcc->CO_init(); 
+
+  if ( iS == 0 ) 
+    return 1; 
+
+/* Read in the Extended Emissions Factor file, in case it's needed */
+  i = NES_Read ("", cr_ErrMes);
+  if ( i <= 0 ) 
+     return 0; 
+  return 1; 
+}
+
+/************************************************************************
+* Name: CI_SetEmis
+* Desc: Set the Default or Extended emissions info into the DLL's s_CI
+*        (input structure). The s_CI info later gets loaded into burnup.
+*   ---> To use/set the default emission code place "0" in the input
+*         parameters. 
+*   In: cr_FLa....Extended Emission Short-Term Flaming and Smoldering 
+*                 numeric code 
+*       cr_Duff...Extended Duff RSC numeric emis code
+*       cr_Woody..Extended Coarse Woody RSC numeric emis code
+*  Out: cr_ErrMes...error message - wrong Extended Emis code sent in
+*************************************************************************/
+int    FOFEM::CI_SetEmis (char cr_Fla[], char cr_Duff[], char cr_Woody[], char cr_ErrMes[])
+{ 
+int i; 
+
+  strcpy (cr_ErrMes,""); 
+
+  strcpy (lcc->s_CI.cr_EmiFla, cr_Fla);
+  Trim_LT (lcc->s_CI.cr_EmiFla);   /* Make sure no lead or trail blnk chars */
+
+  strcpy (lcc->s_CI.cr_EmiDuf,cr_Duff);
+  Trim_LT (lcc->s_CI.cr_EmiDuf);
+
+  strcpy (lcc->s_CI.cr_EmiSmo,cr_Woody); 
+  Trim_LT (lcc->s_CI.cr_EmiSmo);
+
+/* We only have to set the f_CriInt for burnup to use the Default Emis */ 
+  if ( !strcmp (lcc->s_CI.cr_EmiFla, "0") ) {
+     lcc->s_CI.f_CriInt = -1.0; 
+     return 1; }
+
+/* Set up for Extended Emis (basic 7 emis components */
+  lcc->s_CI.f_CriInt = NES_Get_CriFirInt ();  
+
+  i = NES_Get_MajFactor(lcc->s_CI.cr_EmiFla,
+                        &lcc->s_CI.f_fCO, 
+                        &lcc->s_CI.f_fCO2,
+                        &lcc->s_CI.f_fCH4, 
+                        &lcc->s_CI.f_fPM25, 
+                        &lcc->s_CI.f_fPM10, 
+                        &lcc->s_CI.f_fNOX, 
+                        &lcc->s_CI.f_fSO2);
+  if ( i == 0 ) {
+    strcpy (cr_ErrMes, "Invalid Short-term Flame Smolder code");  
+    return 0; }
+ 
+  i = NES_Get_MajFactor(lcc->s_CI.cr_EmiDuf,
+                        &lcc->s_CI.f_dCO, 
+                        &lcc->s_CI.f_dCO2,
+                        &lcc->s_CI.f_dCH4, 
+                        &lcc->s_CI.f_dPM25, 
+                        &lcc->s_CI.f_dPM10, 
+                        &lcc->s_CI.f_dNOX, 
+                        &lcc->s_CI.f_dSO2);
+  if ( i == 0 ) {
+    strcpy (cr_ErrMes, "Invalid Duff RSC code");  
+    return 0; }
+
+  i = NES_Get_MajFactor(lcc->s_CI.cr_EmiSmo,
+                        &lcc->s_CI.f_sCO, 
+                        &lcc->s_CI.f_sCO2,
+                        &lcc->s_CI.f_sCH4, 
+                        &lcc->s_CI.f_sPM25, 
+                        &lcc->s_CI.f_sPM10, 
+                        &lcc->s_CI.f_sNOX, 
+                        &lcc->s_CI.f_sSO2);
+  if ( i == 0 ) {
+    strcpy (cr_ErrMes, "Invalid Coarse Wood RSC code");  
+    return 0; }
+
+  return 1;
 }
 
 
-
+/************************************************************************/
 
 void  FOFEM::CI_f_Duff    (float f)   { lcc->CI_f_Duff(f); }
 void  FOFEM::CI_f_DufDep  ( float f)  { lcc->CI_f_DufDep(f);}

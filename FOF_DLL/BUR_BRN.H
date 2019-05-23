@@ -82,7 +82,7 @@
 #define  e_IG_TIME         60.00
 #define  e_WINDSPEED        0.00
 #define  e_DEPTH            0.3
-#define  e_AMBIENT_TEMP    27.00
+#define  e_AMBIENT_TEMP    21.0     // changed 3/21/19 Ticket-234    orig --> 27.00
 #define  e_R0               1.83
 #define  e_DR               0.40
 #define  e_TIMESTEP        15.00

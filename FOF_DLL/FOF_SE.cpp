@@ -27,9 +27,12 @@ float ToMinutes (int i_Sec);
 
 /**********************************************************************
 * Name: SE_Mngr_Array
-* Desc: Non-Soil Heat simulation
+* Desc: Non-Duff Heat simulation
 *       New implemantaion that uses the burnup fire intensity array
 *
+* Note-1: this was set to 10 in the sr_SE[], I changed it to 15 because
+*         burnup puts out fire intensity in 15 sec increments, and 15
+*         makes the soil and soil intenstiy graphs lineup better. 
 * Note-2: Stop simulation when surface temp comes back to starting 
 *         temp, but sometimes the surface temp is back to start 
 *         temp but lower layers aren't so let run at least 60 minutes
@@ -77,6 +80,9 @@ int i_ClockSec;
   TmpFil_Heading (fh_Out); 
 
 A:
+/* Change 5-5-19, see Note-1 above */
+  a_SE->i_dt = 15;
+ 
   SHA_SetInc (a_SE->i_dt);                      /* How often we'll save temps */ 
   i_ClockSec = 0; 
   r_Rabs = 5.67e-8 * sqr ( sqr (a_SE->r_starttemp + 273.0)); /* ambient Radiant heat at surface */
@@ -101,6 +107,8 @@ A:
   SHA_TP_Init();                         /* Init for saving fire intensity */
   SHA_DufDepRem_Set (0);                 /* There is no duff */
  
+
+
 /*-----------------------------------------------------------------------*/
   while ( 1 ) {
 
@@ -259,7 +267,7 @@ float f;
 int  SE_Init (d_SI *a_SI, d_SE *a_SE, char cr_ErrMes[])
 {
 int i,  i_time;
-float   f_Heat;
+float  f, g, f_Heat;
 
 /*.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
 /* Find entry in table, based on soil type                                   */
@@ -270,6 +278,13 @@ float   f_Heat;
      if ( !strcmp (sr_SE[i].cr_Name,a_SI->cr_SoilType)){ /* Copy out                */
        memcpy (a_SE,&sr_SE[i],sizeof(d_SE));
        break; } }
+
+/* Use the GUI Ambient Air Temperature as the starting soil temperature */
+    if ( a_SI->f_AmbAirTmp < e_AirTmpMin || a_SI->f_AmbAirTmp > e_AirTmpMax ) {
+      sprintf (cr_ErrMes, "%s Ambient Air Temperature %2.0f is out of range ( %2.0f to %2.0f )",e_SoilErr, a_SI->f_AmbAirTmp,e_AirTmpMin,e_AirTmpMax);
+      return 0; } 
+    a_SE->r_starttemp = a_SI->f_AmbAirTmp; 
+
 
    if ( a_SI->f_SoilMoist > e_SMV_Max || a_SI->f_SoilMoist < e_SMV_Min ){
       sprintf (cr_ErrMes,"%s Moisture %6.2f is out of range (%3.0f to %3.0f)", e_SoilErr,a_SI->f_SoilMoist, e_SMV_Min, e_SMV_Max);

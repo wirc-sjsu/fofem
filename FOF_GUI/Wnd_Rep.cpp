@@ -3222,9 +3222,37 @@ float fr_Heat[30], fr_Time[30];
      sprintf (cr,"Max Depth Having %d degrees: %d\n", e_Max2, i_Max2 - 1 );
      _rep (cr); }
 
-
-
-
-
   return 1; 
+}
+/*********************************************************
+* Name: SoilReport_MassmanMess
+* Desc: Massman Soil Report button has been clicked
+*       See if we need to give the user a Warning or
+*       a First-Time button click message 
+* NOTE: A report can/will be created while a soil simulation 
+*       if running, so let the user know. 
+*   In: i .... number of completed simulations 
+**********************************************************/
+void Wnd_Mai::SoilReport_MassmanMess (int i)
+{
+String ^ Str;
+  
+/* 0 means no simulation has been run yet Or it is currently in progress */
+     if ( i == 0 && this->iS_MassRep == 0 ) {
+       Str =  " In order to create a Massman soil report you must first run\n";
+       Str += "a Massman soil simulation.\n";  
+       Str += " If you attempt to create a report while the simulation is running\n";
+       Str += "the report will reflect the current state of the simulation.";
+       this->iS_MassRep++;   /* One-Time switch */
+       MessageBox::Show(Str,"FOFEM");
+       return ; } 
+
+/* If the above message has not already been given to the user */    
+/* than the first time the Massman Soil Report button is Click */    
+    if ( this->iS_MassRep == 0 ) {
+       Str = " FYI: If you attempt to create a report while a simulation is running\n";
+       Str += " the report will reflect the current state of the simulation.";
+       this->iS_MassRep++;   /* One-Time switch */
+       MessageBox::Show(Str,"FOFEM");
+       return ; } 
 }

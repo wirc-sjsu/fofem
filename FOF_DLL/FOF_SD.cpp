@@ -246,6 +246,12 @@ double d_BurnTime, d_MidBurn;
        memcpy (a_SD,&sr_SD[i],sizeof(d_SD));
        break; } }
 
+/* Use the GUI Ambient Air Temperature as the starting soil temperature */
+    if ( a_SI->f_AmbAirTmp < e_AirTmpMin || a_SI->f_AmbAirTmp > e_AirTmpMax ) {
+      sprintf (cr_ErrMes, "%s Ambient Air Temperature %2.0f is out of range ( %2.0f to %2.0f )",e_SoilErr,a_SI->f_AmbAirTmp,e_AirTmpMin,e_AirTmpMax);
+      return 0; } 
+    a_SD->r_starttemp = a_SI->f_AmbAirTmp; 
+
 /* Check Soil Moisture and set starting water content                        */
    if ( a_SI->f_SoilMoist > e_SMV_Max || a_SI->f_SoilMoist < e_SMV_Min ){
       sprintf (cr_ErrMes,"%s Moisture %6.2f is out of range (%3.0f to %3.0f)", e_SoilErr, a_SI->f_SoilMoist, e_SMV_Min, e_SMV_Max);

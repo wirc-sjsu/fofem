@@ -150,7 +150,7 @@ float    f_DEPTH;       /* fuel depth, meters,                               */
                         /* burnup var = d, defualt 0.3, limits 0.1 -> 5.0    */
 
 float    f_AMBIENT_TEMP; /* ambient air temperature, degrees Celcus          */
-                         /* burnup var = tamb, default 27,                   */
+                         /* burnup var = tamb, default 21.0  was --> 27,     */
                          /*  if ( tamb-273 < tam1 || tamb-273 > tam2)        */
                          /*   const double tam1 = -40.0,  tam2 = 40.0;       */
 

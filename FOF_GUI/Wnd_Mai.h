@@ -34,6 +34,7 @@
 
 #include "Wnd_BM.h"
 
+
 /* Fuel Load Text Box Adjustment Colors */
 #define e_LigR  230      /* Light - Sparse */
 #define e_LigG  228
@@ -106,13 +107,17 @@ private: System::Windows::Forms::DataGridViewTextBoxColumn^  _dgcBeetle;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^  _dgcBole;
 private: System::Windows::Forms::DataGridViewTextBoxColumn^  _dgcProb;
 private: System::Windows::Forms::DataGridViewCheckBoxColumn^  _dgcGraph;
+public: System::Windows::Forms::Button^  _btSoilMassman;
+private: System::Windows::Forms::Label^  label40;
+public: System::Windows::Forms::Button^  _btSoiGraMas;
+private: System::Windows::Forms::Label^  label41;
+private: System::Windows::Forms::Label^  label43;
+public: System::Windows::Forms::Label^  label422;
+public: System::Windows::Forms::TextBox^  _txAmbAirTmp;
 
+private: System::Windows::Forms::Label^  label44;
 
-
-private: 
-
-public: 
-public: 
+private: System::Windows::Forms::Label^  label42;
 
 
 public: 
@@ -181,7 +186,9 @@ private: System::Windows::Forms::TextBox^  _txSC3A;
   int CSF_Mngr (String ^ Str ); 
 
   int SoilReport_Massman(); 
-
+  void SoilReport_MassmanMess(int i); 
+  int  iS_MassRep; 
+  int  iS_MassWnd;    /* first time switch, open Massman Graph Wnd */
 /*..........................................................*/
 
   float  f_PreFuelClass;  /* Sav ComboBox Selection index before it changes, might need to restore */
@@ -229,6 +236,7 @@ private: System::Windows::Forms::TextBox^  _txSC3A;
   SoilNew_Frm ^SNF;      /* Soil New Form */ 
 
   Form1 ^BmSoil_Frm;
+  int    i_BMSoil_BurnupSw; 
  
 
 public: System::Windows::Forms::Button^  _btSoil_Frm;
@@ -574,8 +582,11 @@ String ^ Str;
   this->SNF = gcnew SoilNew_Frm; 
   this->BmSoil_Frm = gcnew Form1; 
   this->BmSoil_Frm->s_UserFolder = this->s_UserFolder; 
+  this->i_BMSoil_BurnupSw = 0;   /* one-time switch */ 
+  this->iS_MassRep = 0;          /* Massman Report Button One-Time switch*/
+  this->iS_MassWnd = 0;          /* First time Massman Graph Button clicked */
 
-  this->Text = "FOFEM 6.5"; 
+  this->Text = "FOFEM 6.6.1"; 
 
   this->_cb_SalRep->Checked = false ; 
   this->SalvageSet("Hide");   
@@ -782,17 +793,17 @@ public:
 		void InitializeComponent(void)
 		{
             this->components = (gcnew System::ComponentModel::Container());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle10 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle11 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle7 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle8 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle9 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle23 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle32 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle33 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle24 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle25 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle26 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle27 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle28 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle29 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle30 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+            System::Windows::Forms::DataGridViewCellStyle^  dataGridViewCellStyle31 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
             System::ComponentModel::ComponentResourceManager^  resources = (gcnew System::ComponentModel::ComponentResourceManager(Wnd_Mai::typeid));
             this->_cms_AdjDead = (gcnew System::Windows::Forms::ContextMenuStrip(this->components));
             this->_mi_Light = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -812,6 +823,7 @@ public:
             this->_tx1Hr = (gcnew System::Windows::Forms::TextBox());
             this->_tc_Main = (gcnew System::Windows::Forms::TabControl());
             this->_tcpFuel = (gcnew System::Windows::Forms::TabPage());
+            this->label44 = (gcnew System::Windows::Forms::Label());
             this->groupBox3 = (gcnew System::Windows::Forms::GroupBox());
             this->label30 = (gcnew System::Windows::Forms::Label());
             this->label29 = (gcnew System::Windows::Forms::Label());
@@ -834,6 +846,9 @@ public:
             this->label3 = (gcnew System::Windows::Forms::Label());
             this->label17 = (gcnew System::Windows::Forms::Label());
             this->groupBox2 = (gcnew System::Windows::Forms::GroupBox());
+            this->label43 = (gcnew System::Windows::Forms::Label());
+            this->label422 = (gcnew System::Windows::Forms::Label());
+            this->_txAmbAirTmp = (gcnew System::Windows::Forms::TextBox());
             this->_txMoistSoil = (gcnew System::Windows::Forms::TextBox());
             this->_cbSoil = (gcnew System::Windows::Forms::ComboBox());
             this->_cbLogDist = (gcnew System::Windows::Forms::ComboBox());
@@ -1030,11 +1045,15 @@ public:
             this->label24 = (gcnew System::Windows::Forms::Label());
             this->_btClearReport = (gcnew System::Windows::Forms::Button());
             this->_btFireIntensity = (gcnew System::Windows::Forms::Button());
+            this->_btSoilMassman = (gcnew System::Windows::Forms::Button());
+            this->_btSoiGraMas = (gcnew System::Windows::Forms::Button());
             this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
             this->_picFOFEM = (gcnew System::Windows::Forms::PictureBox());
             this->_btTip = (gcnew System::Windows::Forms::Button());
             this->_btMort_Dam = (gcnew System::Windows::Forms::Button());
             this->_btMort_Bol = (gcnew System::Windows::Forms::Button());
+            this->label40 = (gcnew System::Windows::Forms::Label());
+            this->label41 = (gcnew System::Windows::Forms::Label());
             this->_cms_AdjDead->SuspendLayout();
             this->_cmsReport->SuspendLayout();
             this->_tc_Main->SuspendLayout();
@@ -1213,6 +1232,7 @@ public:
             // _tcpFuel
             // 
             this->_tcpFuel->BackColor = System::Drawing::SystemColors::ScrollBar;
+            this->_tcpFuel->Controls->Add(this->label44);
             this->_tcpFuel->Controls->Add(this->groupBox3);
             this->_tcpFuel->Controls->Add(this->_lbSeason);
             this->_tcpFuel->Controls->Add(this->_cbSeason);
@@ -1290,6 +1310,17 @@ public:
             this->_tcpFuel->UseVisualStyleBackColor = true;
             this->_tcpFuel->Click += gcnew System::EventHandler(this, &Wnd_Mai::_tcpFuel_Click);
             this->_tcpFuel->Enter += gcnew System::EventHandler(this, &Wnd_Mai::_tcpFuel_Enter);
+            // 
+            // label44
+            // 
+            this->label44->AutoSize = true;
+            this->label44->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+                static_cast<System::Byte>(0)));
+            this->label44->Location = System::Drawing::Point(784, 83);
+            this->label44->Name = L"label44";
+            this->label44->Size = System::Drawing::Size(88, 15);
+            this->label44->TabIndex = 82;
+            this->label44->Text = L"Soil Settings";
             // 
             // groupBox3
             // 
@@ -1501,14 +1532,14 @@ public:
             // 
             this->_btLightSpa->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(224)), static_cast<System::Int32>(static_cast<System::Byte>(224)), 
                 static_cast<System::Int32>(static_cast<System::Byte>(224)));
-            this->_btLightSpa->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+            this->_btLightSpa->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
                 static_cast<System::Byte>(0)));
             this->helpProvider1->SetHelpKeyword(this->_btLightSpa, L"F1");
             this->helpProvider1->SetHelpString(this->_btLightSpa, L"Adjust all fuels to Light");
-            this->_btLightSpa->Location = System::Drawing::Point(764, 58);
+            this->_btLightSpa->Location = System::Drawing::Point(764, 56);
             this->_btLightSpa->Name = L"_btLightSpa";
             this->helpProvider1->SetShowHelp(this->_btLightSpa, true);
-            this->_btLightSpa->Size = System::Drawing::Size(24, 24);
+            this->_btLightSpa->Size = System::Drawing::Size(24, 22);
             this->_btLightSpa->TabIndex = 15;
             this->_btLightSpa->TabStop = false;
             this->_btLightSpa->Text = L"L";
@@ -1519,14 +1550,14 @@ public:
             // _btTypical
             // 
             this->_btTypical->BackColor = System::Drawing::Color::Silver;
-            this->_btTypical->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+            this->_btTypical->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
                 static_cast<System::Byte>(0)));
             this->helpProvider1->SetHelpKeyword(this->_btTypical, L"F1");
             this->helpProvider1->SetHelpString(this->_btTypical, L"Adjst all fuels to typical ");
-            this->_btTypical->Location = System::Drawing::Point(812, 58);
+            this->_btTypical->Location = System::Drawing::Point(812, 56);
             this->_btTypical->Name = L"_btTypical";
             this->helpProvider1->SetShowHelp(this->_btTypical, true);
-            this->_btTypical->Size = System::Drawing::Size(24, 24);
+            this->_btTypical->Size = System::Drawing::Size(24, 22);
             this->_btTypical->TabIndex = 17;
             this->_btTypical->TabStop = false;
             this->_btTypical->Text = L"T";
@@ -1537,14 +1568,14 @@ public:
             // _btHeavyAbun
             // 
             this->_btHeavyAbun->BackColor = System::Drawing::Color::Gray;
-            this->_btHeavyAbun->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+            this->_btHeavyAbun->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
                 static_cast<System::Byte>(0)));
             this->helpProvider1->SetHelpKeyword(this->_btHeavyAbun, L"f1");
             this->helpProvider1->SetHelpString(this->_btHeavyAbun, L"Adjust all fuels to heavy");
-            this->_btHeavyAbun->Location = System::Drawing::Point(864, 58);
+            this->_btHeavyAbun->Location = System::Drawing::Point(864, 56);
             this->_btHeavyAbun->Name = L"_btHeavyAbun";
             this->helpProvider1->SetShowHelp(this->_btHeavyAbun, true);
-            this->_btHeavyAbun->Size = System::Drawing::Size(24, 24);
+            this->_btHeavyAbun->Size = System::Drawing::Size(24, 22);
             this->_btHeavyAbun->TabIndex = 18;
             this->_btHeavyAbun->TabStop = false;
             this->_btHeavyAbun->Text = L"Heavy";
@@ -1594,32 +1625,71 @@ public:
             // groupBox2
             // 
             this->groupBox2->BackColor = System::Drawing::Color::Transparent;
+            this->groupBox2->Controls->Add(this->label43);
+            this->groupBox2->Controls->Add(this->label422);
+            this->groupBox2->Controls->Add(this->_txAmbAirTmp);
             this->groupBox2->Controls->Add(this->_txMoistSoil);
             this->groupBox2->Controls->Add(this->_cbSoil);
             this->groupBox2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
                 static_cast<System::Byte>(0)));
             this->helpProvider1->SetHelpKeyword(this->groupBox2, L"f1");
             this->helpProvider1->SetHelpString(this->groupBox2, L"Soil Moisture. This value is only used when you are doing a soil simulation ");
-            this->groupBox2->Location = System::Drawing::Point(763, 113);
+            this->groupBox2->Location = System::Drawing::Point(763, 81);
             this->groupBox2->Name = L"groupBox2";
             this->helpProvider1->SetShowHelp(this->groupBox2, true);
-            this->groupBox2->Size = System::Drawing::Size(130, 80);
+            this->groupBox2->Size = System::Drawing::Size(130, 114);
             this->groupBox2->TabIndex = 66;
             this->groupBox2->TabStop = false;
-            this->groupBox2->Text = L"Soils";
             this->toolTip1->SetToolTip(this->groupBox2, L"Soil Moisture. This value is only used when you are doing a soil simulation ");
+            // 
+            // label43
+            // 
+            this->label43->AutoSize = true;
+            this->label43->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+                static_cast<System::Byte>(0)));
+            this->label43->Location = System::Drawing::Point(3, 82);
+            this->label43->Name = L"label43";
+            this->label43->Size = System::Drawing::Size(78, 13);
+            this->label43->TabIndex = 28;
+            this->label43->Text = L"Amb Temp C";
+            this->toolTip1->SetToolTip(this->label43, L"Ambient Temperature");
+            // 
+            // label422
+            // 
+            this->label422->AutoSize = true;
+            this->label422->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
+                static_cast<System::Byte>(0)));
+            this->label422->Location = System::Drawing::Point(6, 53);
+            this->label422->Name = L"label422";
+            this->label422->Size = System::Drawing::Size(55, 13);
+            this->label422->TabIndex = 27;
+            this->label422->Text = L"Moisture";
+            this->toolTip1->SetToolTip(this->label422, L"Percent soil moisture (% volumetric)\r\nThis value is only used when you are \r\ndoin" 
+                L"g a soil simulation\r\n");
+            // 
+            // _txAmbAirTmp
+            // 
+            this->_txAmbAirTmp->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+                static_cast<System::Byte>(0)));
+            this->_txAmbAirTmp->Location = System::Drawing::Point(89, 77);
+            this->_txAmbAirTmp->Name = L"_txAmbAirTmp";
+            this->_txAmbAirTmp->Size = System::Drawing::Size(32, 22);
+            this->_txAmbAirTmp->TabIndex = 26;
+            this->_txAmbAirTmp->Text = L"21";
+            this->_txAmbAirTmp->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
             // 
             // _txMoistSoil
             // 
             this->_txMoistSoil->BackColor = System::Drawing::Color::SkyBlue;
             this->_txMoistSoil->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
                 static_cast<System::Byte>(0)));
-            this->_txMoistSoil->Location = System::Drawing::Point(38, 20);
+            this->_txMoistSoil->Location = System::Drawing::Point(74, 52);
             this->_txMoistSoil->Name = L"_txMoistSoil";
             this->_txMoistSoil->Size = System::Drawing::Size(50, 20);
             this->_txMoistSoil->TabIndex = 24;
             this->_txMoistSoil->TextAlign = System::Windows::Forms::HorizontalAlignment::Center;
-            this->toolTip1->SetToolTip(this->_txMoistSoil, L"Soil Moisture Content - Note this is a percent of Mass");
+            this->toolTip1->SetToolTip(this->_txMoistSoil, L"Percent soil moisture (% volumetric)\r\nThis value is only used when you are\r\ndoing" 
+                L" a soil simulation.");
             this->_txMoistSoil->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Wnd_Mai::_txMoistDuff_KeyDown);
             // 
             // _cbSoil
@@ -1630,7 +1700,7 @@ public:
             this->helpProvider1->SetHelpKeyword(this->_cbSoil, L"f1");
             this->helpProvider1->SetHelpString(this->_cbSoil, L"Select the type of soil. This setting is only used if you are doing a soil simula" 
                 L"tion ");
-            this->_cbSoil->Location = System::Drawing::Point(5, 46);
+            this->_cbSoil->Location = System::Drawing::Point(5, 19);
             this->_cbSoil->Name = L"_cbSoil";
             this->helpProvider1->SetShowHelp(this->_cbSoil, true);
             this->_cbSoil->Size = System::Drawing::Size(120, 21);
@@ -1823,7 +1893,7 @@ public:
             this->_cbMoisture->Name = L"_cbMoisture";
             this->_cbMoisture->Size = System::Drawing::Size(78, 21);
             this->_cbMoisture->TabIndex = 20;
-            this->toolTip1->SetToolTip(this->_cbMoisture, L"Moisture conditions at time of burn");
+            this->toolTip1->SetToolTip(this->_cbMoisture, L"Moisture conditions at time\r\nof burn (% gravimetric)");
             this->_cbMoisture->SelectedIndexChanged += gcnew System::EventHandler(this, &Wnd_Mai::_cbMoist_SelectedIndexChanged);
             this->_cbMoisture->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &Wnd_Mai::_cbFuelClass_KeyDown);
             // 
@@ -1910,7 +1980,7 @@ public:
             this->_lbFolBraCon->BackColor = System::Drawing::Color::Transparent;
             this->_lbFolBraCon->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point, 
                 static_cast<System::Byte>(0)));
-            this->_lbFolBraCon->Location = System::Drawing::Point(784, 40);
+            this->_lbFolBraCon->Location = System::Drawing::Point(784, 39);
             this->_lbFolBraCon->Name = L"_lbFolBraCon";
             this->_lbFolBraCon->Size = System::Drawing::Size(85, 15);
             this->_lbFolBraCon->TabIndex = 35;
@@ -1927,7 +1997,7 @@ public:
             this->_lbMoistures->Size = System::Drawing::Size(70, 15);
             this->_lbMoistures->TabIndex = 34;
             this->_lbMoistures->Text = L"Moistures";
-            this->toolTip1->SetToolTip(this->_lbMoistures, L"Moisture conditions at time of burn");
+            this->toolTip1->SetToolTip(this->_lbMoistures, L"Moisture conditions at time\r\nof burn (% gravimetric)");
             // 
             // _lbFuels
             // 
@@ -2767,39 +2837,39 @@ public:
             this->_dgMort->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom) 
                 | System::Windows::Forms::AnchorStyles::Left) 
                 | System::Windows::Forms::AnchorStyles::Right));
-            dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-            dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::Control;
-            dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, 
+            dataGridViewCellStyle23->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+            dataGridViewCellStyle23->BackColor = System::Drawing::SystemColors::Control;
+            dataGridViewCellStyle23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, 
                 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-            dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
-            dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-            dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-            dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-            this->_dgMort->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle23->ForeColor = System::Drawing::SystemColors::WindowText;
+            dataGridViewCellStyle23->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+            dataGridViewCellStyle23->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+            dataGridViewCellStyle23->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+            this->_dgMort->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle23;
             this->_dgMort->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
             this->_dgMort->Columns->AddRange(gcnew cli::array< System::Windows::Forms::DataGridViewColumn^  >(12) {this->_dgcSpecies, 
                 this->_cbEquTyp, this->_dgcDensity, this->_dgcDBH, this->_dgcHeight, this->_dgcCrownRatio, this->_dgcCrnDam, this->_dgcCKR, this->_dgcBeetle, 
                 this->_dgcBole, this->_dgcProb, this->_dgcGraph});
-            dataGridViewCellStyle10->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-            dataGridViewCellStyle10->BackColor = System::Drawing::SystemColors::Window;
-            dataGridViewCellStyle10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, 
+            dataGridViewCellStyle32->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+            dataGridViewCellStyle32->BackColor = System::Drawing::SystemColors::Window;
+            dataGridViewCellStyle32->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, 
                 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-            dataGridViewCellStyle10->ForeColor = System::Drawing::SystemColors::ControlText;
-            dataGridViewCellStyle10->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-            dataGridViewCellStyle10->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-            dataGridViewCellStyle10->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
-            this->_dgMort->DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle32->ForeColor = System::Drawing::SystemColors::ControlText;
+            dataGridViewCellStyle32->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+            dataGridViewCellStyle32->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+            dataGridViewCellStyle32->WrapMode = System::Windows::Forms::DataGridViewTriState::False;
+            this->_dgMort->DefaultCellStyle = dataGridViewCellStyle32;
             this->_dgMort->Location = System::Drawing::Point(428, 6);
             this->_dgMort->Name = L"_dgMort";
-            dataGridViewCellStyle11->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
-            dataGridViewCellStyle11->BackColor = System::Drawing::SystemColors::Control;
-            dataGridViewCellStyle11->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, 
+            dataGridViewCellStyle33->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleLeft;
+            dataGridViewCellStyle33->BackColor = System::Drawing::SystemColors::Control;
+            dataGridViewCellStyle33->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, 
                 System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
-            dataGridViewCellStyle11->ForeColor = System::Drawing::SystemColors::WindowText;
-            dataGridViewCellStyle11->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-            dataGridViewCellStyle11->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-            dataGridViewCellStyle11->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-            this->_dgMort->RowHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle33->ForeColor = System::Drawing::SystemColors::WindowText;
+            dataGridViewCellStyle33->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+            dataGridViewCellStyle33->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+            dataGridViewCellStyle33->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+            this->_dgMort->RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this->_dgMort->RowHeadersWidth = 20;
             this->_dgMort->RowTemplate->Height = 18;
             this->_dgMort->Size = System::Drawing::Size(485, 195);
@@ -2835,10 +2905,10 @@ public:
             // 
             // _dgcDensity
             // 
-            dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            dataGridViewCellStyle2->Format = L"N1";
-            dataGridViewCellStyle2->NullValue = nullptr;
-            this->_dgcDensity->DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle24->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            dataGridViewCellStyle24->Format = L"N1";
+            dataGridViewCellStyle24->NullValue = nullptr;
+            this->_dgcDensity->DefaultCellStyle = dataGridViewCellStyle24;
             this->_dgcDensity->HeaderText = L"Den";
             this->_dgcDensity->Name = L"_dgcDensity";
             this->_dgcDensity->ToolTipText = L"Tree density (per acre)";
@@ -2846,8 +2916,8 @@ public:
             // 
             // _dgcDBH
             // 
-            dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcDBH->DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle25->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcDBH->DefaultCellStyle = dataGridViewCellStyle25;
             this->_dgcDBH->HeaderText = L"DBH";
             this->_dgcDBH->Name = L"_dgcDBH";
             this->_dgcDBH->ToolTipText = L" Diameter Breast Height (in) ";
@@ -2855,8 +2925,8 @@ public:
             // 
             // _dgcHeight
             // 
-            dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcHeight->DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle26->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcHeight->DefaultCellStyle = dataGridViewCellStyle26;
             this->_dgcHeight->HeaderText = L"Hgt";
             this->_dgcHeight->Name = L"_dgcHeight";
             this->_dgcHeight->ToolTipText = L"Tree height (ft)";
@@ -2864,8 +2934,8 @@ public:
             // 
             // _dgcCrownRatio
             // 
-            dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcCrownRatio->DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle27->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcCrownRatio->DefaultCellStyle = dataGridViewCellStyle27;
             this->_dgcCrownRatio->HeaderText = L"Crn Rat";
             this->_dgcCrownRatio->Name = L"_dgcCrownRatio";
             this->_dgcCrownRatio->ToolTipText = L"Live crown ratio (1-10) ";
@@ -2873,8 +2943,8 @@ public:
             // 
             // _dgcCrnDam
             // 
-            dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcCrnDam->DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle28->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcCrnDam->DefaultCellStyle = dataGridViewCellStyle28;
             this->_dgcCrnDam->HeaderText = L"Crn Dam%";
             this->_dgcCrnDam->Name = L"_dgcCrnDam";
             this->_dgcCrnDam->ToolTipText = L"Crown Damage Percent - ( 0 -> 100) ";
@@ -2882,8 +2952,8 @@ public:
             // 
             // _dgcCKR
             // 
-            dataGridViewCellStyle7->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcCKR->DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle29->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcCKR->DefaultCellStyle = dataGridViewCellStyle29;
             this->_dgcCKR->HeaderText = L"CKR";
             this->_dgcCKR->Name = L"_dgcCKR";
             this->_dgcCKR->ToolTipText = L"Cambium kill rating (0-4)";
@@ -2891,8 +2961,8 @@ public:
             // 
             // _dgcBeetle
             // 
-            dataGridViewCellStyle8->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcBeetle->DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle30->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcBeetle->DefaultCellStyle = dataGridViewCellStyle30;
             this->_dgcBeetle->HeaderText = L"Btle Dam";
             this->_dgcBeetle->Name = L"_dgcBeetle";
             this->_dgcBeetle->ToolTipText = L"Beetle Damage";
@@ -2900,8 +2970,8 @@ public:
             // 
             // _dgcBole
             // 
-            dataGridViewCellStyle9->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-            this->_dgcBole->DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle31->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+            this->_dgcBole->DefaultCellStyle = dataGridViewCellStyle31;
             this->_dgcBole->HeaderText = L"Bole Char";
             this->_dgcBole->Name = L"_dgcBole";
             this->_dgcBole->ToolTipText = L"Bole char height  (ft)";
@@ -2971,12 +3041,12 @@ public:
             // _btSoil_Frm
             // 
             this->_btSoil_Frm->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-            this->_btSoil_Frm->Location = System::Drawing::Point(841, 487);
+            this->_btSoil_Frm->Location = System::Drawing::Point(847, 508);
             this->_btSoil_Frm->Name = L"_btSoil_Frm";
-            this->_btSoil_Frm->Size = System::Drawing::Size(76, 36);
+            this->_btSoil_Frm->Size = System::Drawing::Size(60, 20);
             this->_btSoil_Frm->TabIndex = 67;
             this->_btSoil_Frm->TabStop = false;
-            this->_btSoil_Frm->Text = L"Soil Heating";
+            this->_btSoil_Frm->Text = L"Campbell";
             this->toolTip1->SetToolTip(this->_btSoil_Frm, L"Generate a graphic report on soil heating ");
             this->_btSoil_Frm->UseVisualStyleBackColor = true;
             this->_btSoil_Frm->Click += gcnew System::EventHandler(this, &Wnd_Mai::_btSoil_Frm_Click);
@@ -3552,12 +3622,12 @@ public:
             // 
             // _btReportSoil
             // 
-            this->_btReportSoil->Location = System::Drawing::Point(18, 488);
+            this->_btReportSoil->Location = System::Drawing::Point(22, 514);
             this->_btReportSoil->Name = L"_btReportSoil";
-            this->_btReportSoil->Size = System::Drawing::Size(76, 36);
+            this->_btReportSoil->Size = System::Drawing::Size(60, 20);
             this->_btReportSoil->TabIndex = 70;
             this->_btReportSoil->TabStop = false;
-            this->_btReportSoil->Text = L"Soil Heating";
+            this->_btReportSoil->Text = L"Campbell";
             this->toolTip1->SetToolTip(this->_btReportSoil, L"Generate a tabular report on soil heating ");
             this->_btReportSoil->UseVisualStyleBackColor = true;
             this->_btReportSoil->Click += gcnew System::EventHandler(this, &Wnd_Mai::_btReportSoil_Click);
@@ -3740,6 +3810,31 @@ public:
             this->_btFireIntensity->UseVisualStyleBackColor = true;
             this->_btFireIntensity->Click += gcnew System::EventHandler(this, &Wnd_Mai::_btFireIntensity_Click);
             // 
+            // _btSoilMassman
+            // 
+            this->_btSoilMassman->Location = System::Drawing::Point(22, 541);
+            this->_btSoilMassman->Name = L"_btSoilMassman";
+            this->_btSoilMassman->Size = System::Drawing::Size(60, 20);
+            this->_btSoilMassman->TabIndex = 87;
+            this->_btSoilMassman->TabStop = false;
+            this->_btSoilMassman->Text = L"Massman";
+            this->toolTip1->SetToolTip(this->_btSoilMassman, L"Generate a tabular report on soil heating ");
+            this->_btSoilMassman->UseVisualStyleBackColor = true;
+            this->_btSoilMassman->Click += gcnew System::EventHandler(this, &Wnd_Mai::button1_Click);
+            // 
+            // _btSoiGraMas
+            // 
+            this->_btSoiGraMas->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+            this->_btSoiGraMas->Location = System::Drawing::Point(848, 532);
+            this->_btSoiGraMas->Name = L"_btSoiGraMas";
+            this->_btSoiGraMas->Size = System::Drawing::Size(60, 20);
+            this->_btSoiGraMas->TabIndex = 89;
+            this->_btSoiGraMas->TabStop = false;
+            this->_btSoiGraMas->Text = L"Massman";
+            this->toolTip1->SetToolTip(this->_btSoiGraMas, L"Generate a graphic report on soil heating ");
+            this->_btSoiGraMas->UseVisualStyleBackColor = true;
+            this->_btSoiGraMas->Click += gcnew System::EventHandler(this, &Wnd_Mai::_btSoiGraMas_Click);
+            // 
             // pictureBox1
             // 
             this->pictureBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
@@ -3778,7 +3873,7 @@ public:
             // _btMort_Dam
             // 
             this->_btMort_Dam->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-            this->_btMort_Dam->Location = System::Drawing::Point(841, 466);
+            this->_btMort_Dam->Location = System::Drawing::Point(840, 466);
             this->_btMort_Dam->Name = L"_btMort_Dam";
             this->_btMort_Dam->Size = System::Drawing::Size(76, 36);
             this->_btMort_Dam->TabIndex = 85;
@@ -3789,7 +3884,7 @@ public:
             // _btMort_Bol
             // 
             this->_btMort_Bol->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-            this->_btMort_Bol->Location = System::Drawing::Point(841, 518);
+            this->_btMort_Bol->Location = System::Drawing::Point(841, 519);
             this->_btMort_Bol->Name = L"_btMort_Bol";
             this->_btMort_Bol->Size = System::Drawing::Size(76, 36);
             this->_btMort_Bol->TabIndex = 86;
@@ -3797,12 +3892,39 @@ public:
             this->_btMort_Bol->UseVisualStyleBackColor = true;
             this->_btMort_Bol->Click += gcnew System::EventHandler(this, &Wnd_Mai::_btMort_Bol_Click);
             // 
+            // label40
+            // 
+            this->label40->AutoSize = true;
+            this->label40->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+                static_cast<System::Byte>(0)));
+            this->label40->Location = System::Drawing::Point(16, 491);
+            this->label40->Name = L"label40";
+            this->label40->Size = System::Drawing::Size(74, 15);
+            this->label40->TabIndex = 88;
+            this->label40->Text = L"Soil Reports";
+            // 
+            // label41
+            // 
+            this->label41->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
+            this->label41->AutoSize = true;
+            this->label41->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point, 
+                static_cast<System::Byte>(0)));
+            this->label41->Location = System::Drawing::Point(842, 485);
+            this->label41->Name = L"label41";
+            this->label41->Size = System::Drawing::Size(71, 15);
+            this->label41->TabIndex = 90;
+            this->label41->Text = L"Soil Graphs";
+            // 
             // Wnd_Mai
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->AutoScroll = true;
             this->ClientSize = System::Drawing::Size(931, 765);
+            this->Controls->Add(this->label41);
+            this->Controls->Add(this->_btSoiGraMas);
+            this->Controls->Add(this->label40);
+            this->Controls->Add(this->_btSoilMassman);
             this->Controls->Add(this->_btMort_Bol);
             this->Controls->Add(this->_btMort_Dam);
             this->Controls->Add(this->_btFireIntensity);
@@ -3834,7 +3956,7 @@ public:
             this->MainMenuStrip = this->menuStrip1;
             this->MaximumSize = System::Drawing::Size(2000, 2000);
             this->Name = L"Wnd_Mai";
-            this->Text = L"FOFEM6.5";
+            this->Text = L"FOFEM6.6";
             this->Load += gcnew System::EventHandler(this, &Wnd_Mai::Wnd_Mai_Load);
             this->ResizeBegin += gcnew System::EventHandler(this, &Wnd_Mai::Wnd_Mai_ResizeBegin);
             this->FormClosing += gcnew System::Windows::Forms::FormClosingEventHandler(this, &Wnd_Mai::Wnd_Mai_FormClosing);
@@ -4261,8 +4383,27 @@ private: System::Void _btSoil_Frm_Click(System::Object^  sender, System::EventAr
 ************************************************************************/
 private: System::Void _btSoiGraMas_Click(System::Object^  sender, System::EventArgs^  e)
 {
+int i; 
+float f; 
+char cr_Out[500],cr_Name[500],cr_ErrMes[1000];
+
+/* First time the user opens the Massman Soil Window, assign Air Temp and Soil moist */
+/*  from main window to Massman graph window */
+   if ( this->iS_MassWnd == 0 ) {
+      this->BmSoil_Frm->_txBM_AmbAirTmp->Text = this->_txAmbAirTmp->Text;
+      i =  _Get_TBFlo (this->_txMoistSoil, &f, cr_Out,cr_Name,cr_ErrMes);
+      f = f * 0.010; 
+      FloatToTextBox (this->BmSoil_Frm->_txBM_Moist,f,2); 
+      this->iS_MassWnd++; 
+   }
+
    this->BmSoil_Frm->Show();
    this->BmSoil_Frm->BringToFront(); 
+
+/* The first time the Massman Graph Button is hit - set the FireType to Burnup */
+   if ( this->i_BMSoil_BurnupSw == 0 ) { 
+     this->BmSoil_Frm->SetFireTypeBurnup(); 
+     this->i_BMSoil_BurnupSw++; }
 }
 
 /*******************************************************************************
@@ -4283,7 +4424,6 @@ private: System::Void Wnd_Mai_ResizeBegin(System::Object^  sender, System::Event
 int i; 
   i = this->Height;
  }
-
 
 /************************************************************************************
 * Report Wnd ContextMenu Item clicked 
@@ -4488,7 +4628,7 @@ char  cr[2000];
   this->_btReportEmis->Hide();
   this->_btReportFuel->Hide();
   this->_btReportSoil->Hide();
-
+  this->_btSoilMassman->Hide(); 
 
 
 /* Hide the Graph buttons for Fuel stuff */
@@ -4496,10 +4636,10 @@ char  cr[2000];
   this->_btSoil_Frm->Hide(); 
   this->_btFuel_Frm->Hide(); 
   this->_btFireIntensity->Hide();
-//  this->_btSoiGraMas->Hide();  
+  this->_btSoiGraMas->Hide();  
 
-//  this->label40->Hide(); 
-//  this->label41->Hide(); 
+  this->label40->Hide(); 
+  this->label41->Hide(); 
 
   this->_btReportMort->Show();
   this->_btGraphMort->Show(); 
@@ -4532,15 +4672,16 @@ private: System::Void _tcpFuel_Enter(System::Object^  sender, System::EventArgs^
   this->_btReportEmis->Show();  /* Report buttons */
   this->_btReportFuel->Show();
   this->_btReportSoil->Show();
+  this->_btSoilMassman->Show();
 
   this->_btEmis_Frm->Show();   /* Emis graph form button */
   this->_btSoil_Frm->Show(); 
   this->_btFuel_Frm->Show(); 
   this->_btFireIntensity->Show(); 
- // this->_btSoiGraMas->Show(); 
+  this->_btSoiGraMas->Show(); 
 
- // this->label40->Show();
- // this->label41->Show(); 
+  this->label40->Show();
+  this->label41->Show(); 
 
   this->_btReportMort->Hide();
   this->_btGraphMort->Hide(); 
@@ -5084,9 +5225,16 @@ private: System::Void _lbHerb_Click(System::Object^  sender, System::EventArgs^ 
 *********************************************************************/
 private: System::Void button1_Click(System::Object^  sender, System::EventArgs^  e) 
 {
+int i;
    this->_picFOFEM->Hide();  /* Hide FOFEM picture if it's still up */
+
+   i = this->BmSoil_Frm->NumRuns(); 
+   this->SoilReport_MassmanMess(i); 
+       
    this->SoilReport_Massman(); 
 }
+
+
 
 
 

@@ -1,3 +1,0 @@
-
-  There as sample file DL made 
-  See FOFEM Ticket 123   3/3/17

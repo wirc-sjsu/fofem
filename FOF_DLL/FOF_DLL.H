@@ -22,10 +22,11 @@ public:
 
   d_LCC  *lcc; 
 
-  void Init ();
+  int Init (char cr_ErrMes[], int iS);
   FOFEM ();
   ~FOFEM (); 
 
+ int    CI_SetEmis (char cr_ShoTer[], char cr_Duff[], char cr_Woody[], char cr_ErrMes[]);
  void   CI_f_Duff     ( float f);
  void   CI_f_DufDep   ( float f);
  void   CI_f_MoistDuf ( float f);

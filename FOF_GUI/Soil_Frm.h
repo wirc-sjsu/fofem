@@ -145,6 +145,10 @@ public:
 
 public: 
 
+public: 
+
+public: 
+
 
 
 #pragma region Windows Form Designer generated code
@@ -281,7 +285,7 @@ public:
             this->chart1->Location = System::Drawing::Point(94, 12);
             this->chart1->Name = L"chart1";
             series1->ChartArea = L"ChartArea1";
-            series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Area;
+            series1->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::SplineArea;
             series1->Color = System::Drawing::Color::Red;
             series1->Legend = L"Legend1";
             series1->LegendText = L"Surface";
@@ -809,7 +813,7 @@ public:
             this->chart2->Location = System::Drawing::Point(231, 460);
             this->chart2->Name = L"chart2";
             series16->ChartArea = L"ChartArea1";
-            series16->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::Area;
+            series16->ChartType = System::Windows::Forms::DataVisualization::Charting::SeriesChartType::SplineArea;
             series16->Name = L"Series1";
             this->chart2->Series->Add(series16);
             this->chart2->Size = System::Drawing::Size(437, 180);

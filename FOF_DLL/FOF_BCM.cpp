@@ -48,7 +48,7 @@ void  _SetNoIgn (d_CO *a_CO);
 {*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}*/
 int  BCM_Mngr (d_CI *a_CI,  d_CO *a_CO, char cr_ErrMes[])
 {
-int i;
+int i,j;
 float f_fi, f_BF, f_DufPer;
 
 d_SGV s_SGV; 
@@ -262,11 +262,14 @@ OneHr:
    }
    
    for ( i = 0; i < eC_sfi; i++ ) { 
-     if ( fr_SFI[i] <= 0 ) 
-       break; 
-     a_CO->fr_SFI[i] = fr_SFI[i];
-     a_CO->fr_SFIhs[i] = fr_SFIhs[i];   
-   }
+     if ( fr_SFI[i] <= 0 )      /* no more wood liter intenstiy */
+       break;
+     a_CO->fr_SFI[i] = fr_SFI[i]; }
+  
+   for ( i = 0; i < eC_sfi; i++ ) { 
+     if ( fr_SFIhs[i] <= 0 )    /* no more Herb shrub intensity */
+       break;  
+     a_CO->fr_SFIhs[i] = fr_SFIhs[i]; }
     
 /* Get the fire intensity and duration of burnup simulation, see define      */
 /* 3-14-05 Change, put in check for 0 division                               */

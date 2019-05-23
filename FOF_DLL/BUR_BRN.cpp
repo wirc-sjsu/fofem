@@ -18,12 +18,12 @@
 #include "Brn_FileSw.h"
 #include "Unit_Abv.h"
 #include "fof_ansi.h"
+#include "Brn_SFI.h"
 
 
 // test...........................
 float gfN_FlaCon = 0; 
 float gfN_SmoCon = 0; 
-
 // .............................
 
 double FIC_Percent ();
@@ -33,7 +33,6 @@ double FIC_1kSmoPercent ();
 bool _isEqual (double a, double b);
 void FIC_Put (double d_SURat, double d_dendry, double term, double test, double amount, char cr_FS[]);
 void _CompDump (float test, float cmpark, float term, char FS[], float wnoduff, double sigma);
-
 int ES_FlaSmo (d_ES *a, float *af_Smo, float *af_Fla, float *af_1kSmo, float *af_1kFla);
 
 /*..................................................*/
@@ -44,7 +43,6 @@ float   _FireInt_DuffType  (double Rm);
 #endif 
  
 /*...................................................*/
-
 double  dr_Done[MAXNO]; 
 double  dr_DD[MAXNO]; 
 
@@ -78,7 +76,6 @@ double     tout [MAXKL];
 // throughout the code and then the debugger let me 'watch' it 
 // double     wo   [MAXKL];
 double     WOO  [MAXKL];   /* test */
-
 double     wodot[MAXKL];
 double     diam [MAXKL];
 double     ddot [MAXKL];
@@ -140,92 +137,6 @@ double gdN_FlameCon = 0;
 double gdN_SmolderCon = 0; 
 double gdN_DuffCon = 0;   
 
-/**********************************************************************/
-/* Soil Heating Fire Intensity Array                                  */
-/* Store fire intensity to be used by soil heating model              */
-/* each position of the array is 15 seconds                           */
-/* These fire intensity values are used to do the non-duff soil       */
-/* so we only store the fire intensity for wood liter herb shrub      */
-#define eC_SFI 6000   /* Soil Heating fire intensity array */
-float  fr_SFI[eC_SFI + 1 ];
-int    iX_SFI;
-
-float  fr_SFIhs[eC_SFI + 1 ];
-
-/*-----------------------------------------------------
-* Init the array and put the first 60 second fire 
-* intensity into the first four positions
-* Note-1: For now I'm going to assume that the fire 
-*  ramps up to it full rate across the first 60 seconds
-* Also see notes above 
-*------------------------------------------------------*/
-void SFI_Init (float f_WLfi, float f_HSfi) 
-{
-int i; 
-float f; 
-   for ( i = 0; i <= eC_SFI; i++ ) {
-      fr_SFI[i] = -1.0; 
-      fr_SFIhs[i] = 1.0; }
-
-/* See Note-1 above*/
-   fr_SFI[0] = 0.25 * f_WLfi; 
-   fr_SFI[1] = 0.50 * f_WLfi; 
-   fr_SFI[2] = 0.75 * f_WLfi; 
-   fr_SFI[3] = 1.0  * f_WLfi; 
-
-   fr_SFIhs[0] = 0.25 * f_HSfi; 
-   fr_SFIhs[1] = 0.50 * f_HSfi; 
-   fr_SFIhs[2] = 0.75 * f_HSfi; 
-   fr_SFIhs[3] = 1.0  * f_HSfi; 
-   iX_SFI = 4; 
-}
-
-/***********************************************************/
-void SFI_Put (float f_WLfi, float f_HSfi)
-{
- if ( iX_SFI >= eC_SFI )
-    return; 
-  fr_SFI[iX_SFI] = f_WLfi;     /* Wood Litter fire intensity */
-  fr_SFIhs[iX_SFI] = f_HSfi;   /* Herb Shrub fire intensity */
-  iX_SFI++;
-}
-
-/********************************************************************
-*
-*
-********************************************************************/
-double  gd_TotHS;
-double gd_PerSec;
-
-double HSB_Get (double  d_Sec);
-void  HSB_Init (float f_TotHS, float f_PerMin);
-
-/***************************************************************
-* Name: HSB_Init
-* Desc: Given the amount of Herb + Shrub to be consumed per minute
-*       calc the per second amount
-*   In: f_TotHS... Total amount of herb + shrub in tons per acre
-*       f_PerMin.. tons to be consumed per minute
-***************************************************************/
-void  HSB_Init (float f_TotHS, float f_PerMin)
-{
-   gd_PerSec = f_PerMin / 60.0;
-   gd_TotHS = f_TotHS;  
-}
-
-/*************************************************************
-*
-*
-*************************************************************/
-double HSB_Get (double  d_Sec)
-{
-double d;
-  d = gd_PerSec * d_Sec; 
-  if ( d > gd_TotHS )
-    d = gd_TotHS;
-  gd_TotHS = gd_TotHS - d;
-  return d; 
-}
 
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: BRN_Run
@@ -261,12 +172,12 @@ int i, i_Ret;
 long nruns = 0;
 long now;
 double fimin = 0.1;
-double d, d_Time, d_DFI, d_tdf, d_1FI;
+double d, dd, d_Time, d_DFI, d_tdf, d_1FI;
 double d_ConWooLit,d_pcSmoCon;
 double d_DufCon, d_Duf_Tot, d_Duf_Sec;
 double d_HSFB_KiSq;
 float  f;
-double d_HSt; 
+double d_HSt,d_HerShr; 
 double d_HSfi, d_HSkg, d_FBfi; 
 
    _CompDump (0,0, 0, "Open", 0, 0);  /* Put out a test file - see _CompDump() */ 
@@ -274,8 +185,8 @@ double d_HSfi, d_HSkg, d_FBfi;
    strcpy (cr_ErrMes,"");
    i_Ret = 1;
 
-   d =  f_ConHerb + f_ConShrb;
-   HSB_Init (d, 10.0 );                    /* store, we'll get back as needed */
+   d_HerShr =  f_ConHerb + f_ConShrb; /* Total Herb Shrub load */
+ 
    SGV_Init ();                            /* Init table, for Smoke saving   */
    ES_Init (&s_ES);                        /* Init Emission Sturct         */
 
@@ -307,9 +218,12 @@ double d_HSfi, d_HSkg, d_FBfi;
 
    fi = FireIntensity(&d_pcSmoCon);                     /* get Fire Intensity           */
    d_DufCon = Duff_CPTS (&d_Duf_Tot, d_Duf_Sec, 60.0);  /* duff that burn this time step*/
-                  
-   d_HSt = HSB_Get (60.0);                 /* Herb Shr consumed in first 60 seconds*/
-   d_HSfi = BRN_Intensity(d_HSt,60.0);     /* Add Fire Int, Herb,Shr   */
+    
+          
+//   d_HSt = HSB_Get (60.0);                 /* Herb Shr consumed in first 60 seconds*/
+//   d_HSfi = BRN_Intensity(d_HSt,60.0);     /* Add Fire Int, Herb,Shr   */
+   HSBI_FirstMinute (d_HerShr, fi, &d_HSt, &d_HSfi);
+
    d_FBfi = BRN_Intensity(f_ConBraFol,60.0); 
 
    d = TPA_To_KiSq (d_HSt); 
@@ -332,9 +246,6 @@ double d_HSfi, d_HSkg, d_FBfi;
                   d_DufCon, d,  
                   d_Time,d_1FI);   
 
-
-   SFI_Init (fi,d_HSfi);                  /* Save just these for soil heating model */ 
-
    fi = fi + d_HSfi + d_FBfi;             /* fir inten all fuels */
    EFM_Write (&s_ES,d_Time,fi);           /* put a line to Emission File  */
    BOV_Set_TimHea(d_Time,fi);             /* Save for doing Soil Exp Heat */
@@ -355,10 +266,14 @@ double d_HSfi, d_HSkg, d_FBfi;
         d_DFI = 0;                           /* burnout                      */
 
      fi = FireIntensity(&d_pcSmoCon);        /* Fire Intensity - Wood Liter       */
-     d_HSt = HSB_Get (dt);                   /* herb shrb consumed this time step */
-     d_HSfi = BRN_Intensity(d_HSt,dt);       /* Fire Intensity - Herb Shrub  */
+
+
+//  FIX      d_HSt = HSB_Get (dt);                   /* herb shrb consumed this time step */
+//     d_HSfi = BRN_Intensity(d_HSt,dt);       /* Fire Intensity - Herb Shrub  */
+     HSBI_Next (fi, &d_HSt, &d_HSfi); 
+
      d_HSkg = TPA_To_KiSq (d_HSt);           /* Herb Shrb to Kilograms       */
-     SFI_Put (fi,d_HSfi);                    /* save for Soil heating model */
+// FIX     SFI_Put (fi,d_HSfi);                    /* save for Soil heating model */
      fi = fi + d_HSfi;                       /* fire inten - wood liter herb shrub */
 
      d_DufCon = Duff_CPTS (&d_Duf_Tot,d_Duf_Sec,15.0);  /* duff that burn this time step*/
