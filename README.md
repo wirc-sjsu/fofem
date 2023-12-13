@@ -18,4 +18,8 @@ cmake ..
 make
 ```
 
+This creates an executable called fofem in the same build folder. You can run the code by doing:
+```
+./fofem
+```
 After modifying the code in the FOF_UNIX folder, you can just go to the build folder and type make again to update the installation.
