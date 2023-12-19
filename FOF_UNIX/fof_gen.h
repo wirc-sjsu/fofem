@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fir_gen.h
 * Desc: general defines that get shared by Fofem and Batch Fofem
@@ -95,3 +96,4 @@ void  GetDate (char cr_Date[]);
 void  xstrupr (char cr[]);
 
 int  Win_CrashSave (void);
+}

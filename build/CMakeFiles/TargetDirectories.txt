@@ -1,0 +1,4 @@
+/Users/jessica/Documents/fofem/build/CMakeFiles/fofem.dir
+/Users/jessica/Documents/fofem/build/CMakeFiles/fofem_c.dir
+/Users/jessica/Documents/fofem/build/CMakeFiles/edit_cache.dir
+/Users/jessica/Documents/fofem/build/CMakeFiles/rebuild_cache.dir

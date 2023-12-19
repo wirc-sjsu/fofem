@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: bur_brn.h
 * Desc: Defines for Burnup code.
@@ -401,3 +402,4 @@ void BRN_SetEmis (float f_CriInt,
    float f_fCO, float f_fCO2, float f_fCH4, float f_fPM25, float f_fPM10, float f_fNOX, float f_fSO2,
    float f_sCO, float f_sCO2, float f_sCH4, float f_sPM25, float f_sPM10, float f_sNOX, float f_sSO2,
    float f_dCO, float f_dCO2, float f_dCH4, float f_dPM25, float f_dPM10, float f_dNOX, float f_dSO2);
+}

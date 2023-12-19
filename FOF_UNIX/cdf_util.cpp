@@ -9,9 +9,9 @@
 
 
 #include "cdf_util.h"
-// #include "fcf_util.h"
+#include "fof_util.h"
 
-char     Get_NumTyp (char cr_Data[]);
+//char     Get_NumTyp (char cr_Data[]);
 void  Rem_LT_Blanks (char cr[]);
 void    EndNull (char cr[]);
 void    Left_Just ( char  cr[] );

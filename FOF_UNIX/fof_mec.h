@@ -1,3 +1,4 @@
+extern "C" {
 /********************************************************
 *
 *
@@ -26,7 +27,7 @@
 #define  e_CroSco "CRNSCH"    /* original Pre Fire */ 
 #define  e_CroDam "CRCABE"    /* original Post Fire */
 #define  e_BolCha "BOLCHR"    /* Bole Char */ 
-
+}
 
 
 

@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: cdf_util.h        Comma Delimited File
 * Desc:
@@ -36,3 +37,4 @@ typedef struct  {
 int  CDF_Get (d_CDF *a_CDF, FILE *fh, char cr_ErrMes[]);
 
 void CDF_Test (void);
+}

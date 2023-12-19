@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_ansi.h
 * Desc: These are the functions that are not standard library functions
@@ -7,3 +8,4 @@
 int xstrcmpi(char a[], char b[]);
 
 void  xstrupr (char cr[]);
+}

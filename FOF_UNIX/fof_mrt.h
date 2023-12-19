@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_mrt.h Species Master Table
 * Desc:
@@ -142,5 +143,5 @@ int EFR_Get (char  cr_EquId[], char cr_ReqFld[]);
 int SMT_MortEqu_Code (char cr_Spe[],  char cr_EquTyp[], char cr_MrtEqu[]);
 
 int _EquTyp (char cr_MrtEqu[],char cr_EquTyp[]);
-
+}
 

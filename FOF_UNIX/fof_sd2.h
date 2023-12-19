@@ -1,5 +1,5 @@
 
-
+extern "C" {
 /* Original was 60 seconds, */
 /* 10 seconds - seemed to run a little slow, particularly on JR computer */
 #define  e_SD_TimStep  20 
@@ -91,3 +91,4 @@ d_SD  sr_SD[] = {
     -1,               /* starting soil water content - m3/m3          */
     -1 }              /* starting soil temperatue - C                 */
 } ;
+}

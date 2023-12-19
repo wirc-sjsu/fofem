@@ -1,5 +1,5 @@
 
-
+extern "C" {
 int HSF_Mngr  (d_CI *a_CI, d_CO *a_CO, char cr_ErrMes[]);
 int HSF_Check (d_CI *a_CI, char cr_ErrMes[]);
 
@@ -19,3 +19,4 @@ float LitterSouthEast (float f_Litter, int *ai_Equ);
 float PFW_Litter_Eq997 (float load, float moist, int *ai_EqNum);
 
 int    BUE_Herb (d_CI *a_CI, float *af_Con, int *ai_Equ, char cr_ErrMes[]);
+}

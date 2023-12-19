@@ -1,3 +1,4 @@
+extern "C" {
 /*****************************************************
 * Name:
 * Desc: Switches used in Burnup input file.             
@@ -31,3 +32,4 @@
 #define e_swpDR             "#dr"   
 #define e_swpTIMESTEP       "#Timestep"
 
+}

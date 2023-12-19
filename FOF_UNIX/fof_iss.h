@@ -1,4 +1,4 @@
-
+extern "C" {
 #ifdef owowowow
 /*.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
 /*                         Individual Species Structure                      */
@@ -20,3 +20,4 @@ int  ISS_Get  (d_ISS *a_ISS, int iX);
 int  ISS_Count (void);
 
 #endif 
+}

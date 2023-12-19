@@ -1,0 +1,266 @@
+[
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/ansi_mai.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/ansi_mai.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/bur_bov.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/bur_bov.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/bur_brn.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/bur_brn.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/cdf_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/cdf_util.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_bcm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_bcm.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_ci.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_ci.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_cm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_cm.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_co.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_co.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_disp.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_disp.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_duf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_duf.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_hsf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_hsf.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_lem.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_lem.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_mrt.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_mrt.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_nes.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_nes.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_sd.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_sd.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_se.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_se.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_sgv.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_sgv.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_sh.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_sh.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_sha.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_sha.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_soi.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_soi.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_unix.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_unix.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++   -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -o CMakeFiles/fofem.dir/FOF_UNIX/fof_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp",
+  "output": "CMakeFiles/fofem.dir/FOF_UNIX/fof_util.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o"
+},
+{
+  "directory": "/Users/jessica/Documents/fofem/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -Dfofem_c_EXPORTS  -g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp",
+  "file": "/Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp",
+  "output": "CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o"
+}
+]

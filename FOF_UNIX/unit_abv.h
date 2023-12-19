@@ -1,3 +1,4 @@
+extern "C" {
 /********************************************************
 * Name: Unit_Abv.h
 * Desc: Unit Abreviations 
@@ -39,3 +40,4 @@
 
 /* use to convert the emission factors from Grams Per Kilogram to lb (pounds) per Ton */
 #define e_gkTolb 2.0
+}

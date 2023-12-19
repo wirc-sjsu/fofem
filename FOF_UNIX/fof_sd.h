@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fofs_sd.c
 * Desc: Soil Duff Simulation
@@ -67,3 +68,4 @@ int  SD_ChkSoiDuf (float f_DufDepPre, float f_DufDepPos, char cr_ErrMes[]);
 float   SD_HeatAdj (float r_Post);
 float  SD_Heatpercent(void);
 void SD_Disp (d_SD *a_SD);
+}

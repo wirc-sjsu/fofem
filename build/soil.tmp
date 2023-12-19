@@ -1,0 +1,7 @@
+Column 1     Time in minutes
+Column 2     Surface layer temp (C) 
+Column 3->15 Subsequent layers, 1->2, 2->3, ... (cm)  
+
+  Time  Surf  1-Cm  2-Cm  3-Cm  4-Cm  5-Cm  6-Cm  7-Cm  8-Cm  9-Cm  10-Cm 11-Cm 12-Cm 13-Cm
+   0.3  19.4  20.9  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0
+   0.7  19.0  20.7  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0  21.0

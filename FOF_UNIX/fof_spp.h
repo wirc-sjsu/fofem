@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: Species Memory Table
 * Desc: This is the same as the fof_spp.dat fofem Mortality Species file
@@ -240,3 +241,4 @@ d_SMT sr_MSMT [] = {
 { "ULMTHO",  "Ulmus thomasii -- Rock elm                    ", 1,  12,-1,-1, 3, 4, 39 },
 { "UMBCAL",  "Umbellularia califonica -- California-laurel  ", 1,   5,-1, 2,-1,-1, 39 },
 { "",        "",                                               1,   1,-1,-1,-1,-1, 39 }};
+}

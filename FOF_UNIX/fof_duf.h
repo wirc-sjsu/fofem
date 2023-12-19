@@ -1,13 +1,18 @@
-/*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
+extern "C" {
+   /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name:
 * Desc:
 *
 {*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}*/
 
+extern "C" {
+
 /* The Coastal Plain Duff(Lit) equations numbers                             */
 #define e_CP_PerEq 30    /* Percent consumed equation                        */
 #define e_CP_RedEq 31    /* Depth reduction equation                         */
 #define e_CP_MSEEq 32    /* Mineral SoilV Exposed equation                   */
+
+
 
 /*.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.*/
 typedef struct {
@@ -93,5 +98,5 @@ void Equ_19_Per (d_CI *a_CI, d_DUF *a_DUF);
 void Equ_19_Red (d_CI *a_CI, d_DUF *a_DUF);
 void Equ_19_MSE  (d_DUF *a_DUF);
 
-
-
+}
+}

@@ -1,3 +1,4 @@
+extern "C" {
 /***************************************************************************************
 * Name: FOF_NES.h
 * Desc: New Emission System
@@ -36,3 +37,4 @@ int NES_Get_MajFactor(char cr_GrpNum[],
                      float *PM10, float *NOX, float *SO2);
 
 float NES_Get_CriFirInt (); 
+}

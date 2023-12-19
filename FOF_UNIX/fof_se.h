@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_se.h
 * Desc: Soil Exp Simulation
@@ -50,3 +51,4 @@ int  SE_Mngr_Array (d_SE *a_SE, float fr_FI[], float fr_FIhs[], int i_frInc, cha
 void SE_Disp (d_SE *a_SE);
 
 float _Get_FirInt (int i_ClockSec, float fr[], int i_frInc);
+}

@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_pf2.h   Post Fire Injury Mortality Table
 * Desc:
@@ -40,7 +41,7 @@ typedef struct {
 
        } d_PFI;
 
-
+}
 
 
 

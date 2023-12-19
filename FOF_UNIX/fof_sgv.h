@@ -1,3 +1,4 @@
+extern "C" {
 #pragma once 
 
 /*.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
@@ -90,3 +91,4 @@ float _Con (d_SGV *a, char cr_Cmp[], float *af_SmoPercent);
 int SGV_GetFS(char cr_Cmp[], float *af_Fla, float *af_Smo);
 
 int SGV_FlaSmoDuf ( d_SGV *a, float *af_Fla, float *af_Smo, float *af_Duf);
+}

@@ -1,4 +1,4 @@
-
+extern "C" {
 /*
 #ifdef FOF_DLL_EXPORT
 extern "C" {
@@ -19,3 +19,4 @@ int WINAPI CM_Mngr (d_CI *a_CI,  d_CO *a_CO, char cr_ErrMes[]);
 #endif
 
 int  CM_Mngr (d_CI *a_CI,  d_CO *a_CO, char cr_ErrMes[]);
+}

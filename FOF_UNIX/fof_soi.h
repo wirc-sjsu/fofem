@@ -1,4 +1,4 @@
-
+extern "C" {
 /* #define e_mplus1 14     */
 
 
@@ -34,3 +34,4 @@ void Display_Array ( float rr[]);
 /* void  App_Ext ( char cr_FN[], char  cr_Ext[] ); */
 
 void  TmpFil_Heading (FILE *fh_Out); 
+}

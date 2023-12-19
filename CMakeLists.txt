@@ -9,3 +9,8 @@ file(GLOB CPP_FILES FOF_UNIX/*.cpp)
 
 # Add the CPP files to the executable
 add_executable(fofem ${CPP_FILES})
+
+#copy of FOF_UNIX with all functions marked for export
+file(GLOB CPP_LIB_FILES FOF_UNIX/*.cpp)
+
+add_library(fofem_c SHARED ${CPP_LIB_FILES})

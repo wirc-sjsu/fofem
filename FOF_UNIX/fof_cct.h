@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: for_cct
 * Desc: Canopy/Crwon Cover Coefficient Table
@@ -89,3 +90,4 @@ d_CCT sr_CCT[] = {
 int CCT_Get (int i_No, d_CCT *a_CCT);
 
 void  CCT_Display (d_CCT *a_CTT);
+}

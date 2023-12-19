@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_util.h
 * Desc: Various utility functions
@@ -48,6 +49,6 @@ float TPA_To_MTPH (float TPA);
 float MTPH_To_TPA (float Mg);
 float InchToMilMeter  (float f_Inch);
 float MilMeterToInch  (float f);
-
+}
 
 

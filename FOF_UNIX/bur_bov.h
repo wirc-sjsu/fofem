@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: bur_BOV.h     Burnups Output Values  Structure & Time Heat values
 * Desc:
@@ -32,3 +33,4 @@ float BOV_GetRem3 (char cr_BOV_Cat[], int i_3InId);
 int   BOV_Set_TimHea (double time, double fi);
 void  BOV_Set_fiSHFB (float f_fi);
 float BOV_Get_fiSHFB (void);
+}

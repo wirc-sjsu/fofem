@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fir_smt.h Species Master Table
 * Desc:
@@ -55,3 +56,4 @@ int  SMT_Load (char cr_Pth[], char cr_ErrMes[]);
 int  SMT_isPFI (d_SMT *a_SMT);
 
 int     SMT_GetName ( char cr_Spe[],  char cr_Name[]);
+}

@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_sh.c
 * Desc: Soil Heating
@@ -18,3 +19,4 @@
 
 float  InchtoMeter (float r_Inch);
 void  SH_Init_LayDis (float rrL[], float rrD[]);
+}

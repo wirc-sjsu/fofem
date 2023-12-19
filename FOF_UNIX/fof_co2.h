@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_co2.c
 * Desc: Consumerd Output functions
@@ -22,3 +23,4 @@ void WINAPI CO_Init (d_CO *a_CO);
 #endif
 
 void CO_Init (d_CO *a_CO);
+}

@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: FOF_MIS.h
 * Desc: New version of Mortality, 
@@ -62,3 +63,4 @@ int   MIS_Get (int iX, d_MIS *a_MIS);
 int _SetYesNo ( char cr[] );
 
 int _CrownRatio (int i);
+}

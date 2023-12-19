@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_sh.h
 * Desc: Soil Heating defines for input and output structures
@@ -152,3 +153,4 @@ typedef struct {
 void  SI_Init (d_SI *a_SI);
 void  SO_Init (d_SO *a_SO);
 int   SH_Mngr (d_SI  *a_SI, d_SO  *a_SO, float fr_FI[],  float fr_FIhs[],  char cr_TmpPth[], char cr_ErrMes[]);
+}

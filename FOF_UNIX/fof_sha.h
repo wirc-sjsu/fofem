@@ -1,5 +1,5 @@
 
-
+extern "C" {
 #define  e_SHA_Init  -999               /* Init Value                        */
 
 /* This is the Number of Soil Layers the Soil Duff Sim and Exp Heat use      */
@@ -37,3 +37,4 @@ int SHA_TP_GetByTime (int i_Sec, int *ai_Tim, float *af_PC, float *af_Wts);
 
 
 float ToMinutes (int i_Sec);
+}

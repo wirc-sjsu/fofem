@@ -1,3 +1,4 @@
+extern "C" {
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
 * Name: fof_bcm.h    Burnup Consumed Manager
 * Desc: Defines
@@ -33,3 +34,4 @@ void  BCM_SetInputs (d_CI *a_CI, d_CO *a_CO);
 
 
 int  BUE_Litter (d_CI *a_CI, float *af_Con, int *ai_Eq);
+}

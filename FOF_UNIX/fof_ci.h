@@ -1,3 +1,4 @@
+extern "C" {
 #pragma once 
 
 /*{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}
@@ -402,3 +403,4 @@ int CI_isDuffWet (d_CI *a_CI);
 void CI_Display (d_CI *a_CI);
 float CI_MaxLoad (d_CI *a_CI);
 int  CI_OnlyDuff (d_CI *a_CI);
+}
