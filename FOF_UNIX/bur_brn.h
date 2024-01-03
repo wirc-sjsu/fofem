@@ -402,4 +402,23 @@ void BRN_SetEmis (float f_CriInt,
    float f_fCO, float f_fCO2, float f_fCH4, float f_fPM25, float f_fPM10, float f_fNOX, float f_fSO2,
    float f_sCO, float f_sCO2, float f_sCH4, float f_sPM25, float f_sPM10, float f_sNOX, float f_sSO2,
    float f_dCO, float f_dCO2, float f_dCH4, float f_dPM25, float f_dPM10, float f_dNOX, float f_dSO2);
+
+double FIC_Percent ();
+void FIC_Init ();
+double FIC_SmoPercent (double d_SURat);
+double FIC_1kSmoPercent ();
+bool _isEqual (double a, double b);
+void FIC_Put (double d_SURat, double d_dendry, double term, double test, double amount, char cr_FS[]);
+void _CompDump (float test, float cmpark, float term, char FS[], float wnoduff, double sigma);
+
+int ES_FlaSmo (d_ES *a, float *af_Smo, float *af_Fla, float *af_1kSmo, float *af_1kFla);
+
+double  Min (double a, double b);
+double  Max (double a, double b);
+
+int _ChkLimM (double d, double low, double hi);
+int  ES_Calc_NEW (d_ES *a_ES, double d_WooLit,  double d_Duff, double d_HSFB, double d_time, float f_FirInt);
+double  ES_SetComponents (int iS_Init, float *af_TPA, double d_Time, d_ES *a_ES);
+int ES_SetComp (int i, double d_Rem, double d_Con, d_ES *a_ES );
+
 }

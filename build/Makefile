@@ -130,17 +130,17 @@ fofem/fast:
 .PHONY : fofem/fast
 
 #=============================================================================
-# Target rules for targets named fofem_c
+# Target rules for targets named fofem_debug_c
 
 # Build rule for target.
-fofem_c: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fofem_c
-.PHONY : fofem_c
+fofem_debug_c: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 fofem_debug_c
+.PHONY : fofem_debug_c
 
 # fast build rule for target.
-fofem_c/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/build
-.PHONY : fofem_c/fast
+fofem_debug_c/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/build
+.PHONY : fofem_debug_c/fast
 
 FOF_UNIX/ansi_mai.o: FOF_UNIX/ansi_mai.cpp.o
 .PHONY : FOF_UNIX/ansi_mai.o
@@ -148,7 +148,7 @@ FOF_UNIX/ansi_mai.o: FOF_UNIX/ansi_mai.cpp.o
 # target to build an object file
 FOF_UNIX/ansi_mai.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/ansi_mai.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/ansi_mai.cpp.o
 .PHONY : FOF_UNIX/ansi_mai.cpp.o
 
 FOF_UNIX/ansi_mai.i: FOF_UNIX/ansi_mai.cpp.i
@@ -157,7 +157,7 @@ FOF_UNIX/ansi_mai.i: FOF_UNIX/ansi_mai.cpp.i
 # target to preprocess a source file
 FOF_UNIX/ansi_mai.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/ansi_mai.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/ansi_mai.cpp.i
 .PHONY : FOF_UNIX/ansi_mai.cpp.i
 
 FOF_UNIX/ansi_mai.s: FOF_UNIX/ansi_mai.cpp.s
@@ -166,7 +166,7 @@ FOF_UNIX/ansi_mai.s: FOF_UNIX/ansi_mai.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/ansi_mai.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/ansi_mai.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/ansi_mai.cpp.s
 .PHONY : FOF_UNIX/ansi_mai.cpp.s
 
 FOF_UNIX/bur_bov.o: FOF_UNIX/bur_bov.cpp.o
@@ -175,7 +175,7 @@ FOF_UNIX/bur_bov.o: FOF_UNIX/bur_bov.cpp.o
 # target to build an object file
 FOF_UNIX/bur_bov.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/bur_bov.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/bur_bov.cpp.o
 .PHONY : FOF_UNIX/bur_bov.cpp.o
 
 FOF_UNIX/bur_bov.i: FOF_UNIX/bur_bov.cpp.i
@@ -184,7 +184,7 @@ FOF_UNIX/bur_bov.i: FOF_UNIX/bur_bov.cpp.i
 # target to preprocess a source file
 FOF_UNIX/bur_bov.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/bur_bov.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/bur_bov.cpp.i
 .PHONY : FOF_UNIX/bur_bov.cpp.i
 
 FOF_UNIX/bur_bov.s: FOF_UNIX/bur_bov.cpp.s
@@ -193,7 +193,7 @@ FOF_UNIX/bur_bov.s: FOF_UNIX/bur_bov.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/bur_bov.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/bur_bov.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/bur_bov.cpp.s
 .PHONY : FOF_UNIX/bur_bov.cpp.s
 
 FOF_UNIX/bur_brn.o: FOF_UNIX/bur_brn.cpp.o
@@ -202,7 +202,7 @@ FOF_UNIX/bur_brn.o: FOF_UNIX/bur_brn.cpp.o
 # target to build an object file
 FOF_UNIX/bur_brn.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/bur_brn.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/bur_brn.cpp.o
 .PHONY : FOF_UNIX/bur_brn.cpp.o
 
 FOF_UNIX/bur_brn.i: FOF_UNIX/bur_brn.cpp.i
@@ -211,7 +211,7 @@ FOF_UNIX/bur_brn.i: FOF_UNIX/bur_brn.cpp.i
 # target to preprocess a source file
 FOF_UNIX/bur_brn.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/bur_brn.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/bur_brn.cpp.i
 .PHONY : FOF_UNIX/bur_brn.cpp.i
 
 FOF_UNIX/bur_brn.s: FOF_UNIX/bur_brn.cpp.s
@@ -220,7 +220,7 @@ FOF_UNIX/bur_brn.s: FOF_UNIX/bur_brn.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/bur_brn.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/bur_brn.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/bur_brn.cpp.s
 .PHONY : FOF_UNIX/bur_brn.cpp.s
 
 FOF_UNIX/cdf_util.o: FOF_UNIX/cdf_util.cpp.o
@@ -229,7 +229,7 @@ FOF_UNIX/cdf_util.o: FOF_UNIX/cdf_util.cpp.o
 # target to build an object file
 FOF_UNIX/cdf_util.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/cdf_util.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/cdf_util.cpp.o
 .PHONY : FOF_UNIX/cdf_util.cpp.o
 
 FOF_UNIX/cdf_util.i: FOF_UNIX/cdf_util.cpp.i
@@ -238,7 +238,7 @@ FOF_UNIX/cdf_util.i: FOF_UNIX/cdf_util.cpp.i
 # target to preprocess a source file
 FOF_UNIX/cdf_util.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/cdf_util.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/cdf_util.cpp.i
 .PHONY : FOF_UNIX/cdf_util.cpp.i
 
 FOF_UNIX/cdf_util.s: FOF_UNIX/cdf_util.cpp.s
@@ -247,7 +247,7 @@ FOF_UNIX/cdf_util.s: FOF_UNIX/cdf_util.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/cdf_util.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/cdf_util.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/cdf_util.cpp.s
 .PHONY : FOF_UNIX/cdf_util.cpp.s
 
 FOF_UNIX/fof_bcm.o: FOF_UNIX/fof_bcm.cpp.o
@@ -256,7 +256,7 @@ FOF_UNIX/fof_bcm.o: FOF_UNIX/fof_bcm.cpp.o
 # target to build an object file
 FOF_UNIX/fof_bcm.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_bcm.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_bcm.cpp.o
 .PHONY : FOF_UNIX/fof_bcm.cpp.o
 
 FOF_UNIX/fof_bcm.i: FOF_UNIX/fof_bcm.cpp.i
@@ -265,7 +265,7 @@ FOF_UNIX/fof_bcm.i: FOF_UNIX/fof_bcm.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_bcm.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_bcm.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_bcm.cpp.i
 .PHONY : FOF_UNIX/fof_bcm.cpp.i
 
 FOF_UNIX/fof_bcm.s: FOF_UNIX/fof_bcm.cpp.s
@@ -274,7 +274,7 @@ FOF_UNIX/fof_bcm.s: FOF_UNIX/fof_bcm.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_bcm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_bcm.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_bcm.cpp.s
 .PHONY : FOF_UNIX/fof_bcm.cpp.s
 
 FOF_UNIX/fof_ci.o: FOF_UNIX/fof_ci.cpp.o
@@ -283,7 +283,7 @@ FOF_UNIX/fof_ci.o: FOF_UNIX/fof_ci.cpp.o
 # target to build an object file
 FOF_UNIX/fof_ci.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_ci.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_ci.cpp.o
 .PHONY : FOF_UNIX/fof_ci.cpp.o
 
 FOF_UNIX/fof_ci.i: FOF_UNIX/fof_ci.cpp.i
@@ -292,7 +292,7 @@ FOF_UNIX/fof_ci.i: FOF_UNIX/fof_ci.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_ci.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_ci.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_ci.cpp.i
 .PHONY : FOF_UNIX/fof_ci.cpp.i
 
 FOF_UNIX/fof_ci.s: FOF_UNIX/fof_ci.cpp.s
@@ -301,7 +301,7 @@ FOF_UNIX/fof_ci.s: FOF_UNIX/fof_ci.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_ci.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_ci.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_ci.cpp.s
 .PHONY : FOF_UNIX/fof_ci.cpp.s
 
 FOF_UNIX/fof_cm.o: FOF_UNIX/fof_cm.cpp.o
@@ -310,7 +310,7 @@ FOF_UNIX/fof_cm.o: FOF_UNIX/fof_cm.cpp.o
 # target to build an object file
 FOF_UNIX/fof_cm.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_cm.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_cm.cpp.o
 .PHONY : FOF_UNIX/fof_cm.cpp.o
 
 FOF_UNIX/fof_cm.i: FOF_UNIX/fof_cm.cpp.i
@@ -319,7 +319,7 @@ FOF_UNIX/fof_cm.i: FOF_UNIX/fof_cm.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_cm.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_cm.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_cm.cpp.i
 .PHONY : FOF_UNIX/fof_cm.cpp.i
 
 FOF_UNIX/fof_cm.s: FOF_UNIX/fof_cm.cpp.s
@@ -328,7 +328,7 @@ FOF_UNIX/fof_cm.s: FOF_UNIX/fof_cm.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_cm.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_cm.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_cm.cpp.s
 .PHONY : FOF_UNIX/fof_cm.cpp.s
 
 FOF_UNIX/fof_co.o: FOF_UNIX/fof_co.cpp.o
@@ -337,7 +337,7 @@ FOF_UNIX/fof_co.o: FOF_UNIX/fof_co.cpp.o
 # target to build an object file
 FOF_UNIX/fof_co.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_co.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_co.cpp.o
 .PHONY : FOF_UNIX/fof_co.cpp.o
 
 FOF_UNIX/fof_co.i: FOF_UNIX/fof_co.cpp.i
@@ -346,7 +346,7 @@ FOF_UNIX/fof_co.i: FOF_UNIX/fof_co.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_co.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_co.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_co.cpp.i
 .PHONY : FOF_UNIX/fof_co.cpp.i
 
 FOF_UNIX/fof_co.s: FOF_UNIX/fof_co.cpp.s
@@ -355,7 +355,7 @@ FOF_UNIX/fof_co.s: FOF_UNIX/fof_co.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_co.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_co.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_co.cpp.s
 .PHONY : FOF_UNIX/fof_co.cpp.s
 
 FOF_UNIX/fof_disp.o: FOF_UNIX/fof_disp.cpp.o
@@ -364,7 +364,7 @@ FOF_UNIX/fof_disp.o: FOF_UNIX/fof_disp.cpp.o
 # target to build an object file
 FOF_UNIX/fof_disp.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_disp.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_disp.cpp.o
 .PHONY : FOF_UNIX/fof_disp.cpp.o
 
 FOF_UNIX/fof_disp.i: FOF_UNIX/fof_disp.cpp.i
@@ -373,7 +373,7 @@ FOF_UNIX/fof_disp.i: FOF_UNIX/fof_disp.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_disp.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_disp.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_disp.cpp.i
 .PHONY : FOF_UNIX/fof_disp.cpp.i
 
 FOF_UNIX/fof_disp.s: FOF_UNIX/fof_disp.cpp.s
@@ -382,7 +382,7 @@ FOF_UNIX/fof_disp.s: FOF_UNIX/fof_disp.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_disp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_disp.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_disp.cpp.s
 .PHONY : FOF_UNIX/fof_disp.cpp.s
 
 FOF_UNIX/fof_duf.o: FOF_UNIX/fof_duf.cpp.o
@@ -391,7 +391,7 @@ FOF_UNIX/fof_duf.o: FOF_UNIX/fof_duf.cpp.o
 # target to build an object file
 FOF_UNIX/fof_duf.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_duf.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_duf.cpp.o
 .PHONY : FOF_UNIX/fof_duf.cpp.o
 
 FOF_UNIX/fof_duf.i: FOF_UNIX/fof_duf.cpp.i
@@ -400,7 +400,7 @@ FOF_UNIX/fof_duf.i: FOF_UNIX/fof_duf.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_duf.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_duf.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_duf.cpp.i
 .PHONY : FOF_UNIX/fof_duf.cpp.i
 
 FOF_UNIX/fof_duf.s: FOF_UNIX/fof_duf.cpp.s
@@ -409,7 +409,7 @@ FOF_UNIX/fof_duf.s: FOF_UNIX/fof_duf.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_duf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_duf.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_duf.cpp.s
 .PHONY : FOF_UNIX/fof_duf.cpp.s
 
 FOF_UNIX/fof_hsf.o: FOF_UNIX/fof_hsf.cpp.o
@@ -418,7 +418,7 @@ FOF_UNIX/fof_hsf.o: FOF_UNIX/fof_hsf.cpp.o
 # target to build an object file
 FOF_UNIX/fof_hsf.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_hsf.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_hsf.cpp.o
 .PHONY : FOF_UNIX/fof_hsf.cpp.o
 
 FOF_UNIX/fof_hsf.i: FOF_UNIX/fof_hsf.cpp.i
@@ -427,7 +427,7 @@ FOF_UNIX/fof_hsf.i: FOF_UNIX/fof_hsf.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_hsf.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_hsf.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_hsf.cpp.i
 .PHONY : FOF_UNIX/fof_hsf.cpp.i
 
 FOF_UNIX/fof_hsf.s: FOF_UNIX/fof_hsf.cpp.s
@@ -436,7 +436,7 @@ FOF_UNIX/fof_hsf.s: FOF_UNIX/fof_hsf.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_hsf.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_hsf.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_hsf.cpp.s
 .PHONY : FOF_UNIX/fof_hsf.cpp.s
 
 FOF_UNIX/fof_lem.o: FOF_UNIX/fof_lem.cpp.o
@@ -445,7 +445,7 @@ FOF_UNIX/fof_lem.o: FOF_UNIX/fof_lem.cpp.o
 # target to build an object file
 FOF_UNIX/fof_lem.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_lem.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_lem.cpp.o
 .PHONY : FOF_UNIX/fof_lem.cpp.o
 
 FOF_UNIX/fof_lem.i: FOF_UNIX/fof_lem.cpp.i
@@ -454,7 +454,7 @@ FOF_UNIX/fof_lem.i: FOF_UNIX/fof_lem.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_lem.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_lem.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_lem.cpp.i
 .PHONY : FOF_UNIX/fof_lem.cpp.i
 
 FOF_UNIX/fof_lem.s: FOF_UNIX/fof_lem.cpp.s
@@ -463,7 +463,7 @@ FOF_UNIX/fof_lem.s: FOF_UNIX/fof_lem.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_lem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_lem.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_lem.cpp.s
 .PHONY : FOF_UNIX/fof_lem.cpp.s
 
 FOF_UNIX/fof_mrt.o: FOF_UNIX/fof_mrt.cpp.o
@@ -472,7 +472,7 @@ FOF_UNIX/fof_mrt.o: FOF_UNIX/fof_mrt.cpp.o
 # target to build an object file
 FOF_UNIX/fof_mrt.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_mrt.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_mrt.cpp.o
 .PHONY : FOF_UNIX/fof_mrt.cpp.o
 
 FOF_UNIX/fof_mrt.i: FOF_UNIX/fof_mrt.cpp.i
@@ -481,7 +481,7 @@ FOF_UNIX/fof_mrt.i: FOF_UNIX/fof_mrt.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_mrt.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_mrt.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_mrt.cpp.i
 .PHONY : FOF_UNIX/fof_mrt.cpp.i
 
 FOF_UNIX/fof_mrt.s: FOF_UNIX/fof_mrt.cpp.s
@@ -490,7 +490,7 @@ FOF_UNIX/fof_mrt.s: FOF_UNIX/fof_mrt.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_mrt.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_mrt.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_mrt.cpp.s
 .PHONY : FOF_UNIX/fof_mrt.cpp.s
 
 FOF_UNIX/fof_nes.o: FOF_UNIX/fof_nes.cpp.o
@@ -499,7 +499,7 @@ FOF_UNIX/fof_nes.o: FOF_UNIX/fof_nes.cpp.o
 # target to build an object file
 FOF_UNIX/fof_nes.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_nes.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_nes.cpp.o
 .PHONY : FOF_UNIX/fof_nes.cpp.o
 
 FOF_UNIX/fof_nes.i: FOF_UNIX/fof_nes.cpp.i
@@ -508,7 +508,7 @@ FOF_UNIX/fof_nes.i: FOF_UNIX/fof_nes.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_nes.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_nes.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_nes.cpp.i
 .PHONY : FOF_UNIX/fof_nes.cpp.i
 
 FOF_UNIX/fof_nes.s: FOF_UNIX/fof_nes.cpp.s
@@ -517,7 +517,7 @@ FOF_UNIX/fof_nes.s: FOF_UNIX/fof_nes.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_nes.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_nes.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_nes.cpp.s
 .PHONY : FOF_UNIX/fof_nes.cpp.s
 
 FOF_UNIX/fof_sd.o: FOF_UNIX/fof_sd.cpp.o
@@ -526,7 +526,7 @@ FOF_UNIX/fof_sd.o: FOF_UNIX/fof_sd.cpp.o
 # target to build an object file
 FOF_UNIX/fof_sd.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sd.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sd.cpp.o
 .PHONY : FOF_UNIX/fof_sd.cpp.o
 
 FOF_UNIX/fof_sd.i: FOF_UNIX/fof_sd.cpp.i
@@ -535,7 +535,7 @@ FOF_UNIX/fof_sd.i: FOF_UNIX/fof_sd.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_sd.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sd.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sd.cpp.i
 .PHONY : FOF_UNIX/fof_sd.cpp.i
 
 FOF_UNIX/fof_sd.s: FOF_UNIX/fof_sd.cpp.s
@@ -544,7 +544,7 @@ FOF_UNIX/fof_sd.s: FOF_UNIX/fof_sd.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_sd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sd.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sd.cpp.s
 .PHONY : FOF_UNIX/fof_sd.cpp.s
 
 FOF_UNIX/fof_se.o: FOF_UNIX/fof_se.cpp.o
@@ -553,7 +553,7 @@ FOF_UNIX/fof_se.o: FOF_UNIX/fof_se.cpp.o
 # target to build an object file
 FOF_UNIX/fof_se.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_se.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_se.cpp.o
 .PHONY : FOF_UNIX/fof_se.cpp.o
 
 FOF_UNIX/fof_se.i: FOF_UNIX/fof_se.cpp.i
@@ -562,7 +562,7 @@ FOF_UNIX/fof_se.i: FOF_UNIX/fof_se.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_se.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_se.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_se.cpp.i
 .PHONY : FOF_UNIX/fof_se.cpp.i
 
 FOF_UNIX/fof_se.s: FOF_UNIX/fof_se.cpp.s
@@ -571,7 +571,7 @@ FOF_UNIX/fof_se.s: FOF_UNIX/fof_se.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_se.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_se.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_se.cpp.s
 .PHONY : FOF_UNIX/fof_se.cpp.s
 
 FOF_UNIX/fof_sgv.o: FOF_UNIX/fof_sgv.cpp.o
@@ -580,7 +580,7 @@ FOF_UNIX/fof_sgv.o: FOF_UNIX/fof_sgv.cpp.o
 # target to build an object file
 FOF_UNIX/fof_sgv.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sgv.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sgv.cpp.o
 .PHONY : FOF_UNIX/fof_sgv.cpp.o
 
 FOF_UNIX/fof_sgv.i: FOF_UNIX/fof_sgv.cpp.i
@@ -589,7 +589,7 @@ FOF_UNIX/fof_sgv.i: FOF_UNIX/fof_sgv.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_sgv.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sgv.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sgv.cpp.i
 .PHONY : FOF_UNIX/fof_sgv.cpp.i
 
 FOF_UNIX/fof_sgv.s: FOF_UNIX/fof_sgv.cpp.s
@@ -598,7 +598,7 @@ FOF_UNIX/fof_sgv.s: FOF_UNIX/fof_sgv.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_sgv.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sgv.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sgv.cpp.s
 .PHONY : FOF_UNIX/fof_sgv.cpp.s
 
 FOF_UNIX/fof_sh.o: FOF_UNIX/fof_sh.cpp.o
@@ -607,7 +607,7 @@ FOF_UNIX/fof_sh.o: FOF_UNIX/fof_sh.cpp.o
 # target to build an object file
 FOF_UNIX/fof_sh.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sh.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sh.cpp.o
 .PHONY : FOF_UNIX/fof_sh.cpp.o
 
 FOF_UNIX/fof_sh.i: FOF_UNIX/fof_sh.cpp.i
@@ -616,7 +616,7 @@ FOF_UNIX/fof_sh.i: FOF_UNIX/fof_sh.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_sh.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sh.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sh.cpp.i
 .PHONY : FOF_UNIX/fof_sh.cpp.i
 
 FOF_UNIX/fof_sh.s: FOF_UNIX/fof_sh.cpp.s
@@ -625,7 +625,7 @@ FOF_UNIX/fof_sh.s: FOF_UNIX/fof_sh.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_sh.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sh.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sh.cpp.s
 .PHONY : FOF_UNIX/fof_sh.cpp.s
 
 FOF_UNIX/fof_sha.o: FOF_UNIX/fof_sha.cpp.o
@@ -634,7 +634,7 @@ FOF_UNIX/fof_sha.o: FOF_UNIX/fof_sha.cpp.o
 # target to build an object file
 FOF_UNIX/fof_sha.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sha.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sha.cpp.o
 .PHONY : FOF_UNIX/fof_sha.cpp.o
 
 FOF_UNIX/fof_sha.i: FOF_UNIX/fof_sha.cpp.i
@@ -643,7 +643,7 @@ FOF_UNIX/fof_sha.i: FOF_UNIX/fof_sha.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_sha.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sha.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sha.cpp.i
 .PHONY : FOF_UNIX/fof_sha.cpp.i
 
 FOF_UNIX/fof_sha.s: FOF_UNIX/fof_sha.cpp.s
@@ -652,7 +652,7 @@ FOF_UNIX/fof_sha.s: FOF_UNIX/fof_sha.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_sha.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_sha.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_sha.cpp.s
 .PHONY : FOF_UNIX/fof_sha.cpp.s
 
 FOF_UNIX/fof_soi.o: FOF_UNIX/fof_soi.cpp.o
@@ -661,7 +661,7 @@ FOF_UNIX/fof_soi.o: FOF_UNIX/fof_soi.cpp.o
 # target to build an object file
 FOF_UNIX/fof_soi.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_soi.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_soi.cpp.o
 .PHONY : FOF_UNIX/fof_soi.cpp.o
 
 FOF_UNIX/fof_soi.i: FOF_UNIX/fof_soi.cpp.i
@@ -670,7 +670,7 @@ FOF_UNIX/fof_soi.i: FOF_UNIX/fof_soi.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_soi.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_soi.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_soi.cpp.i
 .PHONY : FOF_UNIX/fof_soi.cpp.i
 
 FOF_UNIX/fof_soi.s: FOF_UNIX/fof_soi.cpp.s
@@ -679,7 +679,7 @@ FOF_UNIX/fof_soi.s: FOF_UNIX/fof_soi.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_soi.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_soi.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_soi.cpp.s
 .PHONY : FOF_UNIX/fof_soi.cpp.s
 
 FOF_UNIX/fof_unix.o: FOF_UNIX/fof_unix.cpp.o
@@ -688,7 +688,7 @@ FOF_UNIX/fof_unix.o: FOF_UNIX/fof_unix.cpp.o
 # target to build an object file
 FOF_UNIX/fof_unix.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_unix.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_unix.cpp.o
 .PHONY : FOF_UNIX/fof_unix.cpp.o
 
 FOF_UNIX/fof_unix.i: FOF_UNIX/fof_unix.cpp.i
@@ -697,7 +697,7 @@ FOF_UNIX/fof_unix.i: FOF_UNIX/fof_unix.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_unix.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_unix.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_unix.cpp.i
 .PHONY : FOF_UNIX/fof_unix.cpp.i
 
 FOF_UNIX/fof_unix.s: FOF_UNIX/fof_unix.cpp.s
@@ -706,7 +706,7 @@ FOF_UNIX/fof_unix.s: FOF_UNIX/fof_unix.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_unix.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_unix.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_unix.cpp.s
 .PHONY : FOF_UNIX/fof_unix.cpp.s
 
 FOF_UNIX/fof_util.o: FOF_UNIX/fof_util.cpp.o
@@ -715,7 +715,7 @@ FOF_UNIX/fof_util.o: FOF_UNIX/fof_util.cpp.o
 # target to build an object file
 FOF_UNIX/fof_util.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_util.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_util.cpp.o
 .PHONY : FOF_UNIX/fof_util.cpp.o
 
 FOF_UNIX/fof_util.i: FOF_UNIX/fof_util.cpp.i
@@ -724,7 +724,7 @@ FOF_UNIX/fof_util.i: FOF_UNIX/fof_util.cpp.i
 # target to preprocess a source file
 FOF_UNIX/fof_util.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_util.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_util.cpp.i
 .PHONY : FOF_UNIX/fof_util.cpp.i
 
 FOF_UNIX/fof_util.s: FOF_UNIX/fof_util.cpp.s
@@ -733,7 +733,7 @@ FOF_UNIX/fof_util.s: FOF_UNIX/fof_util.cpp.s
 # target to generate assembly for a file
 FOF_UNIX/fof_util.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem.dir/build.make CMakeFiles/fofem.dir/FOF_UNIX/fof_util.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/FOF_UNIX/fof_util.cpp.s
 .PHONY : FOF_UNIX/fof_util.cpp.s
 
 # Help Target
@@ -745,7 +745,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... fofem"
-	@echo "... fofem_c"
+	@echo "... fofem_debug_c"
 	@echo "... FOF_UNIX/ansi_mai.o"
 	@echo "... FOF_UNIX/ansi_mai.i"
 	@echo "... FOF_UNIX/ansi_mai.s"

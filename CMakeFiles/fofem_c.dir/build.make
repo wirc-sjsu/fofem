@@ -69,364 +69,364 @@ include CMakeFiles/fofem_c.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/fofem_c.dir/flags.make
 
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o: FOF_UNIX_LIB/ansi_mai.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/ansi_mai.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/ansi_mai.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/ansi_mai.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o: FOF_UNIX_LIB/bur_bov.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/bur_bov.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/bur_bov.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/bur_bov.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o: FOF_UNIX_LIB/bur_brn.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/bur_brn.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/bur_brn.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/bur_brn.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o: FOF_UNIX_LIB/cdf_util.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/cdf_util.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/cdf_util.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/cdf_util.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o: FOF_UNIX_LIB/fof_bcm.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_bcm.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_bcm.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_bcm.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o: FOF_UNIX_LIB/fof_ci.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_ci.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_ci.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_ci.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o: FOF_UNIX_LIB/fof_cm.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_cm.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_cm.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_cm.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o: FOF_UNIX_LIB/fof_co.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_co.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_co.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_co.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o: FOF_UNIX_LIB/fof_disp.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_disp.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_disp.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_disp.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o: FOF_UNIX_LIB/fof_duf.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_duf.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_duf.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_duf.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o: FOF_UNIX_LIB/fof_hsf.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_hsf.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_hsf.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_hsf.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o: FOF_UNIX_LIB/fof_lem.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_lem.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_lem.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_lem.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o: FOF_UNIX_LIB/fof_mrt.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_mrt.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_mrt.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_mrt.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o: FOF_UNIX_LIB/fof_nes.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_nes.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_nes.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_nes.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o: FOF_UNIX_LIB/fof_sd.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sd.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sd.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sd.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o: FOF_UNIX_LIB/fof_se.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_se.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_se.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_se.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o: FOF_UNIX_LIB/fof_sgv.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sgv.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sgv.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sgv.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o: FOF_UNIX_LIB/fof_sh.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sh.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sh.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sh.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o: FOF_UNIX_LIB/fof_sha.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sha.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sha.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_sha.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o: FOF_UNIX_LIB/fof_soi.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_soi.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_soi.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_soi.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o: FOF_UNIX_LIB/fof_unix.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_unix.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_unix.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_unix.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.s
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o: CMakeFiles/fofem_c.dir/flags.make
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o: FOF_UNIX_LIB/fof_util.cpp
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_util.cpp
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_util.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.i
-
-CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX_LIB/fof_util.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.s
+CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o: FOF_UNIX/ansi_mai.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/ansi_mai.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o: FOF_UNIX/bur_bov.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/bur_bov.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o: FOF_UNIX/bur_brn.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/bur_brn.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o: FOF_UNIX/cdf_util.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o: FOF_UNIX/fof_bcm.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_bcm.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o: FOF_UNIX/fof_ci.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_ci.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o: FOF_UNIX/fof_cm.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_cm.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o: FOF_UNIX/fof_co.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_co.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o: FOF_UNIX/fof_disp.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_disp.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o: FOF_UNIX/fof_duf.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_duf.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o: FOF_UNIX/fof_hsf.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_hsf.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o: FOF_UNIX/fof_lem.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_lem.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o: FOF_UNIX/fof_mrt.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_mrt.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o: FOF_UNIX/fof_nes.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_nes.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o: FOF_UNIX/fof_sd.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_sd.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o: FOF_UNIX/fof_se.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_se.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o: FOF_UNIX/fof_sgv.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_sgv.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o: FOF_UNIX/fof_sh.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_sh.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o: FOF_UNIX/fof_sha.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_sha.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o: FOF_UNIX/fof_soi.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_soi.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o: FOF_UNIX/fof_unix.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_unix.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.s
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o: CMakeFiles/fofem_c.dir/flags.make
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o: FOF_UNIX/fof_util.cpp
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o: CMakeFiles/fofem_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o -MF CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o.d -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o -c /Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp > CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.i
+
+CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/jessica/Documents/fofem/FOF_UNIX/fof_util.cpp -o CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.s
 
 # Object files for target fofem_c
 fofem_c_OBJECTS = \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o" \
-"CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o"
+"CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o" \
+"CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o"
 
 # External object files for target fofem_c
 fofem_c_EXTERNAL_OBJECTS =
 
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/ansi_mai.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_bov.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/bur_brn.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/cdf_util.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_bcm.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_ci.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_cm.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_co.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_disp.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_duf.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_hsf.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_lem.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_mrt.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_nes.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sd.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_se.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sgv.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sh.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_sha.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_soi.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_unix.cpp.o
-libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX_LIB/fof_util.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/ansi_mai.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/bur_bov.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/bur_brn.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/cdf_util.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_bcm.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_ci.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_cm.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_co.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_disp.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_duf.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_hsf.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_lem.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_mrt.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_nes.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sd.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_se.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sgv.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sh.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_sha.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_soi.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_unix.cpp.o
+libfofem_c.dylib: CMakeFiles/fofem_c.dir/FOF_UNIX/fof_util.cpp.o
 libfofem_c.dylib: CMakeFiles/fofem_c.dir/build.make
 libfofem_c.dylib: CMakeFiles/fofem_c.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/jessica/Documents/fofem/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX shared library libfofem_c.dylib"

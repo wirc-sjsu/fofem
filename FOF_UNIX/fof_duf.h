@@ -5,7 +5,7 @@ extern "C" {
 *
 {*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}{*}*/
 
-extern "C" {
+
 
 /* The Coastal Plain Duff(Lit) equations numbers                             */
 #define e_CP_PerEq 30    /* Percent consumed equation                        */
@@ -98,5 +98,4 @@ void Equ_19_Per (d_CI *a_CI, d_DUF *a_DUF);
 void Equ_19_Red (d_CI *a_CI, d_DUF *a_DUF);
 void Equ_19_MSE  (d_DUF *a_DUF);
 
-}
 }

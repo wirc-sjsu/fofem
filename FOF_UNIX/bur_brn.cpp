@@ -627,7 +627,7 @@ double X,Y,Z;
 //                                = 0 on first call or reset
 //                                cumulates after first call
 //        flit =          fraction of each component currently alight
-//        fout =          fraction of each component currently gone out
+//        fout =          c
 //        tdry =          time of drying start of the larger of each
 //                        fuel component pair
 //        tign =          ignition time for the larger of each

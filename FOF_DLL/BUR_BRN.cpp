@@ -1838,7 +1838,7 @@ void Heat_HeadingFS (FILE  *fh)
 *  9-18-2015 - ran test...
 * DL pulled this equation from Frandsen literature, it looks different than
 *  the equation we use below, BUT it produces the same result
-* tdf = ff * wdf / (7.5 x 10-4 – 2.7 x 10-4*Rm)
+* tdf = ff * wdf / (7.5 x 10-4 ï¿½ 2.7 x 10-4*Rm)
 *                 
 * Note-1: This function has been modified to use the Duff Consumed Percent
 *          that fofem calculates.
@@ -4002,16 +4002,16 @@ float f;
   f = 11.25 - (4.05 * Rm) ;   // default, but should always get a match below 
 
 
-  if ( !stricmp ("PeatLow", cr_DuffType ) )   //   “Peat Low: (15 MJ/kg)”: Int = 11.25  – (4.05*Rm)
+  if ( !stricmp ("PeatLow", cr_DuffType ) )   //   ï¿½Peat Low: (15 MJ/kg)ï¿½: Int = 11.25  ï¿½ (4.05*Rm)
     f = 11.25 - (4.05 * Rm); 
 
-  if ( !stricmp ("PeatHigh", cr_DuffType))    //   Peat High (20 MJ/kg)”: Int = 15.00  – (5.40*Rm)   
+  if ( !stricmp ("PeatHigh", cr_DuffType))    //   Peat High (20 MJ/kg)ï¿½: Int = 15.00  ï¿½ (5.40*Rm)   
     f = 15.00 - (5.40 * Rm); 
 
-  if ( !stricmp ("DuffLow", cr_DuffType))     //   Duff Low (25 MJ/kg)”: Int = 18.75  – (6.75*Rm)  
+  if ( !stricmp ("DuffLow", cr_DuffType))     //   Duff Low (25 MJ/kg)ï¿½: Int = 18.75  ï¿½ (6.75*Rm)  
     f = 18.75 - (6.75 * Rm); 
 
-  if ( !stricmp ("DuffHigh", cr_DuffType))    //  Duff High  (30 MJ/kg)”: Int = 22.50  – (8.10*Rm)   
+  if ( !stricmp ("DuffHigh", cr_DuffType))    //  Duff High  (30 MJ/kg)ï¿½: Int = 22.50  ï¿½ (8.10*Rm)   
     f = 22.50 - ( 8.10 * Rm ); 
 
   return f; 

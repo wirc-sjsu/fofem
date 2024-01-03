@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "fofem"
+			"path" : "libfofem_debug_c.dylib"
 		}
 	],
 	"backtrace" : 1,
@@ -10,7 +10,7 @@
 	{
 		"commands" : 
 		[
-			"add_executable"
+			"add_library"
 		],
 		"files" : 
 		[
@@ -24,7 +24,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 11,
+				"line" : 18,
 				"parent" : 0
 			}
 		]
@@ -35,7 +35,13 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6"
+					"fragment" : "-g -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk -mmacosx-version-min=13.6 -fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"define" : "fofem_debug_c_EXPORTS"
 				}
 			],
 			"language" : "CXX",
@@ -74,15 +80,11 @@
 			]
 		}
 	],
-	"id" : "fofem::@6890427a1f51a3e7e1df",
+	"id" : "fofem_debug_c::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
 		[
-			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
 			{
 				"fragment" : "",
 				"role" : "flags"
@@ -90,8 +92,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "fofem",
-	"nameOnDisk" : "fofem",
+	"name" : "fofem_debug_c",
+	"nameOnDisk" : "libfofem_debug_c.dylib",
 	"paths" : 
 	{
 		"build" : ".",
@@ -263,5 +265,5 @@
 			"sourceGroupIndex" : 0
 		}
 	],
-	"type" : "EXECUTABLE"
+	"type" : "SHARED_LIBRARY"
 }

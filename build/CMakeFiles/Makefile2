@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /Users/jessica/Documents/fofem/build
 
 # The main recursive "all" target.
 all: CMakeFiles/fofem.dir/all
-all: CMakeFiles/fofem_c.dir/all
+all: CMakeFiles/fofem_debug_c.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,7 +73,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/fofem.dir/clean
-clean: CMakeFiles/fofem_c.dir/clean
+clean: CMakeFiles/fofem_debug_c.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -103,30 +103,30 @@ CMakeFiles/fofem.dir/clean:
 .PHONY : CMakeFiles/fofem.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/fofem_c.dir
+# Target rules for target CMakeFiles/fofem_debug_c.dir
 
 # All Build rule for target.
-CMakeFiles/fofem_c.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jessica/Documents/fofem/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target fofem_c"
-.PHONY : CMakeFiles/fofem_c.dir/all
+CMakeFiles/fofem_debug_c.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/jessica/Documents/fofem/build/CMakeFiles --progress-num=24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46 "Built target fofem_debug_c"
+.PHONY : CMakeFiles/fofem_debug_c.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/fofem_c.dir/rule: cmake_check_build_system
+CMakeFiles/fofem_debug_c.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jessica/Documents/fofem/build/CMakeFiles 23
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fofem_c.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/fofem_debug_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/jessica/Documents/fofem/build/CMakeFiles 0
-.PHONY : CMakeFiles/fofem_c.dir/rule
+.PHONY : CMakeFiles/fofem_debug_c.dir/rule
 
 # Convenience name for target.
-fofem_c: CMakeFiles/fofem_c.dir/rule
-.PHONY : fofem_c
+fofem_debug_c: CMakeFiles/fofem_debug_c.dir/rule
+.PHONY : fofem_debug_c
 
 # clean rule for target.
-CMakeFiles/fofem_c.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_c.dir/build.make CMakeFiles/fofem_c.dir/clean
-.PHONY : CMakeFiles/fofem_c.dir/clean
+CMakeFiles/fofem_debug_c.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/fofem_debug_c.dir/build.make CMakeFiles/fofem_debug_c.dir/clean
+.PHONY : CMakeFiles/fofem_debug_c.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

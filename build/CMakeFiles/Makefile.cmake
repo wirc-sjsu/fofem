@@ -48,5 +48,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/fofem.dir/DependInfo.cmake"
-  "CMakeFiles/fofem_c.dir/DependInfo.cmake"
+  "CMakeFiles/fofem_debug_c.dir/DependInfo.cmake"
   )

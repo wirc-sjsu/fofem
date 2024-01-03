@@ -41,15 +41,15 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "fofem::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-fofem-Debug-9a805652d71a112d758b.json",
+					"jsonFile" : "target-fofem-Debug-6051edf44a8fc94cc227.json",
 					"name" : "fofem",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
-					"id" : "fofem_c::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-fofem_c-Debug-5dde3fd0d858d4f324a9.json",
-					"name" : "fofem_c",
+					"id" : "fofem_debug_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-fofem_debug_c-Debug-9536462a63037d9b0067.json",
+					"name" : "fofem_debug_c",
 					"projectIndex" : 0
 				}
 			]

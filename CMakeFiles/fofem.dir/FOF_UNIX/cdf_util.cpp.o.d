@@ -85,4 +85,5 @@ CMakeFiles/fofem.dir/FOF_UNIX/cdf_util.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_rsize_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/sys/_types/_errno_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include/strings.h \
-  /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.h
+  /Users/jessica/Documents/fofem/FOF_UNIX/cdf_util.h \
+  /Users/jessica/Documents/fofem/FOF_UNIX/fof_util.h

@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 2.8)
 project(FOFEM)
 
 set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_BUILD_TYPE Debug)
+
 
 # Find all CPP files in the src directory
 file(GLOB CPP_FILES FOF_UNIX/*.cpp)
@@ -13,4 +15,5 @@ add_executable(fofem ${CPP_FILES})
 #copy of FOF_UNIX with all functions marked for export
 file(GLOB CPP_LIB_FILES FOF_UNIX/*.cpp)
 
-add_library(fofem_c SHARED ${CPP_LIB_FILES})
+add_library(fofem_debug_
+c SHARED ${CPP_LIB_FILES})
