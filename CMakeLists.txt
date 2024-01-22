@@ -15,5 +15,4 @@ add_executable(fofem ${CPP_FILES})
 #copy of FOF_UNIX with all functions marked for export
 file(GLOB CPP_LIB_FILES FOF_UNIX/*.cpp)
 
-add_library(fofem_debug_
-c SHARED ${CPP_LIB_FILES})
+add_library(fofem_debug_c SHARED ${CPP_LIB_FILES})
